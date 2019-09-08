@@ -1,3 +1,19 @@
+// SETTINGS
+@import "settings.colors";
+
+// TOOLS
+
+// GENERIC
+
+// ELEMENTS
+@import "elements.reset";
+
+// OBJECTS
+@import "objects.grid";
+
+// COMPONENTS
+@import "components.color-block";
+
 html {
-  background-color: teal;
+  background-color: var(--green);
 }
