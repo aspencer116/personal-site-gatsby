@@ -10,9 +10,11 @@
 
 // OBJECTS
 @import "objects.grid";
+@import "objects.typography";
 
 // COMPONENTS
 @import "components.color-block";
+@import "components.homepage-hero";
 
 html {
   background-color: var(--green);
