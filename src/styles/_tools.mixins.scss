@@ -1,0 +1,13 @@
+// Typography mixins
+@mixin heading-base {
+  font-family: 'Lexend Deca', -apple-system, sans-serif;
+  color: var(--stone);
+}
+
+@mixin paragraph-base {
+  color: var(--pine-dark);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  letter-spacing: 0.046rem; // 0.75px
+  margin-bottom: 1.375rem;
+}

@@ -1,0 +1,9 @@
+.c-heading-1--reverse {
+  @include heading-base;
+  color: var(--mist);
+}
+
+.c-paragraph--reverse {
+  @include paragraph-base;
+  color: var(--mist);
+}

@@ -2,6 +2,7 @@
 @import "settings.colors";
 
 // TOOLS
+@import "tools.mixins";
 
 // GENERIC
 
@@ -10,9 +11,9 @@
 
 // OBJECTS
 @import "objects.grid";
-@import "objects.typography";
 
 // COMPONENTS
+@import "components.typography";
 @import "components.color-block";
 @import "components.homepage-hero";
 
