@@ -1,0 +1,88 @@
+.homepage-hero {
+  display: flex;
+  padding-bottom: 20rem; // TEMP: Just to push the footer content down
+}
+
+.homepage-hero__primary {
+  order: 2;
+  flex: 1 1 80%;
+  max-width: 90rem;
+
+  background: var(--pine-dark);
+}
+
+.homepage-hero__secondary {
+  order: 1;
+  flex: 1 1 10%;
+  position: relative;
+
+  background: var(--pine-dark);
+}
+
+.homepage-hero__tertiary {
+  order: 3;
+  flex: 1 1 10%;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    min-height: calc(100% + 2rem);
+    background: var(--mist) url("../images/slate_stubble_light.jpg");
+    background-repeat: repeat;
+    background-size: 275px; // Scale down the size of the image
+  }
+}
+
+.homepage-hero__text-column {
+  max-width: 34rem;
+
+  z-index: 2;
+  position: relative;
+}
+
+.homepage-hero__text-container {
+  // Holds the body block of text
+
+  // Gives space around the text that extends beyond the container
+  $padding: 5vw;
+
+  padding: $padding $padding 4rem;
+  transform: translateX(-$padding);
+  width: calc(100% + (#{$padding} *2));
+
+  background: var(--pine-dark);
+}
+
+.homepage-hero__heading {
+  padding: 11rem 0 6rem;
+  font-size: 3rem;
+  color: var(--seafoam-light);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.homepage-hero__meta-text {
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 3;
+  bottom: 5.375rem;
+  left: calc(5vw - 0.25rem);
+  transform: rotate(-90deg);
+  transform-origin: left center;
+}
+
+.homepage-hero__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  object-fit: cover;
+
+  z-index: 1; // place behind text but over the background color
+}
