@@ -5,30 +5,21 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Personal Site for Andrew Spencer
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is the portfolio site for Andrew Spencer, a web designer and developer. The site is built using Gatsby.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Styles are all found in the `/styles` directory and are organized using BEM convention. Mixins are used extensively to improve consistency and reusability between components.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
-
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into the site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
+    cd personal-site-gatsby/
     gatsby develop
     ```
 
