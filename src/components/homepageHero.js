@@ -19,7 +19,7 @@ const HomepageHero = () => {
     <section class="homepage-hero">
       <div class="homepage-hero__primary">
         <div class="homepage-hero__text-column">
-          <h1 class="t-heading-1--reverse homepage-hero__heading">Web Designer & Developer</h1>
+          <h1 class="t-heading-1 t-heading-1--reverse homepage-hero__heading">Web Designer & <br/>Developer</h1>
 
           <div class="homepage-hero__text-container">
             <p class="t-paragraph t-paragraph--callout">Andrew Spencer goes by many titles. UX/UI'er, Web Builder, Creative Developer, Frontend Designer, etc. Oh, and he enjoys branding as well.</p>
@@ -29,7 +29,7 @@ const HomepageHero = () => {
         </div>
       </div>
       <div class="homepage-hero__secondary">
-        <p class="t-meta homepage-hero__meta-text">Design & Code</p>
+        <p class="t-meta homepage-hero__meta-text">Design&nbsp;&&nbsp;Code</p>
 
         <div class="homepage-hero__background-image">
           <Img fluid={data.heroBackground.childImageSharp.fluid} alt="Green woods with a mysterious look"/>

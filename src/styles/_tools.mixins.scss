@@ -2,12 +2,27 @@
 @mixin heading-base {
   font-family: 'Lexend Deca', -apple-system, sans-serif;
   color: var(--stone);
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.75rem;
+
+  @media (min-width: $bp-md) {
+    font-size: 3.88vw; // Scale the font up as the screen gets larger
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: 3rem;
+  }
 }
 
 @mixin paragraph-base {
   color: var(--pine-dark);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.7;
   letter-spacing: 0.046rem; // 0.75px
   margin-bottom: 1.375rem;
+
+  @media (min-width: $bp-md) {
+    font-size: 1.125rem;
+  }
 }

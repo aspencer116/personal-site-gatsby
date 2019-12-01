@@ -1,5 +1,8 @@
-.t-heading-1--reverse {
+.t-heading-1 {
   @include heading-base;
+}
+
+.t-heading-1--reverse {
   color: var(--mist);
 }
 
@@ -14,8 +17,13 @@
 .t-paragraph--callout {
   color: var(--seafoam-bright);
   font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.33;
+  font-size: 1.125rem;
+  line-height: 1.44;
+
+  @media (min-width: $bp-md) {
+    font-size: 1.5rem;
+    line-height: 1.33;
+  }
 }
 
 .t-meta {

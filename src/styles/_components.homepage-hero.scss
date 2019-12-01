@@ -13,10 +13,15 @@
 
 .homepage-hero__secondary {
   order: 1;
-  flex: 1 1 10%;
+  flex: 0 1 5%;
   position: relative;
 
   background: var(--pine-dark);
+
+  @media (min-width: $bp-md) {
+    flex-grow: 1;
+    flex-basis: 10%;
+  }
 }
 
 .homepage-hero__tertiary {
@@ -24,6 +29,11 @@
   flex: 1 1 10%;
   position: relative;
 
+  @media (max-width: $bp-md) {
+    flex: 0;
+  }
+
+  // Texture shape behind the right side
   &:after {
     content: '';
     position: absolute;
@@ -51,38 +61,54 @@
   // Gives space around the text that extends beyond the container
   $padding: 5vw;
 
-  padding: $padding $padding 4rem;
-  transform: translateX(-$padding);
-  width: calc(100% + (#{$padding} *2));
-
   background: var(--pine-dark);
+  padding: $padding $padding 2rem;
+
+  @media (min-width: $bp-md) {
+    padding-bottom: 4rem;
+    transform: translateX(-$padding);
+    width: calc(100% + (#{$padding} *2));
+  }
 }
 
 .homepage-hero__heading {
-  padding: 11rem 0 6rem;
-  font-size: 3rem;
+  padding: 11rem 2rem 6rem 0;
+  padding: 25vh 2rem 20vh 0;
   color: var(--seafoam-light);
-  font-weight: 400;
-  letter-spacing: 2px;
 }
 
 .homepage-hero__meta-text {
-  width: 100%;
   margin-bottom: 0;
   position: absolute;
   z-index: 3;
-  bottom: 5.375rem;
-  left: calc(5vw - 0.25rem);
+  bottom: 1.375rem;
+  left: calc(5vw - 0.125rem);
+  font-size: 0.75rem;
   transform: rotate(-90deg);
   transform-origin: left center;
+
+  @media (min-width: $bp-md) {
+    font-size: 0.875rem;
+    bottom: 5.375rem;
+    left: calc(5vw - 0.25rem);
+  }
 }
 
 .homepage-hero__background-image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70vw;
+  width: 100vw;
+  height: 90vh;
   object-fit: cover;
 
   z-index: 1; // place behind text but over the background color
+
+  @media (min-width: $bp-md) {
+    width: 70vw;
+  }
+
+  &  .gatsby-image-wrapper {
+    height: 100%;
+  }
 }
