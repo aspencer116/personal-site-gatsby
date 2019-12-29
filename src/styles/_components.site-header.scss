@@ -1,0 +1,70 @@
+.c-site-header {
+  // Variables for elements inside the navigation
+  --c-logo-color: var(--stone-dark);
+
+  position: absolute;
+  z-index: 999; // Position it above all other content
+  width: 100%;
+}
+
+.c-site-header--light {
+  // Light colored version of the navigation
+  --c-logo-color: var(--seafoam-light);
+}
+
+.c-site-header__inner {
+  margin-top: 0.75rem;
+
+  @media(min-width: $bp-md) {
+    margin-top: 2rem;
+    margin-left: calc(var(--v-page-margin) / 2);
+  }
+}
+
+.c-site-header__logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  transition: all var(--v-transition-time) var(--v-transition-function);
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.65;
+  }
+}
+
+.c-site-header__logo-icon {
+  $icon-width-sm: 1.75rem;
+  $icon-width-lg: 2.5rem; // Variable to keep the value consistent in this class
+  // --c-logo-color: var(--mist);
+
+  display: block;
+  width: $icon-width-sm;
+  margin-right: 1rem;
+
+  @media(min-width: $bp-sm) {
+    width: $icon-width-lg;
+  }
+
+  @media(min-width: $bp-md) {
+    // Transformation to "hang" the logo icon to the left of the layout grid
+    transform: translateX(calc(-#{$icon-width-lg} / 2));
+    margin-right: calc((var(--v-page-margin) / 2) - #{$icon-width-lg});
+  }
+}
+
+.c-site-header__logo-name {
+  color: var(--c-logo-color);
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 1rem;
+
+  @media(min-width: $bp-sm) {
+    font-size: 1.25rem;
+  }
+}

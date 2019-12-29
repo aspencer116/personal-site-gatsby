@@ -7,7 +7,7 @@ import HomepageHero from "../components/homepageHero"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout lightVersion={true}>
     <SEO title="Home" />
 
     <HomepageHero />

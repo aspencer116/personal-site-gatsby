@@ -1,0 +1,15 @@
+// Variables for use across the site
+
+// Common layout values
+
+:root {
+  --v-page-margin: 5vw;
+  --v-max-width: #{$bp-xl};
+
+  @media(min-width: $bp-md) {
+    --v-page-margin: 10vw;
+  }
+
+  --v-transition-time: 300ms;
+  --v-transition-function: cubic-bezier(.3,0,0,1);
+}

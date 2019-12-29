@@ -1,6 +1,7 @@
 // SETTINGS
 @import "settings.colors";
 @import "settings.breakpoints";
+@import "settings.variables";
 
 // TOOLS
 @import "tools.mixins";
@@ -12,12 +13,10 @@
 
 // OBJECTS
 @import "objects.grid";
+@import "objects.page-layout";
 
 // COMPONENTS
 @import "components.typography";
 @import "components.color-block";
+@import "components.site-header";
 @import "components.homepage-hero";
-
-html {
-  background-color: var(--green);
-}

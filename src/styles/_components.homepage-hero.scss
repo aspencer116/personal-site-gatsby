@@ -6,7 +6,7 @@
 .homepage-hero__primary {
   order: 2;
   flex: 1 1 80%;
-  max-width: 90rem;
+  max-width: var(--v-page-max-width);
 
   background: var(--pine-dark);
 }
