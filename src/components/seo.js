@@ -41,11 +41,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `Andrew Spencer — Designer & Web Developer`,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `/images/andrew-spencer_og.png`,
         },
         {
           property: `og:type`,

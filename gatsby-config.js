@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Andrew Spencer's Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Andrew Spencer — Designer & Web Developer`,
+    description: `Portfolio of Andrew Spencer, a hybrid designer and web developer who thrives in the space where design meets frontend web development.`,
+    author: `@iam_aspencer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,10 +22,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#e6e9ed`,
+        theme_color: `#e6e9ed`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/andrew-spencer_favicon.png`, // This path is relative to the root of the site.
       },
     },
     {

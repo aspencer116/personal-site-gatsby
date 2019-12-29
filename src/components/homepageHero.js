@@ -19,7 +19,7 @@ const HomepageHero = () => {
     <section className="c-homepage-hero">
       <div className="c-homepage-hero__primary">
         <div className="c-homepage-hero__text-column">
-          <h1 className="t-heading-1 t-heading-1--reverse c-homepage-hero__heading">Web Designer & <br/>Developer</h1>
+          <h1 className="t-heading-1 t-heading-1--reverse c-homepage-hero__heading">Designer & <br/> Web Developer</h1>
 
           <div className="c-homepage-hero__text-container">
             <p className="t-paragraph t-paragraph--callout">Andrew Spencer goes by many titles. UX/UI'er, Web Builder, Creative Developer, Frontend Designer, etc. Oh, and he enjoys branding as well.</p>
