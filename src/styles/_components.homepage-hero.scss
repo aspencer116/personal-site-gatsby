@@ -1,9 +1,9 @@
-.homepage-hero {
+.c-homepage-hero {
   display: flex;
   padding-bottom: 20rem; // TEMP: Just to push the footer content down
 }
 
-.homepage-hero__primary {
+.c-homepage-hero__primary {
   order: 2;
   flex: 1 1 80%;
   max-width: var(--v-page-max-width);
@@ -11,7 +11,7 @@
   background: var(--pine-dark);
 }
 
-.homepage-hero__secondary {
+.c-homepage-hero__secondary {
   order: 1;
   flex: 0 1 5%;
   position: relative;
@@ -24,7 +24,7 @@
   }
 }
 
-.homepage-hero__tertiary {
+.c-homepage-hero__tertiary {
   order: 3;
   flex: 1 1 10%;
   position: relative;
@@ -48,14 +48,14 @@
   }
 }
 
-.homepage-hero__text-column {
+.c-homepage-hero__text-column {
   max-width: 34rem;
 
   z-index: 2;
   position: relative;
 }
 
-.homepage-hero__text-container {
+.c-homepage-hero__text-container {
   // Holds the body block of text
 
   // Gives space around the text that extends beyond the container
@@ -71,13 +71,13 @@
   }
 }
 
-.homepage-hero__heading {
+.c-homepage-hero__heading {
   padding: 11rem 2rem 6rem 0;
   padding: 25vh 2rem 20vh 0;
   color: var(--seafoam-light);
 }
 
-.homepage-hero__meta-text {
+.c-homepage-hero__meta-text {
   margin-bottom: 0;
   position: absolute;
   z-index: 3;
@@ -94,7 +94,7 @@
   }
 }
 
-.homepage-hero__background-image {
+.c-homepage-hero__background-image {
   position: absolute;
   top: 0;
   left: 0;
