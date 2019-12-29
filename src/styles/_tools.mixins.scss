@@ -1,7 +1,7 @@
 // Typography mixins
 @mixin heading-base {
   font-family: 'Lexend Deca', -apple-system, sans-serif;
-  color: var(--stone);
+  color: var(--c-stone);
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.75rem;

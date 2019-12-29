@@ -3,7 +3,7 @@
 }
 
 .t-heading-1--reverse {
-  color: var(--mist);
+  color: var(--c-mist);
 }
 
 .t-paragraph {
@@ -11,11 +11,11 @@
 }
 
 .t-paragraph--reverse {
-  color: var(--mist);
+  color: var(--c-mist);
 }
 
 .t-paragraph--callout {
-  color: var(--seafoam-bright);
+  color: var(--c-seafoam-bright);
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.44;
@@ -27,7 +27,7 @@
 }
 
 .t-meta {
-  color: var(--mist);
+  color: var(--c-mist);
   opacity: 0.6;
   text-transform: uppercase;
   line-height: 1;

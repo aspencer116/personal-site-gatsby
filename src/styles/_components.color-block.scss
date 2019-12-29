@@ -13,3 +13,18 @@
     background-color: currentColor;
   }
 }
+
+.c-color-block__name {
+  display: block;
+
+  font-weight: bold;
+  color: var(--c-stone-dark);
+}
+
+.c-color-block__variable {
+  display: block;
+
+  color: var(--c-stone);
+  font-size: 0.875rem;
+  font-family: monospace;
+}

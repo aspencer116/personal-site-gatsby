@@ -1,6 +1,6 @@
 .c-site-header {
   // Variables for elements inside the navigation
-  --c-logo-color: var(--stone-dark);
+  --c-logo-color: var(--c-stone-dark);
 
   position: absolute;
   z-index: 999; // Position it above all other content
@@ -9,7 +9,7 @@
 
 .c-site-header--light {
   // Light colored version of the navigation
-  --c-logo-color: var(--seafoam-light);
+  --c-logo-color: var(--c-seafoam-light);
 }
 
 .c-site-header__inner {
