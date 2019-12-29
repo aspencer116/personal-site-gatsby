@@ -1,22 +1,37 @@
-// SETTINGS
-@import "settings.colors";
-@import "settings.breakpoints";
-@import "settings.variables";
+// This site uses many "modern" CSS practices that unfortunately
+// are not supported in older browsers like IE. Because we do not
+// expect much web traffic from these older browsers and in order
+// to fully make use of modern frontend development practices we
+// have opted to not use our CSS in these older browsers.
+//
+// In place of our main CSS, we have some basic styles applied that
+// help ensure our content is readable in these older browsers.
 
-// TOOLS
-@import "tools.mixins";
+// Styles for a message if the browser is not supported
+@import "components.unsupported-message";
 
-// GENERIC
+// Styles for modern browsers:
+@supports (display: grid) {
+  // SETTINGS
+  @import "settings.colors";
+  @import "settings.breakpoints";
+  @import "settings.variables";
 
-// ELEMENTS
-@import "elements.reset";
+  // TOOLS
+  @import "tools.mixins";
 
-// OBJECTS
-@import "objects.grid";
-@import "objects.page-layout";
-@import "objects.typography";
+  // GENERIC
 
-// COMPONENTS
-@import "components.color-block";
-@import "components.site-header";
-@import "components.homepage-hero";
+  // ELEMENTS
+  @import "elements.reset";
+
+  // OBJECTS
+  @import "objects.grid";
+  @import "objects.page-layout";
+  @import "objects.typography";
+
+  // COMPONENTS
+  @import "components.color-block";
+  @import "components.site-header";
+  @import "components.homepage-hero";
+}

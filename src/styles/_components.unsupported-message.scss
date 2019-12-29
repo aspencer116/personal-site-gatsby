@@ -1,0 +1,11 @@
+.c-unsupported-message {
+  padding: 1rem;
+
+  background: yellow;
+  font-weight: bold;
+
+  // Remove the message if grid is supported
+  @supports (display: grid) {
+    display: none;
+  }
+}

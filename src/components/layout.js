@@ -25,6 +25,9 @@ const Layout = ({ children, lightVersion }) => {
 
   return (
     <>
+      <div className="c-unsupported-message">
+        This browser is not supported for this site. You can still view the site but there will not be any CSS styles.
+      </div>
       <SiteHeader lightVersion={lightVersion}/>
       <main>{children}</main>
       <footer>
