@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import SiteHeader from "./siteHeader"
+import SiteFooter from "./siteFooter"
 import "./layout.css"
 
 const Layout = ({ children, lightVersion }) => {
@@ -29,12 +30,10 @@ const Layout = ({ children, lightVersion }) => {
         This browser is not supported for this site. You can still view the site but there will not be any CSS styles.
       </div>
       <SiteHeader lightVersion={lightVersion}/>
+
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+
+      <SiteFooter />
     </>
   )
 }

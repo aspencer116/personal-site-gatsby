@@ -1,28 +1,38 @@
 // Typography mixins
-@mixin heading-base {
+@mixin heading-base($color: $c-stone, $font-size-sm: 1.75rem, $font-size-lg: 3rem, $letter-spacing: 0) {
   font-family: 'Lexend Deca', -apple-system, sans-serif;
-  color: var(--c-stone);
+  color: $color;
   font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.75rem;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-sm;
 
   @media (min-width: $bp-md) {
-    font-size: 3.88vw; // Scale the font up as the screen gets larger
+    // Scale the font up as the screen gets larger
+    font-size: $font-size-sm / $bp-md * 100vw;
   }
 
   @media (min-width: $bp-lg) {
-    font-size: 3rem;
+    font-size: $font-size-lg;
   }
 }
 
-@mixin paragraph-base {
-  color: var(--pine-dark);
-  font-size: 1rem;
+@mixin paragraph-base($color: $c-pine-dark, $font-size-sm: 1rem, $font-size-lg: 1.25rem) {
+  color: $color;
+  font-size: $font-size-sm;
   line-height: 1.7;
-  letter-spacing: 0.046rem; // 0.75px
+  letter-spacing: 0.04rem;
   margin-bottom: 1.375rem;
 
   @media (min-width: $bp-md) {
-    font-size: 1.125rem;
+    font-size: $font-size-lg;
   }
+}
+
+@mixin visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }

@@ -1,17 +1,34 @@
-// All the colors
+// All the colors. Either use SASS or CSS variables, depending
+// on the application either can be used.
 
+// Defined as SASS variables
+$c-pine: #3e5a4c;
+$c-pine-dark: #2e3a34;
+
+$c-seafoam: #a7c5b4;
+$c-seafoam-light: #e9f4ed;
+$c-seafoam-bright: #76C193;
+
+$c-stone: #3e4859;
+$c-stone-light: #89909b;
+$c-stone-dark: #23282d;
+
+$c-mist: #f7f8f9;
+$c-mist-dark: #e6e9ed;
+
+// Devinded as root level CSS variables
 :root {
-  --c-pine-dark: #2e3a34;
-  --c-pine: #3e5a4c;
+  --c-pine: #{$c-pine};
+  --c-pine-dark: #{$c-pine-dark};
 
-  --c-seafoam: #a7c5b4;
-  --c-seafoam-light: #e9f4ed;
-  --c-seafoam-bright: #76C193;
+  --c-seafoam: #{$c-seafoam};
+  --c-seafoam-light: #{$c-seafoam-light};
+  --c-seafoam-bright: #{$c-seafoam-bright};
 
-  --c-stone: #3e4859;
-  --c-stone-light: #89909b;
-  --c-stone-dark: #23282d;
+  --c-stone: #{$c-stone};
+  --c-stone-light: #{$c-stone-light};
+  --c-stone-dark: #{$c-stone-dark};
 
-  --c-mist: #f7f8f9;
-  --c-mist-dark: #e6e9ed;
+  --c-mist: #{$c-mist};
+  --c-mist-dark: #{$c-mist-dark};
 }

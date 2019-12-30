@@ -1,9 +1,19 @@
 .t-heading-1 {
-  @include heading-base;
+  @include heading-base($letter-spacing: 2px);
 }
 
 .t-heading-1--reverse {
   color: var(--c-mist);
+}
+
+.t-heading-4 {
+  @include heading-base(
+    $color: $c-seafoam-bright,
+    $font-size-sm: 1.125rem,
+    $font-size-lg: 1.625rem,
+    $letter-spacing: 1px
+  );
+  margin-bottom: 0.5rem;
 }
 
 .t-paragraph {
@@ -11,7 +21,7 @@
 }
 
 .t-paragraph--reverse {
-  color: var(--c-mist);
+  color: $c-mist;
 }
 
 .t-paragraph--callout {
