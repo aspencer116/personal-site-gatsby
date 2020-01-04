@@ -98,10 +98,19 @@
 
 .c-site-footer__list-item {
   margin-bottom: 0.5rem;
+
+  @media (min-width: $bp-sm) {
+    margin-bottom: 1rem;
+  }
 }
 
 .c-site-footer__link {
-  @include paragraph-base($color: $c-mist, $font-size-sm: 0.875rem, $font-size-lg: 1rem);
+  @include paragraph-base(
+    $color: $c-mist,
+    $font-size-sm: 0.875rem,
+    $font-size-lg: 1rem,
+    $line-height: 1.2
+  );
   text-decoration: none;
 
   transition: all var(--v-transition-time) var(--v-transition-function);
@@ -127,7 +136,11 @@
   @media (min-width: $bp-md) {
     flex-direction: column;
 
-    padding: 4rem 0;
+    padding: 5.875rem 0 2rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding-top: 6.375rem;
   }
 }
 

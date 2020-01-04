@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Link } from "gatsby"
+import SiteFooterLink from "./SiteFooterLink"
 
 const SiteHeader = () => (
   <footer className="c-site-footer">
@@ -8,12 +9,15 @@ const SiteHeader = () => (
       <li className="c-site-footer__category">
         <h2 className="t-heading-4">About</h2>
         <ul className="c-site-footer__list">
+
+          <SiteFooterLink linkText="Contact (Email)" linkPath="mailto:aspencer.hello@gmail.com" />
+
           <li className="c-site-footer__list-item">
             <Link
-              to="/"
+              to="/pattern-library"
               className="c-site-footer__link"
             >
-              Contact
+              Pattern Library
             </Link>
           </li>
         </ul>
@@ -22,90 +26,52 @@ const SiteHeader = () => (
       <li className="c-site-footer__category c-site-footer__category--alt">
         <h2 className="t-heading-4">Projects</h2>
         <ul className="c-site-footer__list">
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
+
+          <SiteFooterLink linkText="👨‍💻Case Studies Coming Soon" linkPath="/" />
+
+          <SiteFooterLink linkText="Personal Brand Progress (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/358899-Personal-Brand" newTab />
+
+          <SiteFooterLink linkText="PicSnippets (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
+
+          <SiteFooterLink linkText="Whitworth University (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
+
+          <SiteFooterLink linkText="Yo Portfolio (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/568437-Yo-Portfolio" newTab />
+
+          <SiteFooterLink linkText="Sparkbox (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />
         </ul>
       </li>
 
       <li className="c-site-footer__category">
         <h2 className="t-heading-4">Writing</h2>
         <ul className="c-site-footer__list">
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
+
+          <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/#comments" newTab />
+
+          <SiteFooterLink linkText="The Case for Including a Designer from Project Start to Finish" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
+
+          <SiteFooterLink linkText="Accessible By Design" linkPath='https://seesparkbox.com/foundry/accessible_by_design' newTab />
+
+          <SiteFooterLink linkText="The Value of Design Constraints" linkPath='https://seesparkbox.com/foundry/the_value_of_design_constraints' newTab />
+
+          <SiteFooterLink linkText="Performant Design" linkPath='https://seesparkbox.com/foundry/improve_website_speed_performance_with_design_choices' newTab />
+
+          <SiteFooterLink linkText="Maintaining Design Vision" linkPath='https://seesparkbox.com/foundry/maintaining_design_vision' newTab />
         </ul>
       </li>
 
       <li className="c-site-footer__category c-site-footer__category--alt">
         <h2 className="t-heading-4">Code Bits & Side Projects</h2>
         <ul className="c-site-footer__list">
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/"
-              className="c-site-footer__link"
-            >
-              Work In Progress
-            </Link>
-          </li>
+
+          <SiteFooterLink linkText="Hyperloop Map (on Dribbble)" linkPath="https://dribbble.com/shots/4712665-Hyperloop-Map-Dark-Mode" newTab />
+
+          <SiteFooterLink linkText="Realistic Shadow Button (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/xXQbvK" newTab />
+
+          <SiteFooterLink linkText="Website Inception Effect (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/ePmmeV" newTab />
+
+          <SiteFooterLink linkText="Bezier Curve Style Library (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/ZeQvGW" newTab />
+
+          <SiteFooterLink linkText="Photorealistic Photo in a Frame (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/NeYdbL" newTab />
         </ul>
       </li>
     </ul>
