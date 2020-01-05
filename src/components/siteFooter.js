@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Link } from "gatsby"
-import SiteFooterLink from "./SiteFooterLink"
+import SiteFooterLink from "./siteFooterLink"
 
 const SiteHeader = () => (
   <footer className="c-site-footer">
@@ -29,15 +29,15 @@ const SiteHeader = () => (
 
           <SiteFooterLink linkText="👨‍💻Case Studies Coming Soon" linkPath="/" />
 
-          <SiteFooterLink linkText="Personal Brand Progress (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/358899-Personal-Brand" newTab />
+          <SiteFooterLink linkText="PicSnippets" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
 
-          <SiteFooterLink linkText="PicSnippets (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
+          <SiteFooterLink linkText="Whitworth University" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
 
-          <SiteFooterLink linkText="Whitworth University (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
+          <SiteFooterLink linkText="Yo Portfolio" linkPath="https://dribbble.com/iam_aspencer/projects/568437-Yo-Portfolio" newTab />
 
-          <SiteFooterLink linkText="Yo Portfolio (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/568437-Yo-Portfolio" newTab />
+          <SiteFooterLink linkText="Sparkbox" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />
 
-          <SiteFooterLink linkText="Sparkbox (on Dribbble)" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />
+          <SiteFooterLink linkText="Personal Brand" linkPath="https://dribbble.com/iam_aspencer/projects/358899-Personal-Brand" newTab />
         </ul>
       </li>
 
@@ -51,8 +51,6 @@ const SiteHeader = () => (
 
           <SiteFooterLink linkText="Accessible By Design" linkPath='https://seesparkbox.com/foundry/accessible_by_design' newTab />
 
-          <SiteFooterLink linkText="The Value of Design Constraints" linkPath='https://seesparkbox.com/foundry/the_value_of_design_constraints' newTab />
-
           <SiteFooterLink linkText="Performant Design" linkPath='https://seesparkbox.com/foundry/improve_website_speed_performance_with_design_choices' newTab />
 
           <SiteFooterLink linkText="Maintaining Design Vision" linkPath='https://seesparkbox.com/foundry/maintaining_design_vision' newTab />
@@ -63,15 +61,17 @@ const SiteHeader = () => (
         <h2 className="t-heading-4">Code Bits & Side Projects</h2>
         <ul className="c-site-footer__list">
 
-          <SiteFooterLink linkText="Hyperloop Map (on Dribbble)" linkPath="https://dribbble.com/shots/4712665-Hyperloop-Map-Dark-Mode" newTab />
+          <SiteFooterLink linkText="Hyperloop Map" linkPath="https://dribbble.com/shots/4712665-Hyperloop-Map-Dark-Mode" newTab />
 
-          <SiteFooterLink linkText="Realistic Shadow Button (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/xXQbvK" newTab />
+          <SiteFooterLink linkText="Realistic Shadow Button" linkPath="https://codepen.io/iam_aspencer/pen/xXQbvK" newTab />
 
-          <SiteFooterLink linkText="Website Inception Effect (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/ePmmeV" newTab />
+          <SiteFooterLink linkText="Website Inception Effect" linkPath="https://codepen.io/iam_aspencer/pen/ePmmeV" newTab />
 
-          <SiteFooterLink linkText="Bezier Curve Style Library (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/ZeQvGW" newTab />
+          <SiteFooterLink linkText="Bezier Curve Style Library" linkPath="https://codepen.io/iam_aspencer/pen/ZeQvGW" newTab />
 
-          <SiteFooterLink linkText="Photorealistic Photo in a Frame (on CodePen)" linkPath="https://codepen.io/iam_aspencer/pen/NeYdbL" newTab />
+          <SiteFooterLink linkText="Photorealistic Photo in a Frame" linkPath="https://codepen.io/iam_aspencer/pen/NeYdbL" newTab />
+
+          <SiteFooterLink linkText="Christmas Tree Farm Brand" linkPath="https://dribbble.com/shots/9068185-Christmas-Tree-Brand" newTab />
         </ul>
       </li>
     </ul>
