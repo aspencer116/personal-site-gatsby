@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import HomepageHeroImages from "../components/HomepageHeroImages"
 
 const HomepageHero = () => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const HomepageHero = () => {
             <p className="t-paragraph t-paragraph--reverse">In his free time Andrew enjoys traveling with his wife and photographing either their adventures or their puppy, Piper. Whether they are exploring a new city or National Park, he is always on a quest for the perfect cup of coffee and tacos—to be enjoyed separately.</p>
           </div>
         </div>
+        <HomepageHeroImages />
       </div>
       <div className="c-homepage-hero__secondary">
         <p className="t-meta c-homepage-hero__meta-text">Design&nbsp;&&nbsp;Code</p>

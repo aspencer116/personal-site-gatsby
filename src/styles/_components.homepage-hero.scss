@@ -6,6 +6,7 @@
 .c-homepage-hero__primary {
   order: 2;
   flex: 1 1 80%;
+  display: flex;
   max-width: var(--v-page-max-width);
 
   background: var(--c-pine-dark);
@@ -49,10 +50,78 @@
 }
 
 .c-homepage-hero__text-column {
-  max-width: 34rem;
-
   z-index: 2;
   position: relative;
+}
+
+.c-homepage-hero__images-column {
+  position: absolute;
+  width: 25vw;
+  left: 70vw;
+  display: flex;
+
+  @media (max-width: $bp-md) {
+    // Hide the images until a set breakpoint
+    display: none;
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 37.5vw;
+    left: 57.5vw;
+  }
+
+  @media (min-width: $bp-xl) {
+    width: 35vw;
+    max-width: 34rem;
+    left: 60vw;
+  }
+}
+
+.c-homepage-hero__images-column-inner {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 18vh;
+
+  &:not(:last-child) {
+    @media (min-width: $bp-lg) {
+      margin-right: 2.5vw;
+    }
+
+    @media (min-width: $bp-xl) {
+      margin-right: 5vw;
+    }
+  }
+}
+
+.c-homepage-hero__images-column-inner--alt {
+  @media (max-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.c-homepage-hero__image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 177%; // 16:9 intrinsic ratio
+
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin-bottom: 10vw;
+
+  border-radius: 1.75vw;
+  border: $c-mist solid 0.0625rem;
+  background: $c-pine-dark;
+  box-shadow:
+    0 2rem 6rem -2rem rgba(0, 0, 0, 0.5),
+    0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .c-homepage-hero__text-container {
@@ -62,12 +131,18 @@
   $padding: 5vw;
 
   background: var(--c-pine-dark);
-  padding: $padding $padding 2rem;
+  padding: $padding 10vw 2rem $padding;
+
 
   @media (min-width: $bp-md) {
+    padding-right: 30vw;
     padding-bottom: 4rem;
     transform: translateX(-$padding);
-    width: calc(100% + (#{$padding} *2));
+    width: calc(100% + #{$padding});
+  }
+
+  @media (min-width: $bp-lg) {
+    padding-right: 40vw;
   }
 }
 
@@ -80,10 +155,12 @@
 .c-homepage-hero__meta-text {
   margin-bottom: 0;
   position: absolute;
+  height: 0.25rem; // To center the text
   z-index: 3;
   bottom: 1.375rem;
   left: calc(5vw - 0.125rem);
   font-size: 0.75rem;
+  box-shadow: 1 1 1rem $c-pine-dark;
   transform: rotate(-90deg);
   transform-origin: left center;
 
@@ -99,12 +176,16 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 90vh;
+  height: 110vh;
   object-fit: cover;
 
   z-index: 1; // place behind text but over the background color
 
   @media (min-width: $bp-md) {
+    width: 80vw;
+  }
+
+  @media (min-width: $bp-lg) {
     width: 70vw;
   }
 
