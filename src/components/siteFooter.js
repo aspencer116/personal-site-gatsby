@@ -10,7 +10,7 @@ const SiteHeader = () => (
         <h2 className="t-heading-4">About</h2>
         <ul className="c-site-footer__list">
 
-          <SiteFooterLink linkText="Contact (Email)" linkPath="mailto:aspencer.hello@gmail.com" />
+          <SiteFooterLink linkText="Contact" linkPath="mailto:aspencer.hello@gmail.com" />
 
           <li className="c-site-footer__list-item">
             <Link
@@ -45,7 +45,7 @@ const SiteHeader = () => (
         <h2 className="t-heading-4">Writing</h2>
         <ul className="c-site-footer__list">
 
-          <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/#comments" newTab />
+          <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/" newTab />
 
           <SiteFooterLink linkText="The Case for Including a Designer from Project Start to Finish" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
 
