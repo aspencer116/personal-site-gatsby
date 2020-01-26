@@ -16,12 +16,12 @@
   }
 }
 
-@mixin paragraph-base($color: $c-pine-dark, $font-size-sm: 1rem, $font-size-lg: 1.25rem, $line-height: 1.7) {
+@mixin paragraph-base($color: $c-pine-dark, $font-size-sm: 1.0625rem, $font-size-lg: 1.1875rem, $line-height: 1.68) {
   color: $color;
   font-size: $font-size-sm;
   line-height: $line-height;
-  letter-spacing: 0.04rem;
-  margin-bottom: 1.375rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 2rem;
 
   @media (min-width: $bp-md) {
     font-size: $font-size-lg;

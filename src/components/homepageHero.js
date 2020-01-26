@@ -23,9 +23,9 @@ const HomepageHero = () => {
           <h1 className="t-heading-1 t-heading-1--reverse c-homepage-hero__heading">Designer & <br/> Web Developer</h1>
 
           <div className="c-homepage-hero__text-container">
-            <p className="t-paragraph t-paragraph--callout">Andrew Spencer goes by many titles. UX/UI'er, Web Builder, Creative Developer, Frontend Designer, etc. Oh, and he enjoys branding as well.</p>
-            <p className="t-paragraph t-paragraph--reverse">Andrew lives in that weird space between design and code, carrying a unique balance of creativity and logic. He enjoys solving complex problems for clients and their users—with both design and code.</p>
-            <p className="t-paragraph t-paragraph--reverse">In his free time Andrew enjoys traveling with his wife and photographing either their adventures or their puppy, Piper. Whether they are exploring a new city or National Park, he is always on a quest for the perfect cup of coffee and tacos—to be enjoyed separately.</p>
+            <p className="t-paragraph t-paragraph--callout">Hello, I’m Andrew,  a creative problem solver who works at the intersection of design and code.</p>
+            <p className="t-paragraph t-paragraph--reverse">I focus on crafting great web experiences through the use of thoughtful UX, beautiful design, and semantic, accessible frontend code. Whether it’s selling a product, telling a story, or helping users accomplish a task, I enjoy tackling unique and complex problems for clients large and small—and across many disciplines.</p>
+            <p className="t-paragraph t-paragraph--reverse">In my free time I enjoy traveling with my wife and photographing our adventures—or our puppy. Whether we are exploring a new city or a National Park, I’m always searching for the best coffee and tacos—to be enjoyed separately.</p>
           </div>
         </div>
         <HomepageHeroImages />
