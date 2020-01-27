@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import {CSSTransition} from 'react-transition-group';
+import {CSSTransition} from 'react-transition-group'
 import Img from "gatsby-image"
 import Parallax from 'react-rellax'
 
@@ -36,7 +36,7 @@ const HomepageHeroImages = () => {
       <div className="c-homepage-hero__images-column-inner">
         <CSSTransition
           in={true}
-          timeout={3000}
+          timeout={4000}
           classNames="c-homepage-hero__image-1"
           appear
         >
@@ -48,7 +48,7 @@ const HomepageHeroImages = () => {
         </CSSTransition>
         <CSSTransition
           in={true}
-          timeout={3000}
+          timeout={4000}
           classNames="c-homepage-hero__image-2"
           appear
         >
@@ -62,7 +62,7 @@ const HomepageHeroImages = () => {
       <div className="c-homepage-hero__images-column-inner c-homepage-hero__images-column-inner--alt">
         <CSSTransition
           in={true}
-          timeout={3000}
+          timeout={4000}
           classNames="c-homepage-hero__image-3"
           appear
         >

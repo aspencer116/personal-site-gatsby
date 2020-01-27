@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import {CSSTransition} from 'react-transition-group'
 import Img from "gatsby-image"
 import HomepageHeroImages from "./homepageHeroImages"
 
@@ -20,7 +21,37 @@ const HomepageHero = () => {
     <section className="c-homepage-hero">
       <div className="c-homepage-hero__primary">
         <div className="c-homepage-hero__text-column">
-          <h1 className="t-heading-1 t-heading-1--reverse c-homepage-hero__heading">Designer & <br/> Web Developer</h1>
+          <CSSTransition
+            in={true}
+            timeout={3000}
+            classNames="transition-homepage-hero__heading"
+            appear
+          >
+            <h1 className="t-heading-1 t-heading-1--reverse c-homepage-hero__heading">
+              <span>D</span>
+              <span>e</span>
+              <span>s</span>
+              <span>i</span>
+              <span>g</span>
+              <span>n</span>
+              <span>e</span>
+              <span className="with-space">r</span>
+              <span>&</span>
+              <br/>
+              <span>W</span>
+              <span>e</span>
+              <span className="with-space">b</span>
+              <span>D</span>
+              <span>e</span>
+              <span>v</span>
+              <span>e</span>
+              <span>l</span>
+              <span>o</span>
+              <span>p</span>
+              <span>e</span>
+              <span>r</span>
+            </h1>
+          </CSSTransition>
 
           <div className="c-homepage-hero__text-container">
             <p className="t-paragraph t-paragraph--callout">Hello, I’m Andrew,  a creative problem solver who works at the intersection of design and code.</p>
