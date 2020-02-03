@@ -48,8 +48,8 @@ const HomepageHeroImages = () => {
         </CSSTransition>
         <CSSTransition
           in={true}
-          timeout={4000}
-          classNames="c-homepage-hero__image-2"
+          timeout={5000}
+          classNames="c-homepage-hero__image-3"
           appear
         >
           <div className="c-homepage-hero__image-container c-homepage-hero__image-container--alt">
@@ -63,7 +63,7 @@ const HomepageHeroImages = () => {
         <CSSTransition
           in={true}
           timeout={4000}
-          classNames="c-homepage-hero__image-3"
+          classNames="c-homepage-hero__image-2"
           appear
         >
           <div className="c-homepage-hero__image-container">

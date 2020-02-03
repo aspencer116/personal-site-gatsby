@@ -206,24 +206,28 @@
 }
 
 // Transition Variables
-$transition-image-time: 1.75s;
-$transition-image-delay: 1.5s;
-$transition-heading-time: 800ms;
-$transition-heading-delay: 500ms;
+$transition-heading-time:  900ms;
+$transition-heading-delay: 600ms;
+$transition-text-time:     900ms;
+$transition-text-delay:    1200ms;
+$transition-image-time:    1750ms;
+$transition-image-delay:   1750ms;
 
 // Hero image transition classes
 .c-homepage-hero__image-1-appear,
 .c-homepage-hero__image-2-appear,
 .c-homepage-hero__image-3-appear {
   opacity: 0;
-  transform: translateY(1.5rem);
+  transform-style: preserve-3d;
+  transform-origin: 75% center;
+  transform: translateY(4rem) perspective(10000) rotateX(-4deg);
 }
 
 .c-homepage-hero__image-1-appear-active,
 .c-homepage-hero__image-2-appear-active,
 .c-homepage-hero__image-3-appear-active {
   opacity: 1;
-  transform: none;
+  transform: translateY(0) perspective(10000) rotateX(0);
   transition: all $transition-image-time $transition-image-delay var(--v-transition-function);
 }
 
@@ -239,17 +243,37 @@ $transition-heading-delay: 500ms;
 // Hero heading transition classes
 .transition-homepage-hero__heading-appear span {
   opacity: 0;
-  transform: translateY(2rem);
+  transform-style: preserve-3d;
+  transform-origin: 75% center;
+  transform: translateY(2rem) perspective(100) rotateX(-30deg);
 }
 
 .transition-homepage-hero__heading-appear-active span {
   opacity: 1;
-  transform: none;
+  transform: translateY(0) perspective(100) rotateX(0);
   transition: all $transition-heading-time $transition-heading-delay var(--v-transition-function);
 }
 
 @for $i from 1 through 22 {
   .transition-homepage-hero__heading-appear-active span:nth-child(#{$i}) {
     transition-delay: $transition-heading-delay + ($i * 30);
+  }
+}
+
+// Hero text transition classes
+.transition-homepage-hero__text-appear p {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.transition-homepage-hero__text-appear-active p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all $transition-text-time $transition-text-delay var(--v-transition-function);
+}
+
+@for $i from 1 through 3 {
+  .transition-homepage-hero__text-appear-active p:nth-child(#{$i}) {
+    transition-delay: $transition-text-delay + ($i * 200);
   }
 }
