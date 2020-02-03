@@ -60,6 +60,8 @@
   left: 70vw;
   display: flex;
 
+  z-index: 2;
+
   @media (max-width: $bp-md) {
     // Hide the images until a set breakpoint
     display: none;
@@ -206,12 +208,12 @@
 }
 
 // Transition Variables
-$transition-heading-time:  900ms;
+$transition-heading-time:  1200ms;
 $transition-heading-delay: 600ms;
 $transition-text-time:     900ms;
 $transition-text-delay:    1200ms;
 $transition-image-time:    1750ms;
-$transition-image-delay:   1750ms;
+$transition-image-delay:   1900ms;
 
 // Hero image transition classes
 .c-homepage-hero__image-1-appear,
@@ -220,24 +222,38 @@ $transition-image-delay:   1750ms;
   opacity: 0;
   transform-style: preserve-3d;
   transform-origin: 75% center;
-  transform: translateY(4rem) perspective(10000) rotateX(-4deg);
+  perspective: 1000px;
+  transform: translateY(4rem) rotateX(-20deg);
 }
 
 .c-homepage-hero__image-1-appear-active,
 .c-homepage-hero__image-2-appear-active,
 .c-homepage-hero__image-3-appear-active {
   opacity: 1;
-  transform: translateY(0) perspective(10000) rotateX(0);
+  transform: translateY(0) rotateX(0);
   transition: all $transition-image-time $transition-image-delay var(--v-transition-function);
+}
+
+.c-homepage-hero__image-1-appear picture,
+.c-homepage-hero__image-2-appear picture,
+.c-homepage-hero__image-3-appear picture {
+  opacity: 0;
+}
+
+.c-homepage-hero__image-1-appear-active picture,
+.c-homepage-hero__image-2-appear-active picture,
+.c-homepage-hero__image-3-appear-active picture {
+  opacity: 1;
+  transition: opacity 2s $transition-image-delay + 600ms var(--v-transition-function-easy);
 }
 
 // Staggered values for the iamge
 .c-homepage-hero__image-2-appear-active {
-  transition-delay: $transition-image-delay * 1.3;
+  transition-delay: $transition-image-delay * 1.2;
 }
 
 .c-homepage-hero__image-3-appear-active {
-  transition-delay: $transition-image-delay * 1.6;
+  transition-delay: $transition-image-delay * 1.4;
 }
 
 // Hero heading transition classes
@@ -245,18 +261,19 @@ $transition-image-delay:   1750ms;
   opacity: 0;
   transform-style: preserve-3d;
   transform-origin: 75% center;
-  transform: translateY(2rem) perspective(100) rotateX(-30deg);
+  perspective: 100px;
+  transform: translateY(2rem) rotateX(-40deg);
 }
 
 .transition-homepage-hero__heading-appear-active span {
   opacity: 1;
-  transform: translateY(0) perspective(100) rotateX(0);
+  transform: translateY(0) rotateX(0);
   transition: all $transition-heading-time $transition-heading-delay var(--v-transition-function);
 }
 
 @for $i from 1 through 22 {
   .transition-homepage-hero__heading-appear-active span:nth-child(#{$i}) {
-    transition-delay: $transition-heading-delay + ($i * 30);
+    transition-delay: $transition-heading-delay + ($i * 40);
   }
 }
 

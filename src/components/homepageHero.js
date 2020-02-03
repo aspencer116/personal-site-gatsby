@@ -69,7 +69,7 @@ const HomepageHero = () => {
         <HomepageHeroImages />
       </div>
       <div className="c-homepage-hero__secondary">
-        <p className="t-meta c-homepage-hero__meta-text">Design&nbsp;&&nbsp;Code</p>
+        <p className="t-meta c-homepage-hero__meta-text">Dayton&nbsp;OH</p>
 
         <div className="c-homepage-hero__background-image">
           <Img fluid={data.heroBackground.childImageSharp.fluid} alt="Green woods with a mysterious look"/>
