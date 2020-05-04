@@ -4,9 +4,14 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import HomepageHero from "../components/homepageHero"
 import SEO from "../components/seo"
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
 
 const IndexPage = () => (
   <Layout lightVersion={true}>
+    <Helmet>
+        <script src={withPrefix('js/safe-focus.js')} type="text/javascript" />
+    </Helmet>
     <SEO title="Home" />
 
     <HomepageHero />
