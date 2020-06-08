@@ -1,8 +1,7 @@
 // Typography mixins
-@mixin heading-base($color: $c-stone, $font-size-sm: 1.75rem, $font-size-lg: 3rem, $letter-spacing: 0) {
-  font-family: 'Lexend Deca', -apple-system, sans-serif;
+@mixin heading-base($color: var(--c-black), $weight: 500, $font-size-sm: 2rem, $font-size-lg: 3rem, $letter-spacing: 0) {
   color: $color;
-  font-weight: 400;
+  font-weight: $weight;
   letter-spacing: $letter-spacing;
   font-size: $font-size-sm;
 
@@ -16,11 +15,11 @@
   }
 }
 
-@mixin paragraph-base($color: $c-pine-dark, $font-size-sm: 1.0625rem, $font-size-lg: 1.1875rem, $line-height: 1.68) {
+@mixin paragraph-base($color: var(--c-black), $font-size-sm: 1rem, $font-size-lg: 1.0625rem, $line-height: 1.68) {
   color: $color;
   font-size: $font-size-sm;
   line-height: $line-height;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.01rem;
 
   &:not(:last-child) {
     margin-bottom: 2rem;

@@ -1,6 +1,6 @@
 .c-site-header {
   // Variables for elements inside the navigation
-  --c-logo-color: var(--c-stone-dark);
+  --c-logo-color: var(--c-black);
 
   position: absolute;
   z-index: 999; // Position it above all other content
@@ -9,7 +9,7 @@
 
 .c-site-header--light {
   // Light colored version of the navigation
-  --c-logo-color: var(--c-seafoam-light);
+  --c-logo-color: var(--c-white);
 }
 
 .c-site-header__inner {
@@ -30,18 +30,17 @@
   transition: all var(--v-transition-time) var(--v-transition-function);
 
   &:hover {
-    opacity: 0.75;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: 0.65;
+    opacity: 0.5;
   }
 }
 
 .c-site-header__logo-icon {
-  $icon-width-sm: 1.75rem;
-  $icon-width-lg: 2.5rem; // Variable to keep the value consistent in this class
-  // --c-logo-color: var(--mist);
+  $icon-width-sm: 1.5rem;
+  $icon-width-lg: 2rem; // Variable to keep the value consistent in this class
 
   display: block;
   width: $icon-width-sm;
@@ -60,8 +59,7 @@
 
 .c-site-header__logo-name {
   color: var(--c-logo-color);
-  opacity: 0.8;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1rem;
 
   @media(min-width: $bp-sm) {

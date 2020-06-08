@@ -10,9 +10,10 @@ const PatternLibrary = () => (
 
     <div className="o-page-layout">
       <h1 style={{paddingTop: `8rem`}}>Pattern Library</h1>
-      <p>A collection of styles and patterns for use across the site.</p>
+      <p style={{paddingBottom: `4rem`}}>A collection of styles and patterns for use across the site.</p>
 
-      <h2>Colors</h2>
+      <h2 className="t-heading-2">Colors</h2>
+
       <ul className="o-grid o-grid-4">
         <Color colorName="pine"/>
         <Color colorName="pine-dark"/>

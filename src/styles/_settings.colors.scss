@@ -14,6 +14,7 @@ $c-stone-light: #89909b;
 $c-stone-dark: #23282d;
 
 $c-mist: #f7f8f9;
+$c-mist-light: #ffffff;
 $c-mist-dark: #e6e9ed;
 
 // Devinded as root level CSS variables
@@ -31,4 +32,7 @@ $c-mist-dark: #e6e9ed;
 
   --c-mist: #{$c-mist};
   --c-mist-dark: #{$c-mist-dark};
+
+  --c-white: white;
+  --c-black: black;
 }

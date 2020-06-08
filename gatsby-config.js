@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Andrew Spencer Portfolio`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#e6e9ed`,
@@ -33,12 +33,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Karla`,
-            variants: [`400`, `700`]
+            family: `DM Sans`,
+            variants: [`400`, `500`]
           },
           {
-            family: `Lexend Deca`,
-            variants: [`400`]
+            family: `IBM Plex Mono`,
+            variants: [`bold`]
           },
         ],
       },

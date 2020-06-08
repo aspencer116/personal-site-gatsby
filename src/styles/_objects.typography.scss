@@ -6,6 +6,15 @@
   color: var(--c-mist);
 }
 
+.t-heading-2 {
+  font-family: "IBM Plex Mono", monospace;
+  @include heading-base(
+    $font-size-sm: 1.5rem,
+    $font-size-lg: 1.875rem,
+    $weight: bold,
+  );
+}
+
 .t-heading-4 {
   @include heading-base(
     $color: $c-seafoam-bright,
@@ -25,8 +34,7 @@
 }
 
 .t-paragraph--callout {
-  color: $c-seafoam-bright;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.44;
 
@@ -37,7 +45,7 @@
 }
 
 .t-meta {
-  color: var(--c-mist);
+  color: var(--c-black);
   opacity: 0.6;
   text-transform: uppercase;
   line-height: 1;
