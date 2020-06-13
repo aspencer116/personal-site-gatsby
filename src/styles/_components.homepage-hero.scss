@@ -177,20 +177,20 @@
 }
 
 .c-homepage-hero__meta-text {
-  margin-bottom: 0;
-  position: absolute;
-  height: 0.25rem; // To center the text
-  z-index: 3;
-  bottom: 2rem;
-  left: calc(5vw - 0.125rem);
-  font-size: 0.75rem;
-  transform: rotate(-90deg);
-  transform-origin: left center;
+  display: none;
 
   @media (min-width: $bp-md) {
-    font-size: 0.875rem;
+    display: block;
+
+    margin-bottom: 0;
+    position: absolute;
+    height: 0.25rem; // To center the text
+    z-index: 3;
     bottom: 4rem;
     left: calc(5vw - 0.25rem);
+    font-size: 0.75rem;
+    transform: rotate(-90deg);
+    transform-origin: left center;
   }
 }
 

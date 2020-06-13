@@ -46,16 +46,17 @@ const HomepageHero = () => {
             appear
           >
             <div className="c-homepage-hero__text-container">
-              <p className="t-paragraph t-paragraph--callout">Hello, I’m Andrew,  a creative problem solver who works at the intersection of design and code.</p>
-              <p className="t-paragraph">I focus on crafting great web experiences through the use of thoughtful UX, beautiful design, and semantic, accessible frontend code. Whether it’s selling a product, telling a story, or helping users accomplish a task, I enjoy tackling unique and complex problems for clients large and small—and across many disciplines.</p>
-              <p className="t-paragraph">In my free time I enjoy traveling with my wife and photographing our adventures—or our puppy. Whether we are exploring a new city or a National Park, I’m always searching for the best coffee and tacos—to be enjoyed separately.</p>
+              <p className="t-paragraph t-paragraph--callout">Hello, I’m Andrew,  a creative problem solver who works at the intersection of design and&nbsp;code.</p>
+              <p className="t-paragraph">I focus on crafting great web experiences with thoughtful UX, beautiful design, and semantic, accessible frontend&nbsp;code.</p>
+              <p className="t-paragraph">There’s so many factors involved in building successful products. Whether the project is e-commerce, marketing, or product design I enjoy tackling unique and complex problems for clients large and small.  I do my best work from wireframes and design to HTML and CSS. All while balancing user needs, client goals, budget constraints, and team dynamics–with empathy, creative solutions, and an eye for&nbsp;design.</p>
+              <p className="t-paragraph">In my free time I enjoy traveling with my wife and photographing our adventures—or our puppy. Whether we are exploring a new city or a National Park, I’m always searching for the best coffee and tacos—to be enjoyed&nbsp;separately.</p>
             </div>
           </CSSTransition>
         </div>
         <HomepageHeroImages />
       </div>
       <div className="c-homepage-hero__secondary">
-        <p className="t-meta c-homepage-hero__meta-text">Dayton&nbsp;OH</p>
+        <p className="t-meta c-homepage-hero__meta-text">Pixels&nbsp;&&nbsp;Code</p>
       </div>
       <div className="c-homepage-hero__tertiary">
       </div>
