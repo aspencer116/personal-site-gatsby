@@ -1,15 +1,21 @@
 .c-site-header {
   // Variables for elements inside the navigation
-  --c-logo-color: var(--c-black);
+  --c-logo-color: var(--c-white); // This color will be reversed with the blend mode
 
-  position: absolute;
+  mix-blend-mode: exclusion;
+
+  position: fixed;
   z-index: 999; // Position it above all other content
   width: 100%;
+
+  &:hover {
+    mix-blend-mode: none;
+  }
 }
 
 .c-site-header--light {
   // Light colored version of the navigation
-  --c-logo-color: var(--c-white);
+  --c-logo-color: var(--c-black);
 }
 
 .c-site-header__inner {
@@ -30,7 +36,14 @@
   transition: all var(--v-transition-time) var(--v-transition-function);
 
   &:hover {
-    opacity: 0.6;
+    & .c-site-header__logo-name {
+      color: var(--c-black);
+    }
+
+    & .c-site-header__logo-name::after {
+      transform: scaleY(1);
+      mix-blend-mode: multiply;
+    }
   }
 
   &:active {
@@ -62,7 +75,27 @@
   font-weight: 500;
   font-size: 1rem;
 
+  position: relative;
+
+  transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
+
   @media(min-width: $bp-sm) {
     font-size: 1.25rem;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    left: -0.25rem;
+    right: -0.25rem;
+    bottom: -0.25rem;
+    background: var(--c-white);
+    z-index: 200;
+
+    transform: scaleY(0.06);
+    transform-origin: bottom center;
+
+    transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
   }
 }
