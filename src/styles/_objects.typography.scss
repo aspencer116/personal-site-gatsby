@@ -7,22 +7,27 @@
 }
 
 .t-heading-2 {
-  font-family: "IBM Plex Mono", monospace;
   @include heading-base(
     $font-size-sm: 1.5rem,
     $font-size-lg: 1.875rem,
     $weight: bold,
   );
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .t-heading-4 {
   @include heading-base(
-    $color: $c-seafoam-bright,
-    $font-size-sm: 1.125rem,
-    $font-size-lg: 1.625rem,
+    $font-size-sm: 0.875rem,
+    $font-size-lg: 0.875rem,
     $letter-spacing: 1px
   );
-  margin-bottom: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.t-heading-4--reverse {
+  color: var(--c-white);
 }
 
 .t-paragraph {

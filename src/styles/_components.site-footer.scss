@@ -108,17 +108,19 @@
 
 .c-site-footer__link {
   @include paragraph-base(
-    $color: $c-mist,
+    $color: var(--c-mist-dark),
     $font-size-sm: 0.875rem,
     $font-size-lg: 1rem,
     $line-height: 1.5
   );
+  opacity: 0.8;
   text-decoration: none;
 
   transition: all var(--v-transition-time) var(--v-transition-function);
 
   &:hover {
-    opacity: 0.75;
+    opacity: 0.7;
+    text-decoration: underline;
   }
 
   &:active {
@@ -174,7 +176,7 @@
   transition: all var(--v-transition-time) var(--v-transition-function);
 
   &:hover {
-    opacity: 0.75;
+    opacity: 0.7;
   }
 
   &:active {
@@ -195,7 +197,7 @@
 
   & > path,
   & > rect {
-    fill: var(--c-pine-dark)
+    fill: var(---c-stone-dark)
   }
 }
 
@@ -204,7 +206,7 @@
 }
 
 .c-site-footer__meta {
-  @include paragraph-base($color: $c-seafoam, $font-size-sm: 0.75rem, $font-size-lg: 0.875rem);
+  @include paragraph-base($color: var(--c-mist-dark), $font-size-sm: 0.75rem, $font-size-lg: 0.875rem);
   display: block;
   margin-bottom: 0;
 
@@ -223,7 +225,7 @@
 
 .c-site-footer__meta-link {
   margin-right: 0;
-  color: $c-seafoam;
+  color: var(--c-mist-light);
 
   transition: all var(--v-transition-time) var(--v-transition-function);
 
