@@ -18,7 +18,6 @@ const SiteHeader = ({ lightVersion }) => (
 
         <span className="c-site-header__logo-name">Andrew Spencer</span>
       </Link>
-      <p>{ lightVersion }</p>
     </div>
   </nav>
 )

@@ -1,8 +1,8 @@
 .c-site-header {
   // Variables for elements inside the navigation
-  --c-logo-color: var(--c-white); // This color will be reversed with the blend mode
+  --c-logo-color: var(--c-black); // This color will be reversed with the blend mode
 
-  mix-blend-mode: exclusion;
+  // mix-blend-mode: exclusion;
 
   position: fixed;
   z-index: 999; // Position it above all other content
@@ -34,21 +34,6 @@
   text-decoration: none;
 
   transition: all var(--v-transition-time) var(--v-transition-function);
-
-  &:hover {
-    & .c-site-header__logo-name {
-      color: var(--c-black);
-    }
-
-    & .c-site-header__logo-name::after {
-      transform: scaleY(1);
-      mix-blend-mode: multiply;
-    }
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 .c-site-header__logo-icon {
@@ -83,19 +68,35 @@
     font-size: 1.25rem;
   }
 
-  &:after {
+  &::before {
     position: absolute;
     content: '';
-    top: -0.25rem;
-    left: -0.25rem;
-    right: -0.25rem;
-    bottom: -0.25rem;
-    background: var(--c-white);
-    z-index: 200;
+    top: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    z-index: -1;
 
-    transform: scaleY(0.06);
-    transform-origin: bottom center;
+    background: rgba(white, 0.7);
+
+    backdrop-filter: blur(0.625rem);
 
     transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
   }
+}
+
+// Hover state
+.c-site-header__logo:hover {
+  & .c-site-header__logo-name {
+    color: var(--c-white);
+  }
+
+  & .c-site-header__logo-name::before {
+    background: var(--c-black);
+    backdrop-filter: none;
+  }
+}
+
+.c-site-header__logo:active {
+  opacity: 0.5;
 }
