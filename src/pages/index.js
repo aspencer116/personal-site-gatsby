@@ -16,6 +16,8 @@ const IndexPage = () => (
 
     <HomepageHero />
 
+    <p Style="text-align: center; padding: 8rem 1rem;">🚧 This site is a work in progress</p>
+
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
