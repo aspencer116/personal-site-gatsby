@@ -16,7 +16,7 @@ const IndexPage = () => (
 
     <HomepageHero />
 
-    <p Style="text-align: center; padding: 8rem 1rem;">🚧 This site is a work in progress</p>
+    <p style={{textAlign: 'center', padding: '8rem 1rem'}}><span aria-label="Construction fence emoji" role="img">🚧</span><br/><br/>This site is a work in progress. Case studies and more coming soon.</p>
 
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

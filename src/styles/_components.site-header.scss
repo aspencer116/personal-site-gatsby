@@ -2,14 +2,12 @@
   // Variables for elements inside the navigation
   --c-logo-color: var(--c-black); // This color will be reversed with the blend mode
 
-  // mix-blend-mode: exclusion;
-
-  position: fixed;
+  position: absolute;
   z-index: 999; // Position it above all other content
   width: 100%;
 
-  &:hover {
-    mix-blend-mode: none;
+  @media (min-width: $bp-md) {
+    position: fixed;
   }
 }
 
@@ -77,8 +75,8 @@
     bottom: -0.5rem;
     z-index: -1;
 
+    // Blurred background effect
     background: rgba(white, 0.7);
-
     backdrop-filter: blur(0.625rem);
 
     transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);

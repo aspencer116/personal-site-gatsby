@@ -17,17 +17,15 @@ const SiteHeader = () => (
               to="/pattern-library"
               className="c-site-footer__link"
             >
-              Pattern Library
+              Site Pattern Library
             </Link>
           </li>
         </ul>
       </li>
 
       <li className="c-site-footer__category c-site-footer__category--alt">
-        <h2 className="t-heading-4 t-heading-4--reverse">Projects</h2>
+        <h2 className="t-heading-4 t-heading-4--reverse">Projects on Dribbble</h2>
         <ul className="c-site-footer__list">
-
-          <SiteFooterLink linkText="👨‍💻Case Studies Coming Soon" linkPath="/" />
 
           <SiteFooterLink linkText="PicSnippets" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
 
@@ -42,7 +40,7 @@ const SiteHeader = () => (
       </li>
 
       <li className="c-site-footer__category">
-        <h2 className="t-heading-4 t-heading-4--reverse">Writing</h2>
+        <h2 className="t-heading-4 t-heading-4--reverse">Words</h2>
         <ul className="c-site-footer__list">
 
           <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/" newTab />
@@ -58,7 +56,7 @@ const SiteHeader = () => (
       </li>
 
       <li className="c-site-footer__category c-site-footer__category--alt">
-        <h2 className="t-heading-4 t-heading-4--reverse">Code Bits & Side Projects</h2>
+        <h2 className="t-heading-4 t-heading-4--reverse">Code Bits & Design Tinkerings</h2>
         <ul className="c-site-footer__list">
 
           <SiteFooterLink linkText="Hyperloop Map" linkPath="https://dribbble.com/shots/4712665-Hyperloop-Map-Dark-Mode" newTab />
