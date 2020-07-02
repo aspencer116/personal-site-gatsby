@@ -45,6 +45,8 @@ const SiteHeader = () => (
 
           <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/" newTab />
 
+          <SiteFooterLink linkText="Advanced CSS Selectors for Common Scenarios (on Log Rocket)" linkPath="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/" newTab />
+
           <SiteFooterLink linkText="The Case for Including a Designer from Project Start to Finish" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
 
           <SiteFooterLink linkText="Accessible By Design" linkPath='https://seesparkbox.com/foundry/accessible_by_design' newTab />
