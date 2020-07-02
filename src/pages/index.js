@@ -16,7 +16,9 @@ const IndexPage = () => (
 
     <HomepageHero />
 
-    <p style={{textAlign: 'center', padding: '8rem 1rem'}}><span aria-label="Construction fence emoji" role="img">🚧</span><br/><br/>This site is a work in progress. Case studies and more coming soon.</p>
+    <p style={{textAlign: 'center', padding: '8rem 1rem 4rem'}}><span aria-label="Construction fence emoji" role="img">🚧</span><br/><br/>This site is a work in progress. Case studies and more coming soon.</p>
+
+    <p style={{textAlign: 'center', padding: '4rem 1rem 8rem'}}>Currently a Frontend Designer at <a style={{color: '#000000'}} href="https://seesparkbox.com">Sparkbox</a>.</p>
 
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
