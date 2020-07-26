@@ -6,20 +6,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-}
-body::after {
-  /* Styles display while the site loads */
-  content: 'Loading...';
-  position: absolute;
-  background: white;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  padding: 6rem 1rem;
 }
 article,
 aside,
