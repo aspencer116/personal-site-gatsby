@@ -3,7 +3,7 @@
   --c-logo-color: var(--c-black); // This color will be reversed with the blend mode
 
   position: absolute;
-  z-index: 999; // Position it above all other content
+  z-index: 888; // Position it above all other content
   width: 100%;
 
   @media (min-width: $bp-md) {
