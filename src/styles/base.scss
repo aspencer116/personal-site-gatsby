@@ -30,10 +30,13 @@
   @import "objects.grid";
   @import "objects.page-layout";
   @import "objects.typography";
+  @import "objects.general";
 
   // COMPONENTS
   @import "components.color-block";
   @import "components.site-header";
-  @import "components.site-footer";
   @import "components.homepage-hero";
+  @import "components.case-study-link";
+  @import "components.case-study-links";
+  @import "components.site-footer";
 }

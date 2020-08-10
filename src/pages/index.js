@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import HomepageHero from "../components/homepageHero"
+import CaseStudyLinks from "../components/home/caseStudyLinks"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
@@ -15,6 +16,8 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <HomepageHero />
+
+    <CaseStudyLinks/>
 
     <p style={{textAlign: 'center', padding: '8rem 1rem 4rem'}}><span aria-label="Construction fence emoji" role="img">🚧</span><br/><br/>This site is a work in progress. Case studies and more coming soon.</p>
 

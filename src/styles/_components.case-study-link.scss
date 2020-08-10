@@ -1,0 +1,213 @@
+.c-case-study-link {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; // Content aligns to the bottom of the container
+
+  mix-blend-mode: multiply;
+  cursor: pointer;
+
+  transition: all var(--v-transition-time-long) 50ms var(--v-transition-function-easy-in);
+
+  // Hover state for all but the smallest screens
+  @media (min-width: $bp-md) {
+    &:not(.c-case-study-link--coming-soon):hover {
+      transform: translateY(-0.215rem);
+      box-shadow:
+        1rem 2rem 6rem -2rem rgba(0, 0, 0, 0.4),
+        0.25rem 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.2);
+
+      &::after {
+        opacity: 1;
+      }
+
+      .c-case-study-link__image {
+        filter: blur(6px);
+        transform: scale(1.125);
+      }
+
+      .c-case-study-link__tertiary::after {
+        transform: scale(1.1);
+      }
+    }
+
+    &:not(.c-case-study-link--coming-soon):hover:after {
+      opacity: 1;
+    }
+
+    // Hover state of the callout styled case study link
+    &.c-case-study-link--callout:not(.c-case-study-link--coming-soon):hover {
+      .c-case-study-link__image {
+        transform: scale(1.075);
+      }
+      .c-case-study-link__tertiary::after {
+        transform: scale(1.015, 1.1);
+      }
+    }
+  }
+
+  &__image {
+    position: absolute !important; // Imprtant to override Img component default
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+
+    mix-blend-mode: soft-light;
+    opacity: 0.4;
+
+    transition: all var(--v-transition-time-long) 50ms var(--v-transition-function-easy-in);
+  }
+
+  &__link-container {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%; // Cover the entire container
+
+    html.safe-focus &:focus {
+      // Custom safe focus style
+      box-shadow: inset 0 0 0 6px black !important;
+    }
+  }
+
+  &__primary {
+    flex: 1 0 100%;
+    padding: 6rem 1rem 2rem; // The vertical padding controls the height of the link block
+
+    @media (min-width: $bp-lg) {
+      padding-top: 8rem;
+    }
+
+    @media (min-width: $bp-xl) {
+      padding-top: 12rem;
+    }
+  }
+
+  &__secondary {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  &__tertiary {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background: var(--c-white);
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: -0.25rem; // Extent to cover any gaps
+      bottom: -0.25rem;
+      left: 0;
+      background: var(--c-white);
+
+      transform-origin: bottom right;
+      transition: all var(--v-transition-time) 50ms var(--v-transition-function-easy-in);
+    }
+  }
+
+  // Just the Arrow icon
+  &:not(.c-case-study-link--callout) .c-case-study-link__tertiary {
+    width: 3.3125rem;
+    min-height: 3.3125rem;
+  }
+
+  &__coming-soon {
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+
+    background: var(--c-white);
+    opacity: 1;
+  }
+
+  &__tag {
+    position: relative;
+    margin-bottom: 0;
+    color: var(--c-white);
+    opacity: 0.8;
+    font-size: 0.75rem;
+    margin-right: 1rem;
+    display: inline-block;
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -0.5rem;
+      top: -0.125rem;
+      bottom: -0.125rem;
+      width: 0.125rem;
+      background: var(--c-white);
+      opacity: 0.5;
+    }
+  }
+
+  &__link-text {
+    color: var(--c-stone-dark);
+    font-weight: bold;
+  }
+
+  &:not(.c-case-study-link--callout) .c-case-study-link__link-text {
+    display: none;
+  }
+
+  &__arrow::after {
+    // Arrow icon
+    content: '';
+    position: absolute;
+    top: calc(50% - 0.3375rem);
+    right: 1.4375rem; // 23px
+    width: 0.675rem;
+    height: 0.675rem;
+    transform: rotate(45deg);
+    border-top: 0.125rem solid var(--c-stone-dark);
+    border-right: 0.125rem solid var(--c-stone-dark);
+  }
+
+  // Custom styles for the various states of the component
+  &--callout {
+    & .c-case-study-link__link-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .c-case-study-link__primary {
+      padding-top: 10rem;
+    }
+
+    @media (min-width: $bp-md) {
+      // extra-wide in the grid
+      grid-column-end: span 2;
+
+      & .c-case-study-link__link-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+
+      & .c-case-study-link__primary,
+      & .c-case-study-link__tertiary {
+        grid-column: 2 / span 1;
+      }
+    }
+  }
+
+  &--coming-soon {
+    pointer-events: none;
+
+    & .c-case-study-link__tertiary {
+      display: none;
+    }
+  }
+}

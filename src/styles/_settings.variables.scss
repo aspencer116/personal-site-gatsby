@@ -12,8 +12,10 @@
 
   --v-transition-time-fast: 200ms;
   --v-transition-time: 300ms;
+  --v-transition-time-long: 500ms;
 
 
   --v-transition-function: cubic-bezier(0.05, 0.25, 0.2, 0.95);
-  --v-transition-function-easy: cubic-bezier( .36, 0.2, 0.2, 0.95);
+  --v-transition-function-easy: cubic-bezier(0.36, 0.2, 0.2, 0.95);
+  --v-transition-function-easy-in: cubic-bezier(.06,.5,.2,.95);
 }

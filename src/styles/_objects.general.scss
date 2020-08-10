@@ -1,0 +1,7 @@
+.o-visually-hidden {
+  @include visually-hidden;
+}
+
+.o-delist {
+  @include delist;
+}

@@ -8,11 +8,22 @@
 
 .t-heading-2 {
   @include heading-base(
-    $font-size-sm: 1.5rem,
-    $font-size-lg: 1.875rem,
+    $font-size-sm: 1.75rem,
+    $font-size-lg: 2.125rem,
     $weight: bold,
   );
-  font-family: "IBM Plex Mono", monospace;
+}
+
+.t-heading-3 {
+  @include heading-base(
+    $font-size-sm: 1.675rem,
+    $font-size-lg: 1.75rem,
+    $weight: bold,
+  );
+}
+
+.t-heading-3--reverse {
+  color: var(--c-mist);
 }
 
 .t-heading-4 {
