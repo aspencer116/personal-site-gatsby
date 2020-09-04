@@ -5,6 +5,16 @@ module.exports = {
     author: `@iam_aspencer`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `UA-72309110-1`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
