@@ -128,6 +128,9 @@
     1rem 2rem 6rem -2rem rgba(0, 0, 0, 0.3),
     0.25rem 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.12);
 
+  // Hide until revealed with JS transition
+  opacity: 0;
+
   &:not(last-child) {
     margin-bottom: 10vw;
   }
@@ -237,8 +240,11 @@ $transition-image-delay:   1900ms;
 }
 
 .c-homepage-hero__image-1-appear-active,
+.c-homepage-hero__image-1-appear-done,
 .c-homepage-hero__image-2-appear-active,
-.c-homepage-hero__image-3-appear-active {
+.c-homepage-hero__image-2-appear-done,
+.c-homepage-hero__image-3-appear-active,
+.c-homepage-hero__image-3-appear-done {
   opacity: 1;
   transform: translateY(0) rotateX(0);
   transition: all $transition-image-time $transition-image-delay var(--v-transition-function);

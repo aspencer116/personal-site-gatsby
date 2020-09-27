@@ -1,0 +1,61 @@
+.c-case-study {
+  margin: calc(var(--v-page-margin) * 2) var(--v-page-margin);
+
+  @media (min-width: $bp-md) {
+    margin: var(--v-page-margin);
+  }
+}
+
+.c-case-study__section:not(:last-child) {
+  margin-bottom: calc(var(--v-page-margin) * 2);
+
+  @media (min-width: $bp-md) {
+    margin-bottom: var(--v-page-margin);
+  }
+}
+
+.c-case-study__section--2-column {
+  @media (min-width: $bp-md) {
+    display: flex;
+  }
+}
+
+.c-case-study__section--full-width-image {
+  @media (min-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.c-case-study__caption {
+  margin-bottom: 2rem;
+
+  @media (min-width: $bp-md) {
+    width: 40%;
+    margin-right: 5%;
+  }
+}
+
+.c-case-study__image-container {
+  flex: 1 1 60%;
+
+  & .gatsby-image-wrapper:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.c-case-study__sticky-text {
+  @media (min-height: 600px ) {
+    position: sticky;
+    top: 15vh;
+  }
+}
+
+.c-case-study .t-heading-4:not(:first-child) {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c-case-study .t-paragraph:not(:last-child) {
+  margin-bottom: 1.7rem;
+}

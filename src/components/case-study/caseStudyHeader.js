@@ -29,7 +29,7 @@ const CaseStudyHeader = ({ title, subtitle, tags, year, image, imageAltText }) =
             appear
           >
             <div>
-              <h1>{ title }</h1>
+              <h1 className="t-heading-2">{ title }</h1>
               <p className="t-paragraph--callout c-case-study-header__sub-heading">{ subtitle }</p>
             </div>
           </CSSTransition>
@@ -56,7 +56,7 @@ const CaseStudyHeader = ({ title, subtitle, tags, year, image, imageAltText }) =
       >
         <div className="c-case-study-header__secondary">
             <Parallax speed={-2}>
-              <Img fluid={data.yoPortfolioHeader.childImageSharp.fluid} alt="Test" class="c-case-study-header__image"/>
+              <Img fluid={data.yoPortfolioHeader.childImageSharp.fluid} alt={imageAltText} class="c-case-study-header__image"/>
             </Parallax>
         </div>
       </CSSTransition>

@@ -4,3 +4,7 @@
   margin-right: var(--v-page-margin);
   max-width: var(--v-page-max-width);
 }
+
+.o-text-width-limiter {
+  max-width: 60ch;
+}
