@@ -2,13 +2,19 @@
   // Variables for elements inside the navigation
   --c-logo-color: var(--c-black); // This color will be reversed with the blend mode
 
-  position: absolute;
+  position: fixed;
   z-index: 888; // Position it above all other content
   width: 100%;
 
-  @media (min-width: $bp-md) {
-    position: fixed;
+  // Blurred background effect
+  background: rgba(white, 0.85);
+  backdrop-filter: blur(0.625rem);
+
+  @supports not (backdrop-filter: blur()) {
+    background: var(--c-white);
   }
+
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
 }
 
 .c-site-header--light {
@@ -17,15 +23,19 @@
 }
 
 .c-site-header__inner {
+  display: flex;
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 
   @media(min-width: $bp-md) {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: calc(var(--v-page-margin) / 2);
   }
 }
 
 .c-site-header__logo {
+  width: auto;
   display: flex;
   align-items: center;
 
@@ -36,7 +46,7 @@
 
 .c-site-header__logo-icon {
   $icon-width-sm: 1.5rem;
-  $icon-width-lg: 2rem; // Variable to keep the value consistent in this class
+  $icon-width-lg: 1.75rem; // Variable to keep the value consistent in this class
 
   display: block;
   width: $icon-width-sm;
@@ -75,24 +85,13 @@
     bottom: -0.5rem;
     z-index: -1;
 
-    // Blurred background effect
-    background: rgba(white, 0.7);
-    backdrop-filter: blur(0.625rem);
-
     transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
   }
 }
 
 // Hover state
 .c-site-header__logo:hover {
-  & .c-site-header__logo-name {
-    color: var(--c-white);
-  }
-
-  & .c-site-header__logo-name::before {
-    background: var(--c-black);
-    backdrop-filter: none;
-  }
+  opacity: 0.75;
 }
 
 .c-site-header__logo:active {
