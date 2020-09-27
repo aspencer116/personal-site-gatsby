@@ -1,0 +1,139 @@
+.c-case-study-header {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--c-mist) url("../images/slate_stubble_light.jpg");
+  background-repeat: repeat;
+  background-size: 275px; // Scale down the size of the image
+
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  &__primary {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding: 2rem var(--v-page-margin) 0;
+
+    @media (min-width: $bp-md) {
+      flex: 1 1 50%;
+      order: 1;
+
+      padding-left: calc(var(--v-page-margin) / 2);
+      padding-right: calc(var(--v-page-margin) / 4);
+    }
+  }
+
+  &__secondary {
+    order: 1;
+    height: 30vh;
+
+    position: relative;
+    overflow: hidden;
+
+    background: var(--c-seafoam);
+
+    @media (min-width: $bp-md) {
+      flex: 1 1 50%;
+      order: 2;
+      height: inherit;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset 0 -4rem 8rem rgba(black, 0.2);
+
+      @media (min-width: $bp-md) {
+        box-shadow: inset 4rem -4rem 8rem rgba(black, 0.2);
+      }
+    }
+
+    & div {
+      height: 0;
+      padding-bottom: 100vh;
+    }
+
+    & .gatsby-image-wrapper {
+      // Image component pre-page load
+      opacity: 0;
+      transform: scale(1);
+      transform-origin: bottom center;
+    }
+  }
+
+  &__heading-container {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0 4rem;
+
+    @media (min-width: $bp-md) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__sub-heading {
+    max-width: 30ch;
+    color: var(--c-stone);
+  }
+
+  &__meta {
+    flex: 0 0;
+    padding: 2rem 0;
+    position: relative;
+
+    // Line beside theme meta text
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: calc(var(--v-page-margin) / -2);
+    //   bottom: -2rem;
+    //   width: 0.0625rem;
+    //   background: var(--c-stone-dark);
+    //
+    //   @media (min-width: $bp-md) {
+    //     left: calc(var(--v-page-margin) / -4);
+    //   }
+    // }
+  }
+
+  &__year {
+    margin-top: 2rem;
+  }
+}
+
+// Animations
+
+.c-case-study-header__secondary-transition-appear-active .gatsby-image-wrapper,
+.c-case-study-header__secondary-transition-appear-done .gatsby-image-wrapper {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: all 2000ms 200ms var(--v-transition-function-easy);
+}
+
+.transition-case-study-header__text-appear * {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.transition-case-study-header__text-appear-active * {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1200ms 100ms var(--v-transition-function-easy-in);
+}
+
+@for $i from 1 through 2 {
+  .transition-case-study-header__text-appear-active *:nth-child(#{$i}) {
+    transition-delay: 100ms + ($i * 200);
+  }
+}

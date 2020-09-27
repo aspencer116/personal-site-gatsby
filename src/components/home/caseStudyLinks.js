@@ -8,7 +8,7 @@ const CaseStudyLinks = () => (
     <ul className="o-delist c-case-study-links__grid-container">
 
       <CaseStudyLink
-        linkPath="/"
+        linkPath="/case-study/yo-portfolio"
         linkTitle="YoPortfolio"
         linkDescription="A startup stock market tool needed a playful brand and product design to launch them into the future."
         tags={["Branding", "Product Design", "Animation"]}
