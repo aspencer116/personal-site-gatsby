@@ -10,7 +10,7 @@ const CaseStudyLinks = () => (
       <CaseStudyLink
         linkPath="/case-study/yo-portfolio"
         linkTitle="YoPortfolio"
-        linkDescription="A startup stock market tool needed a playful brand and product design to launch them into the future."
+        linkDescription="A startup investment product needed a playful brand and UI design to launch them into the future."
         tags={["Branding", "Product Design", "Animation"]}
         color="#27770B"
         image="images/homepage/homepage-graphic_YOP.jpg"
