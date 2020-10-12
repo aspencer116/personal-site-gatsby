@@ -159,6 +159,10 @@
   @media (min-width: 1300px) {
     padding-right: 45vw;
   }
+
+  p {
+    opacity: 0;
+  }
 }
 
 .c-homepage-hero__heading {
@@ -172,6 +176,7 @@
 
   span {
     display: inline-block;
+    opacity: 0;
   }
 
   .with-space {
@@ -281,7 +286,8 @@ $transition-image-delay:   1900ms;
   transform: translateY(2rem) rotateX(-40deg);
 }
 
-.transition-homepage-hero__heading-appear-active span {
+.transition-homepage-hero__heading-appear-active span,
+.transition-homepage-hero__heading-appear-done span {
   opacity: 1;
   transform: translateY(0) rotateX(0);
   transition: all $transition-heading-time $transition-heading-delay var(--v-transition-function);
@@ -299,13 +305,14 @@ $transition-image-delay:   1900ms;
   transform: translateY(1.5rem);
 }
 
-.transition-homepage-hero__text-appear-active p {
+.transition-homepage-hero__text-appear-active p,
+.transition-homepage-hero__text-appear-done p {
   opacity: 1;
   transform: translateY(0);
   transition: all $transition-text-time $transition-text-delay var(--v-transition-function);
 }
 
-@for $i from 1 through 3 {
+@for $i from 1 through 5 {
   .transition-homepage-hero__text-appear-active p:nth-child(#{$i}) {
     transition-delay: $transition-text-delay + ($i * 200);
   }

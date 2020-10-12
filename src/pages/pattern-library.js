@@ -42,6 +42,9 @@ const PatternLibrary = () => (
       <hr/>
       <p style={{marginBottom: `2rem`}} className="t-meta">Meta text style</p>
       <p className="t-meta t-meta--small">Small meta text style</p>
+      <br/>
+      <hr/>
+      <p className="t-paragraph">This is a <a href="#" className="t-link">Link</a>.</p>
     </div>
   </Layout>
 )

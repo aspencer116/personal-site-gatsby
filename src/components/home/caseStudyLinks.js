@@ -15,7 +15,6 @@ const CaseStudyLinks = () => (
         color="#27770B"
         image="images/homepage/homepage-graphic_YOP.jpg"
         callout
-        comingSoon
       />
       <CaseStudyLink
         linkPath="/"

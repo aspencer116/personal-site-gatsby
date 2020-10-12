@@ -27,13 +27,15 @@ const SiteHeader = () => (
         <h2 className="t-heading-5 t-heading-5--reverse">Projects on Dribbble</h2>
         <ul className="c-site-footer__list">
 
+          <SiteFooterLink linkText="National Kidney Foundation" linkPath="https://dribbble.com/iam_aspencer/projects/2956145-National-Kidney-Foundation" newTab />
+
           <SiteFooterLink linkText="PicSnippets" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
 
           <SiteFooterLink linkText="Whitworth University" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
 
-          <SiteFooterLink linkText="Yo Portfolio" linkPath="https://dribbble.com/iam_aspencer/projects/568437-Yo-Portfolio" newTab />
-
           <SiteFooterLink linkText="Sparkbox" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />
+
+          <SiteFooterLink linkText="Gush & Grow" linkPath="https://dribbble.com/iam_aspencer/projects/2084185-Gush-Grow" newTab />
 
           <SiteFooterLink linkText="Personal Brand" linkPath="https://dribbble.com/iam_aspencer/projects/358899-Personal-Brand" newTab />
         </ul>
@@ -68,8 +70,6 @@ const SiteHeader = () => (
           <SiteFooterLink linkText="Website Inception Effect" linkPath="https://codepen.io/iam_aspencer/pen/ePmmeV" newTab />
 
           <SiteFooterLink linkText="Bezier Curve Style Library" linkPath="https://codepen.io/iam_aspencer/pen/ZeQvGW" newTab />
-
-          <SiteFooterLink linkText="Photorealistic Photo in a Frame" linkPath="https://codepen.io/iam_aspencer/pen/NeYdbL" newTab />
 
           <SiteFooterLink linkText="Christmas Tree Farm Brand" linkPath="https://dribbble.com/shots/9068185-Christmas-Tree-Brand" newTab />
         </ul>
@@ -123,7 +123,7 @@ const SiteHeader = () => (
     </div>
     <div className="c-site-footer__tertiary">
       <span className="c-site-footer__meta">
-        Designed and built by Andrew Spencer <br/> © {new Date().getFullYear()}
+        Designed and built by Andrew Spencer ©{new Date().getFullYear()}
       </span>
       <span className="c-site-footer__meta">
         Built with <a className="c-site-footer__meta-link" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>. See the <Link className="c-site-footer__meta-link" to="/pattern-library/">pattern library</Link> and <a className="c-site-footer__meta-link" href="https://github.com/aspencer116/personal-site-gatsby" target="_blank" rel="noopener noreferrer">GitHub repo</a>.

@@ -117,7 +117,7 @@ const YoPortfolio = () => {
 
     <div className="c-case-study">
       <div className="o-text-width-limiter c-case-study__section">
-        <p className="t-paragraph">A local entrepreneur came to the team at <a href="https://seesparkbox.com/">Sparkbox</a> with a dream for a new investment product called YoPortfolio. The product would help investors track their trades and know if they were beating the market. His bold vision, mathematical formulas, and quirky name were all we needed to get&nbsp;started!</p>
+        <p className="t-paragraph">A local entrepreneur came to the team at <a href="https://seesparkbox.com/" target="_blank" className="t-link">Sparkbox</a> with a dream for a new investment product called YoPortfolio. The product would help investors track their trades and know if they were beating the market. His bold vision, mathematical formulas, and quirky name was all we needed to get&nbsp;started!</p>
         <p className="t-paragraph">I served as the brand and product designer for the project and used my understanding of design and development to guide the client in cost-saving decisions that still resulted in a great brand design and MVP&nbsp;product.</p>
         <h2 className="t-heading-2">Brand Design</h2>
         <p className="t-paragraph">To begin, the product needed a brand identity that would attract the target audience of tech-savvy at home investors. It also needed to reflect the vision of YoPortfolio, a simple and easy to understand product that was casual yet trustworthy, friendly and&nbsp;approachable.</p>

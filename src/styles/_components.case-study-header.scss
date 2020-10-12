@@ -8,7 +8,7 @@
 
   @media (min-width: $bp-md) {
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   &__primary {
@@ -16,7 +16,7 @@
     flex-direction: column;
     order: 2;
     padding: calc(var(--v-page-margin) * 2) var(--v-page-margin);
-    min-height: 58vh;
+    min-height: 48vh;
 
     @media (min-width: $bp-md) {
       flex: 1 1 50%;
@@ -59,7 +59,7 @@
       @media (min-width: $bp-md) {
         // Image cover the full height of the browser
         height: 0;
-        padding-bottom: 100vh;
+        padding-bottom: 80vh;
       }
     }
 

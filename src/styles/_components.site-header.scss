@@ -13,8 +13,6 @@
   @supports not (backdrop-filter: blur()) {
     background: var(--c-white);
   }
-
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
 }
 
 .c-site-header--light {
@@ -91,7 +89,7 @@
 
 // Hover state
 .c-site-header__logo:hover {
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .c-site-header__logo:active {

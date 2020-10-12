@@ -101,3 +101,26 @@
     font-size: 0.75rem;
   }
 }
+
+.t-link {
+  color: var(--c-stone);
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -0.125rem;
+    right: -0.125rem;
+    bottom: 0.0625rem;
+    height: 0.0625rem;
+    background: var(--c-stone);
+    opacity: 0.25;
+
+    transition: all var(--v-transition-time-fast) ease;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+}

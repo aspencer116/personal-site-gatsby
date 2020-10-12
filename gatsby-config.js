@@ -44,7 +44,7 @@ module.exports = {
         fonts: [
           {
             family: `DM Sans`,
-            variants: [`400`, `500`]
+            variants: [`400`, `500`, `700`]
           },
           {
             family: `IBM Plex Mono`,
