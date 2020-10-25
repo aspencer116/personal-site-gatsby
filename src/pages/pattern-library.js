@@ -44,7 +44,7 @@ const PatternLibrary = () => (
       <p className="t-meta t-meta--small">Small meta text style</p>
       <br/>
       <hr/>
-      <p className="t-paragraph">This is a <a href="#" className="t-link">Link</a>.</p>
+      <p className="t-paragraph">This is a <a href="https://andrew-spencer.com" className="t-link">Link</a>.</p>
     </div>
   </Layout>
 )
