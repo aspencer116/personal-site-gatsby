@@ -33,6 +33,7 @@
   @media (min-width: $bp-md) {
     max-width: 60ch;
     margin-right: 5%;
+    margin-bottom: 4rem;
   }
 
   .c-case-study__section--2-column & {
@@ -51,6 +52,16 @@
   & .gatsby-image-wrapper:not(:last-child) {
     margin-bottom: 2rem;
   }
+}
+
+.c-case-study__image-container--with-caption {
+  & .gatsby-image-wrapper:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.c-case-study__video {
+  max-width: 800px;
 }
 
 .c-case-study__sticky-text {

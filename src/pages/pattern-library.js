@@ -40,6 +40,8 @@ const PatternLibrary = () => (
 
       <p className="t-paragraph">Nunc aliquet bibendum enim facilisis gravida neque convallis. Ultrices dui sapien eget mi. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Maecenas sed enim ut sem viverra. Odio euismod lacinia at quis. Ridiculus mus mauris vitae ultricies leo integer. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Urna porttitor rhoncus dolor purus. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus.</p>
       <hr/>
+      <p className="t-paragraph t-paragraph--small">Small paragraph text style.</p>
+      <hr/>
       <p style={{marginBottom: `2rem`}} className="t-meta">Meta text style</p>
       <p className="t-meta t-meta--small">Small meta text style</p>
       <br/>
