@@ -8,11 +8,9 @@ import Parallax from 'react-rellax'
 const CaseStudyHeader = ({ title, subtitle, tags, year, image, imageAltText }) => {
   const data = useStaticQuery(graphql`
     query {
-      yoPortfolioHeader: file(relativePath: { eq: "yo-portfolio_header.jpg" }) {
+      yoPortfolioHeader: file(relativePath: { eq: "yo-portfolio/yo-portfolio_header.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1600) { ...GatsbyImageSharpFluid }
         }
       },
     }

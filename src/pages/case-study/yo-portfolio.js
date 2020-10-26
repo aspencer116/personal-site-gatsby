@@ -12,88 +12,64 @@ import Img from "gatsby-image"
 const YoPortfolio = () => {
   const data = useStaticQuery(graphql`
     query {
-      yoPortfolioSketch1: file(relativePath: { eq: "yo-portfolio_sketch_1.jpg" }) {
+      yoPortfolioSketch1: file(relativePath: { eq: "yo-portfolio/yo-portfolio_sketch_1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1200) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioSketch2: file(relativePath: { eq: "yo-portfolio_sketch_2.jpg" }) {
+      yoPortfolioSketch2: file(relativePath: { eq: "yo-portfolio/yo-portfolio_sketch_2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1200) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioBrand1: file(relativePath: { eq: "yo-portfolio_brand_1.png" }) {
+      yoPortfolioBrand1: file(relativePath: { eq: "yo-portfolio/yo-portfolio_brand_1.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioBrand2: file(relativePath: { eq: "yo-portfolio_brand_2.jpg" }) {
+      yoPortfolioBrand2: file(relativePath: { eq: "yo-portfolio/yo-portfolio_brand_2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioBrand3: file(relativePath: { eq: "yo-portfolio_brand_3.png" }) {
+      yoPortfolioBrand3: file(relativePath: { eq: "yo-portfolio/yo-portfolio_brand_3.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1400) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioBrand4: file(relativePath: { eq: "yo-portfolio_brand_4.png" }) {
+      yoPortfolioBrand4: file(relativePath: { eq: "yo-portfolio/yo-portfolio_brand_4.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1400) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUI1: file(relativePath: { eq: "yo-portfolio_UI_1.jpg" }) {
+      yoPortfolioUI1: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1400) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUI2: file(relativePath: { eq: "yo-portfolio_UI_2.png" }) {
+      yoPortfolioUI2: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 1400) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUI5: file(relativePath: { eq: "yo-portfolio_UI_5.png" }) {
+      yoPortfolioUI5: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_5.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUI66: file(relativePath: { eq: "yo-portfolio_UI_66.png" }) {
+      yoPortfolioUI66: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_66.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUIgif: file(relativePath: { eq: "yo-portfolio_UI_gif.gif" }) {
+      yoPortfolioUIgif: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_gif.gif" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
-      yoPortfolioUI7: file(relativePath: { eq: "yo-portfolio_UI_7.png" }) {
+      yoPortfolioUI7: file(relativePath: { eq: "yo-portfolio/yo-portfolio_UI_7.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          fluid(maxWidth: 2000) { ...GatsbyImageSharpFluid }
         }
       },
     }
