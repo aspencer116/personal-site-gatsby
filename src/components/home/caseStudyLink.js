@@ -13,7 +13,7 @@ const CaseStudyLink = ({ linkPath, linkTitle, linkDescription, tags, callout, co
     >
       <div className="c-case-study-link__primary">
         {comingSoon &&
-          <span className="t-meta c-case-study-link__coming-soon">Coming Soon</span>
+          <span className="t-meta t-meta--small c-case-study-link__coming-soon">Coming Soon</span>
         }
         <h3 className="t-heading-3 t-heading-3--reverse c-case-study-link__text">{ linkTitle }</h3>
         <p className="t-paragraph t-paragraph--reverse c-case-study-link__text">{ linkDescription }</p>

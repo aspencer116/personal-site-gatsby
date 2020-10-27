@@ -29,8 +29,6 @@ const SiteHeader = () => (
 
           <SiteFooterLink linkText="National Kidney Foundation" linkPath="https://dribbble.com/iam_aspencer/projects/2956145-National-Kidney-Foundation" newTab />
 
-          <SiteFooterLink linkText="PicSnippets" linkPath="https://dribbble.com/iam_aspencer/projects/1738529-PicSnippets" newTab />
-
           <SiteFooterLink linkText="Whitworth University" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
 
           <SiteFooterLink linkText="Sparkbox" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />

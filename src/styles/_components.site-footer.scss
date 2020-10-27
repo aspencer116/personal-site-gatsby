@@ -6,7 +6,7 @@
 
 .c-site-footer__primary {
   flex: 1 1 90%;
-  padding: 4rem 0 4rem var(--v-page-margin);
+  padding: 4rem var(--v-page-margin) 4rem var(--v-page-margin);
   margin-bottom: 0;
 
   background: var(--c-stone-dark) url("../images/slate_stubble_dark.jpg");
@@ -16,6 +16,7 @@
   @media (min-width: $bp-sm) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-right: 0;
   }
 
   @media (min-width: $bp-md) {
@@ -54,7 +55,7 @@
 
   @media (min-width: $bp-md) {
     grid-template-columns: 1fr 2fr;
-    padding-right: calc(var(--v-page-margin) * 2);
+    padding-right: var(--v-page-margin);
 
     &:before {
       content: '';
@@ -114,7 +115,7 @@
   @include paragraph-base(
     $color: var(--c-mist-dark),
     $font-size-sm: 0.875rem,
-    $font-size-lg: 1rem,
+    $font-size-lg: 0.875rem,
     $line-height: 1.5
   );
   opacity: 0.8;
@@ -123,11 +124,11 @@
   transition: all var(--v-transition-time) var(--v-transition-function);
 
   &:hover {
-    opacity: 0.5;
+    opacity: 1;
   }
 
   &:active {
-    opacity: 0.4;
+    opacity: 0.6;
   }
 }
 
@@ -139,6 +140,7 @@
 
   padding-bottom: 0.5rem;
   margin-bottom: 0;
+  padding-left: 0;
 
   @media (min-width: $bp-md) {
     flex-direction: column;
