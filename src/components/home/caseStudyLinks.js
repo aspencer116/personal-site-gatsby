@@ -10,11 +10,28 @@ const CaseStudyLinks = () => (
       <CaseStudyLink
         linkPath="/case-study/yo-portfolio"
         linkTitle="YoPortfolio"
-        linkDescription="A startup investment product needed a playful brand and UI design to launch them into the future."
+        linkDescription="A startup investment product needed a playful brand and UI design to launch them into the&nbsp;future."
         tags={["Branding", "Product Design", "Animation"]}
         color="#27770B"
         image="images/homepage/homepage-graphic_YOP.jpg"
         callout
+      />
+      <CaseStudyLink
+        linkPath="/case-study/picsnippets"
+        linkTitle="PicSnippets"
+        linkDescription="A growing digital product needed a marketing site and product redesign to take them to the next&nbsp;level."
+        tags={["Web Design", "Product Design"]}
+        color="#112639"
+        image="images/homepage/homepage-graphic_PicSnippets.jpg"
+      />
+      <CaseStudyLink
+        linkPath="/"
+        linkTitle="National Kidney Foundation"
+        linkDescription="A national healthcare organization needed a website update to bring consistency and clarity to their&nbsp;vision."
+        tags={["Web Design"]}
+        color="#A15514"
+        image="images/homepage/homepage-graphic_NKF.jpg"
+        comingSoon
       />
       <CaseStudyLink
         linkPath="/"
@@ -34,26 +51,19 @@ const CaseStudyLinks = () => (
         image="images/homepage/homepage-graphic_TommyJohn.jpg"
         comingSoon
       />
-      <CaseStudyLink
-        linkPath="/"
-        linkTitle="National Kidney Foundation"
-        linkDescription="A national healthcare organization needed a website update to bring consistency and clarity to their&nbsp;vision."
-        tags={["Web Design"]}
-        color="#AC5208"
-        image="images/homepage/homepage-graphic_NKF.jpg"
-        comingSoon
-      />
-      <CaseStudyLink
-        linkPath="/"
-        linkTitle="Tire Company"
-        linkDescription="A leader in the tire sales industry was looking to build the first web app to help dealerships inspect and sell&nbsp;tires."
-        tags={["UX", "Product Design", "Frontend Dev"]}
-        color="#175882"
-        comingSoon
-      />
-
     </ul>
   </section>
 )
+
+// Not being used
+
+// <CaseStudyLink
+//   linkPath="/"
+//   linkTitle="Tire Company"
+//   linkDescription="A leader in the tire sales industry was looking to build the first web app to help dealerships inspect and sell&nbsp;tires."
+//   tags={["UX", "Product Design", "Frontend Dev"]}
+//   color="#175882"
+//   comingSoon
+// />
 
 export default CaseStudyLinks

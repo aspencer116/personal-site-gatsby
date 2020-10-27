@@ -182,10 +182,6 @@
       flex-direction: column;
     }
 
-    & .c-case-study-link__primary {
-      padding-top: 10rem;
-    }
-
     @media (min-width: $bp-md) {
       // extra-wide in the grid
       grid-column-end: span 2;
