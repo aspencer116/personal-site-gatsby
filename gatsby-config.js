@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Andrew Spencer — Designer & Web Developer`,
-    description: `Portfolio of Andrew Spencer, a hybrid designer and web developer who thrives in the space where design meets frontend web development.`,
+    description: `Portfolio of Andrew Spencer, a designer and creative problem solver who works at the intersection of design and code.`,
     author: `@iam_aspencer`,
   },
   plugins: [
