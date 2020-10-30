@@ -1,5 +1,5 @@
 // Typography mixins
-@mixin heading-base($color: var(--c-stone-dark), $weight: 500, $font-size-sm: 2rem, $font-size-lg: 3rem, $letter-spacing: 0) {
+@mixin heading-base($color: var(--c-stone-dark), $weight: 500, $font-size-sm: 2.5rem, $font-size-lg: 3.5rem, $letter-spacing: 0) {
   color: $color;
   font-weight: $weight;
   letter-spacing: $letter-spacing;

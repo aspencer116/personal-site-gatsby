@@ -166,8 +166,7 @@
 }
 
 .c-homepage-hero__heading {
-  padding: 25vh 2rem 20vh 0;
-  color: var(--c-black);
+  padding: 25vh 2rem 10vh 0;
   font-weight: 500;
 
   @media(max-width: $bp-md) {
@@ -177,6 +176,7 @@
   span {
     display: inline-block;
     opacity: 0;
+    margin-right: -0.0625rem;
   }
 
   .with-space {
@@ -293,9 +293,9 @@ $transition-image-delay:   1900ms;
   transition: all $transition-heading-time $transition-heading-delay var(--v-transition-function);
 }
 
-@for $i from 1 through 22 {
+@for $i from 1 through 12 {
   .transition-homepage-hero__heading-appear-active span:nth-child(#{$i}) {
-    transition-delay: $transition-heading-delay + ($i * 40);
+    transition-delay: $transition-heading-delay + ($i * 55);
   }
 }
 

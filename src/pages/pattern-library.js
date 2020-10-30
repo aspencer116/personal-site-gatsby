@@ -28,6 +28,7 @@ const PatternLibrary = () => (
 
       <h2 style={{paddingTop: `8rem`, paddingBottom: `2rem`}} className="t-heading-2">Typography</h2>
 
+      <h1 className="t-title">Title</h1>
       <h1 className="t-heading-1">Heading One</h1>
       <h2 className="t-heading-2">Heading Two</h2>
       <h3 className="t-heading-3">Heading Three</h3>

@@ -1,5 +1,17 @@
+.t-title {
+  @include heading-base(
+    $font-size-sm: 3rem,
+    $font-size-lg: 4.5rem,
+    $weight: bold,
+  );
+}
+
 .t-heading-1 {
-  @include heading-base($letter-spacing: 2px);
+  @include heading-base(
+    $font-size-sm: 2.5rem,
+    $font-size-lg: 3.5rem,
+    $weight: bold,
+  );
 }
 
 .t-heading-1--reverse {
@@ -8,8 +20,8 @@
 
 .t-heading-2 {
   @include heading-base(
-    $font-size-sm: 1.75rem,
-    $font-size-lg: 2.25rem,
+    $font-size-sm: 2rem,
+    $font-size-lg: 2.5rem,
     $weight: bold,
   );
 }

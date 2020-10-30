@@ -7,18 +7,7 @@
 
   &__heading {
     position: relative;
-    margin-bottom: 6rem;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2rem;
-      width: 2rem;
-      height: 0.125rem;
-      background: var(--c-black);
-      opacity: 0.25;
-    }
+    margin-bottom: 4rem;
   }
 
   &__grid-container {
