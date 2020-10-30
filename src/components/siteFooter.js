@@ -40,14 +40,14 @@ const SiteHeader = () => (
       </li>
 
       <li className="c-site-footer__category">
-        <h2 className="t-heading-5 t-heading-5--reverse">Words</h2>
+        <h2 className="t-heading-5 t-heading-5--reverse">Writing</h2>
         <ul className="c-site-footer__list">
 
           <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/" newTab />
 
-          <SiteFooterLink linkText="Advanced CSS Selectors for Common Scenarios (on Log Rocket)" linkPath="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/" newTab />
+          <SiteFooterLink linkText="Advanced CSS Selectors (on Log Rocket)" linkPath="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/" newTab />
 
-          <SiteFooterLink linkText="The Case for Including a Designer from Project Start to Finish" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
+          <SiteFooterLink linkText="Designer in the Web Design Process" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
 
           <SiteFooterLink linkText="Accessible By Design" linkPath='https://seesparkbox.com/foundry/accessible_by_design' newTab />
 
