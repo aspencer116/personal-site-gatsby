@@ -39,7 +39,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
@@ -48,11 +48,11 @@ module.exports = {
           },
           {
             family: `IBM Plex Mono`,
-            variants: [`bold`]
+            variants: [`700`]
           },
-        ],
-      },
-    },
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
