@@ -18,7 +18,7 @@
 
     // Auto-size the grid
     @media (min-width: $bp-md) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr; // TEMP Due to the number of active links
     }
 
     @media (min-width: 1080px) {

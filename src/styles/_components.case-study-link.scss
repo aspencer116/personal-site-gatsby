@@ -9,6 +9,11 @@
 
   transition: all var(--v-transition-time-long) 50ms var(--v-transition-function-easy-in);
 
+  @media (max-width: $bp-lg) and (min-width: $bp-md) {
+    // TEMP Change to a 1 column layout due to how the links are organized
+    grid-column: span 2;
+  }
+
   // Hover state for all but the smallest screens
   @media (min-width: $bp-md) {
     &:not(.c-case-study-link--coming-soon):hover {
