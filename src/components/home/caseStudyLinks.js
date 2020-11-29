@@ -28,7 +28,7 @@ const CaseStudyLinks = () => (
       <CaseStudyLink
         linkPath="/case-study/shoes-for-crews"
         linkTitle="Shoes For Crews"
-        linkDescription="A leader in slip resistant footwear or the service industry needed a website design and code overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
+        linkDescription="A leader in slip resistant footwear needed a website overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
         tags={["Web Design", "Frontent Dev", "E-ecommerce"]}
         color="#1D3C7C"
         image="images/homepage/homepage-graphic_SFC.jpg"

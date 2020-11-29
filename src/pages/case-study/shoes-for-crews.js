@@ -54,7 +54,7 @@ const ShoesForCrews = () => {
 
       <CaseStudyHeaderShoesForCrews
         title="Shoes For Crews"
-        subtitle="A leader in slip resistant footwear or the service industry needed a website design and code overhaul to support multiple brands and a cohesive desktop to mobile experience."
+        subtitle="A leader in slip resistant footwear needed a website overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
         tags={["Web Design", "Frontend Dev", "E-commerce"]}
         year="2016"
         imageAltText="Screenshots of the Shoes For Crews website on a swirly colored background."
