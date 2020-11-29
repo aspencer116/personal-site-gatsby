@@ -17,37 +17,47 @@ const CaseStudyLinks = () => (
         callout
       />
       <CaseStudyLink
-        linkPath="/case-study/picsnippets"
-        linkTitle="PicSnippets"
-        linkDescription="A growing digital product needed a marketing site and product redesign to take them to the next&nbsp;level."
-        tags={["Web Design", "Product Design"]}
-        color="#112639"
-        image="images/homepage/homepage-graphic_PicSnippets.jpg"
-      />
-      <CaseStudyLink
         linkPath="/"
         linkTitle="National Kidney Foundation"
         linkDescription="A national healthcare organization needed a website update to bring consistency and clarity to their&nbsp;vision."
         tags={["Web Design"]}
-        color="#A15514"
+        color="#3e4859"
         image="images/homepage/homepage-graphic_NKF.jpg"
         comingSoon
+      />
+      <CaseStudyLink
+        linkPath="/case-study/shoes-for-crews"
+        linkTitle="Shoes For Crews"
+        linkDescription="A leader in slip resistant footwear or the service industry needed a website design and code overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
+        tags={["Web Design", "Frontent Dev", "E-ecommerce"]}
+        color="#1D3C7C"
+        image="images/homepage/homepage-graphic_SFC.jpg"
+        callout
       />
       <CaseStudyLink
         linkPath="/"
         linkTitle="Whitworth University"
         linkDescription="A nationally ranked university was looking to update the look and structure of their homepage and&nbsp;navigation."
         tags={["UX", "Web Design", "Frontend Dev"]}
-        color="#BD1313"
+        color="#3e4859"
         image="images/homepage/homepage-graphic_Whitworth.jpg"
         comingSoon
+      />
+      <CaseStudyLink
+        linkPath="/case-study/picsnippets"
+        linkTitle="PicSnippets"
+        linkDescription="A growing digital product needed a marketing site and product redesign to take them to the next&nbsp;level."
+        tags={["Web Design", "Product Design"]}
+        color="#112639"
+        image="images/homepage/homepage-graphic_PicSnippets.jpg"
+        callout
       />
       <CaseStudyLink
         linkPath="/"
         linkTitle="Tommy John"
         linkDescription="An ecommerce site for high-quality undergarments was looking to add functionality and speed to their checkout&nbsp;experience."
         tags={["Web Design", "Frontend Dev", "Animation"]}
-        color="#8C113D"
+        color="#3e4859"
         image="images/homepage/homepage-graphic_TommyJohn.jpg"
         comingSoon
       />
