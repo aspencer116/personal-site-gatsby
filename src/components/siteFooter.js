@@ -10,6 +10,8 @@ const SiteHeader = () => (
         <h2 className="t-heading-5 t-heading-5--reverse">About</h2>
         <ul className="c-site-footer__list">
 
+          <SiteFooterLink linkText="Resume" linkPath="/files/AndrewSpencer_resume.pdf" newTab />
+
           <SiteFooterLink linkText="Contact" linkPath="mailto:aspencer.hello@gmail.com" />
 
           <li className="c-site-footer__list-item">
