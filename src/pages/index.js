@@ -18,13 +18,9 @@ const IndexPage = () => (
 
     <HomepageHero />
 
-    <CurrentWork /> 
+    <CurrentWork />
 
     <CaseStudyLinks/>
-
-    <p style={{textAlign: 'center', padding: '8rem 1rem 4rem'}}><span aria-label="Construction fence emoji" role="img">🚧</span><br/><br/>Thanks for stopping by! Just wanted to let you know, this site is still a work in&nbsp;progress.<br/>More case studies coming soon.</p>
-
-    <p style={{textAlign: 'center', padding: '4rem 1rem 8rem'}}>Currently a Frontend Designer at <a style={{color: '#000000'}} href="https://seesparkbox.com">Sparkbox</a>.</p>
 
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

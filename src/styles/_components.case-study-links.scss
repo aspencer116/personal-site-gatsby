@@ -1,7 +1,17 @@
 .c-case-study-links {
-  @include grain-background;
-  
+  position: relative;
   padding: 6rem var(--v-page-margin);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 27rem;
+    @include grain-background;
+  }
 
   &__heading {
     position: relative;
