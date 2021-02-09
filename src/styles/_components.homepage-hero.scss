@@ -1,13 +1,11 @@
+$bottom-space: 6rem;
+
 .c-homepage-hero {
-  $bottom-space: 4rem;
+  @include grain-background;
 
   display: flex;
   position: relative;
   padding-bottom: $bottom-space;
-
-  background: var(--c-mist) url("../images/slate_stubble_light.jpg");
-  background-repeat: repeat;
-  background-size: 275px; // Scale down the size of the image
 
   // Texture shape behind the right side
   &:after {
@@ -142,12 +140,12 @@
   // Gives space around the text that extends beyond the container
   $padding: 5vw;
 
-  padding: $padding 10vw 2rem $padding;
+  padding: $padding 10vw 10vw $padding;
 
 
   @media (min-width: $bp-md) {
     padding-right: 30vw;
-    padding-bottom: 4rem;
+    padding-bottom: $bottom-space;
     transform: translateX(-$padding);
     width: calc(100% + #{$padding});
   }
@@ -194,7 +192,7 @@
     position: absolute;
     height: 0.25rem; // To center the text
     z-index: 3;
-    bottom: 4rem;
+    bottom: $bottom-space;
     left: calc(5vw - 0.25rem);
     font-size: 0.75rem;
     transform: rotate(-90deg);

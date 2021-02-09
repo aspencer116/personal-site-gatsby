@@ -46,7 +46,7 @@ const HomepageHero = () => {
         <HomepageHeroImages />
       </div>
       <div className="c-homepage-hero__secondary">
-        <p className="t-meta c-homepage-hero__meta-text">Pixels&nbsp;&&nbsp;Code</p>
+        <p className="t-meta c-homepage-hero__meta-text">Boston&nbsp;MA</p>
       </div>
       <div className="c-homepage-hero__tertiary">
       </div>

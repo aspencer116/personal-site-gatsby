@@ -25,10 +25,11 @@
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 
+  margin-left: calc(var(--v-page-margin) / 2);
+
   @media(min-width: $bp-md) {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: calc(var(--v-page-margin) / 2);
   }
 }
 
