@@ -19,6 +19,10 @@
   @media (min-width: $bp-lg) {
     width: calc(66.75vw - #{var(--v-page-margin)});
   }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 
 .c-current-work__title {
