@@ -4,7 +4,7 @@ const CurrentWork = () => (
   <section className="c-current-work">
     <div className="c-current-work__inner">
       <h2 className="t-meta t-meta--small c-current-work__meta">Currently</h2>
-      <span className="t-heading-4 c-current-work__title">Product Designer</span>
+      <h3 className="t-heading-4 c-current-work__title">Senior Product Designer</h3>
       <span className="t-heading-5 c-current-work__sub-title">
         @
         <a className="o-delink" href="https://thoughtbot.com/" target="_blank" rel="noopener noreferrer">thoughtbot</a>
@@ -15,7 +15,14 @@ const CurrentWork = () => (
 
     <div className="c-current-work__inner">
       <h2 className="t-meta t-meta--small c-current-work__meta">Previously</h2>
-      <span className="t-heading-4 c-current-work__title">Frontend Designer</span>
+      <h3 className="t-heading-4 c-current-work__title">Product Designer</h3>
+      <span className="t-heading-5 c-current-work__sub-title c-current-work__meta">
+        @
+        <a className="o-delink" href="https://thoughtbot.com/" target="_blank" rel="noopener noreferrer">thoughtbot</a>
+        —a digital product consultancy
+      </span>
+
+      <h3 className="t-heading-4 c-current-work__title">Frontend Designer</h3>
       <span className="t-heading-5 c-current-work__sub-title">
         @
         <a className="o-delink" href="https://sparkbox.com/" target="_blank" rel="noopener noreferrer">Sparkbox</a>

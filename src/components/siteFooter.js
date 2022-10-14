@@ -49,13 +49,13 @@ const SiteHeader = () => (
 
           <SiteFooterLink linkText="Advanced CSS Selectors (on Log Rocket)" linkPath="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/" newTab />
 
-          <SiteFooterLink linkText="Designer in the Web Design Process" linkPath="https://seesparkbox.com/foundry/include_designer_in_web_design_process" newTab />
+          <SiteFooterLink linkText="Designer in the Web Design Process" linkPath="https://sparkbox.com/foundry/include_designer_in_web_design_process" newTab />
 
-          <SiteFooterLink linkText="Accessible By Design" linkPath='https://seesparkbox.com/foundry/accessible_by_design' newTab />
+          <SiteFooterLink linkText="Accessible By Design" linkPath='https://sparkbox.com/foundry/accessible_by_design' newTab />
 
-          <SiteFooterLink linkText="Performant Design" linkPath='https://seesparkbox.com/foundry/improve_website_speed_performance_with_design_choices' newTab />
+          <SiteFooterLink linkText="Performant Design" linkPath='https://sparkbox.com/foundry/improve_website_speed_performance_with_design_choices' newTab />
 
-          <SiteFooterLink linkText="Maintaining Design Vision" linkPath='https://seesparkbox.com/foundry/maintaining_design_vision' newTab />
+          <SiteFooterLink linkText="Maintaining Design Vision" linkPath='https://sparkbox.com/foundry/maintaining_design_vision' newTab />
         </ul>
       </li>
 
