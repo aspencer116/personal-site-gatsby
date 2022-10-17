@@ -16,7 +16,7 @@ const Idea = ({callout, type, title, forName, actionLink, actionText}) => (
         }
         <div className="c-idea__action">
           <span className="t-paragraph--small">{ actionText }</span>
-          <svg className="c-idea__icon" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#000"><path d="M0 .5h9.5V10M9 1l-9 9"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h10v10H0z"/></clipPath></defs></svg>
+          <svg className="c-idea__icon" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 .5h9.5V10M9 1l-9 9" stroke="inherit"/></svg>
         </div>
       </div>
     </Link>
