@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import HomepageHero from "../components/homepageHero"
 import CurrentWork from "../components/home/currentWork"
 import CaseStudyLinks from "../components/home/caseStudyLinks"
+import Ideas from "../components/home/ideas"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
@@ -21,6 +22,8 @@ const IndexPage = () => (
     <CurrentWork />
 
     <CaseStudyLinks/>
+
+    <Ideas/>
 
     {/*
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

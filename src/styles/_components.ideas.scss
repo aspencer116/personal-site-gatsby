@@ -1,0 +1,23 @@
+.c-ideas {
+
+  @media (min-width: $bp-md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.c-ideas__heading {
+  padding: 0 var(--v-page-margin) 2rem;
+}
+
+.c-ideas__scroll-container {
+  overflow: scroll;
+  width: 100%;
+}
+
+.c-ideas__horiz-scroll {
+  display: flex;
+  flex-direction: row;
+  padding-left: var(--v-page-margin);
+  margin-top: 0;
+}
