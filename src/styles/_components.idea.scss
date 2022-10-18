@@ -18,8 +18,6 @@
   }
 
   &:hover {
-
-
     background: var(--c-black);
     color: var(--c-white);
     transition-duration: var(--v-transition-time-long);
@@ -27,6 +25,12 @@
 
     & .c-idea__icon {
       stroke: var(--c-white);
+      transition-duration: var(--v-transition-time-long);
+      transition-delay: 50ms;
+    }
+
+    & .c-idea__type {
+      color: var(--c-white);
       transition-duration: var(--v-transition-time-long);
       transition-delay: 50ms;
     }
@@ -44,7 +48,8 @@
 .c-idea__type {
   margin-bottom: 0.75rem;
   display: block;
-  color: currentcolor;
+  color: var(--c-black);
+  transition: all var(--v-transition-time) var(--v-transition-function-easy);
 }
 
 .c-idea__title {
