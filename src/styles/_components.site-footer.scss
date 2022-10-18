@@ -50,7 +50,7 @@
 
   @media (min-width: $bp-sm) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: $bp-md) {
@@ -211,17 +211,12 @@
 }
 
 .c-site-footer__meta {
-  @include paragraph-base($color: var(--c-mist-dark), $font-size-sm: 0.75rem, $font-size-lg: 0.875rem);
+  @include paragraph-base($color: var(--c-mist-dark), $font-size-sm: 0.75rem, $font-size-lg: 0.75rem);
   display: block;
   margin-bottom: 0;
+  opacity: 0.7;
 
   line-height: 1.4;
-
-  @media (max-width: $bp-sm) {
-    &:not(:last-child) {
-      margin-bottom: 0.5rem;
-    }
-  }
 
   @media (min-width: $bp-sm) {
     margin-right: 2rem;

@@ -13,54 +13,11 @@ const SiteHeader = () => (
           <SiteFooterLink linkText="Resume" linkPath="/files/AndrewSpencer_resume.pdf" newTab />
 
           <SiteFooterLink linkText="Contact" linkPath="mailto:aspencer.hello@gmail.com" />
-
-          <li className="c-site-footer__list-item">
-            <Link
-              to="/pattern-library"
-              className="c-site-footer__link"
-            >
-              Site Pattern Library
-            </Link>
-          </li>
         </ul>
       </li>
 
       <li className="c-site-footer__category c-site-footer__category--alt">
-        <h2 className="t-heading-5 t-heading-5--reverse">Projects on Dribbble</h2>
-        <ul className="c-site-footer__list">
-
-          <SiteFooterLink linkText="National Kidney Foundation" linkPath="https://dribbble.com/iam_aspencer/projects/2956145-National-Kidney-Foundation" newTab />
-
-          <SiteFooterLink linkText="Whitworth University" linkPath="https://dribbble.com/iam_aspencer/projects/1012572-Whitworth-University" newTab />
-
-          <SiteFooterLink linkText="Sparkbox" linkPath="https://dribbble.com/iam_aspencer/projects/1772021-Sparkbox" newTab />
-
-          <SiteFooterLink linkText="Gush & Grow" linkPath="https://dribbble.com/iam_aspencer/projects/2084185-Gush-Grow" newTab />
-
-          <SiteFooterLink linkText="Personal Brand" linkPath="https://dribbble.com/iam_aspencer/projects/358899-Personal-Brand" newTab />
-        </ul>
-      </li>
-
-      <li className="c-site-footer__category">
-        <h2 className="t-heading-5 t-heading-5--reverse">Writing</h2>
-        <ul className="c-site-footer__list">
-
-          <SiteFooterLink linkText="Design Principles for Developers (on CSS-Tricks)" linkPath="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/" newTab />
-
-          <SiteFooterLink linkText="Advanced CSS Selectors (on Log Rocket)" linkPath="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/" newTab />
-
-          <SiteFooterLink linkText="Designer in the Web Design Process" linkPath="https://sparkbox.com/foundry/include_designer_in_web_design_process" newTab />
-
-          <SiteFooterLink linkText="Accessible By Design" linkPath='https://sparkbox.com/foundry/accessible_by_design' newTab />
-
-          <SiteFooterLink linkText="Performant Design" linkPath='https://sparkbox.com/foundry/improve_website_speed_performance_with_design_choices' newTab />
-
-          <SiteFooterLink linkText="Maintaining Design Vision" linkPath='https://sparkbox.com/foundry/maintaining_design_vision' newTab />
-        </ul>
-      </li>
-
-      <li className="c-site-footer__category c-site-footer__category--alt">
-        <h2 className="t-heading-5 t-heading-5--reverse">Code Bits & Design Tinkerings</h2>
+        <h2 className="t-heading-5 t-heading-5--reverse">Code Bits & Design Tinkering</h2>
         <ul className="c-site-footer__list">
 
           <SiteFooterLink linkText="Hyperloop Map" linkPath="https://dribbble.com/shots/4712665-Hyperloop-Map-Dark-Mode" newTab />
@@ -123,10 +80,10 @@ const SiteHeader = () => (
     </div>
     <div className="c-site-footer__tertiary">
       <span className="c-site-footer__meta">
-        Designed and built by Andrew Spencer ©{new Date().getFullYear()}
+        Designed and built by Andrew Spencer ©{new Date().getFullYear()}.
       </span>
       <span className="c-site-footer__meta">
-        Built with <a className="c-site-footer__meta-link" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>. See the <Link className="c-site-footer__meta-link" to="/pattern-library/">pattern library</Link> and <a className="c-site-footer__meta-link" href="https://github.com/aspencer116/personal-site-gatsby" target="_blank" rel="noopener noreferrer">GitHub repo</a>.
+        Always a work in progress. Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com">Figma</a>. Built with <a className="c-site-footer__meta-link" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>. See the <Link className="c-site-footer__meta-link" to="/pattern-library/">pattern library</Link> and <a className="c-site-footer__meta-link" href="https://github.com/aspencer116/personal-site-gatsby" target="_blank" rel="noopener noreferrer">GitHub repo</a>.
       </span>
     </div>
   </footer>
