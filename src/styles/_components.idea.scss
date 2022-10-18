@@ -28,12 +28,6 @@
       transition-duration: var(--v-transition-time-long);
       transition-delay: 50ms;
     }
-
-    & .c-idea__type {
-      color: var(--c-white);
-      transition-duration: var(--v-transition-time-long);
-      transition-delay: 50ms;
-    }
   }
 
   &:active {
@@ -48,8 +42,7 @@
 .c-idea__type {
   margin-bottom: 0.75rem;
   display: block;
-  color: var(--c-black);
-  transition: all var(--v-transition-time) var(--v-transition-function-easy);
+  color: currentcolor;
 }
 
 .c-idea__title {
