@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Idea = ({callout, type, title, forName, actionLink, actionText}) => (
   <li className="o-delist">
-    <Link to={actionLink} className={`o-delink c-idea ${callout ? 'c-idea--callout' : ''}`}>
+    <Link target="_blank" to={actionLink} className={`o-delink c-idea ${callout ? 'c-idea--callout' : ''}`}>
       <div className="c-idea__top">
         <span className="t-meta t-meta--small t-subtle c-idea__type">{ type }</span>
         <h3 className="t-heading-4 c-idea__title">{ title }</h3>
