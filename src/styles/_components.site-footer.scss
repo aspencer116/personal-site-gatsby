@@ -9,7 +9,7 @@
   padding: 4rem var(--v-page-margin) 4rem var(--v-page-margin);
   margin-bottom: 0;
 
-  background: var(--c-stone-dark) url("../images/slate_stubble_dark.jpg");
+  background: var(--c-grayscale-5) url("../images/slate_stubble_dark.jpg");
   background-repeat: repeat;
   background-size: 275px; // Scale down the size of the image
 
@@ -46,7 +46,7 @@
   flex: 0 0 100%;
   padding: 2rem var(--v-page-margin);
 
-  background: lighten($c-stone-dark, 4);
+  background: lighten($c-grayscale-5, 4);
 
   @media (min-width: $bp-sm) {
     display: grid;
@@ -65,7 +65,7 @@
       width: 5%;
       bottom: 0;
 
-      background: var(--c-stone-dark) url("../images/slate_stubble_dark.jpg");
+      background: var(--c-grayscale-5) url("../images/slate_stubble_dark.jpg");
       background-repeat: repeat;
       background-size: 275px; // Scale down the size of the image
     }
@@ -113,7 +113,7 @@
 
 .c-site-footer__link {
   @include paragraph-base(
-    $color: var(--c-mist-dark),
+    $color: var(--c-grayscale-1),
     $font-size-sm: 0.875rem,
     $font-size-lg: 0.875rem,
     $line-height: 1.5
@@ -202,7 +202,7 @@
 
   & > path,
   & > rect {
-    fill: var(---c-stone-dark)
+    fill: var(---c-grayscale-5)
   }
 }
 
@@ -211,7 +211,7 @@
 }
 
 .c-site-footer__meta {
-  color: var(--c-mist-dark);
+  color: var(--c-grayscale-2);
   font-size: 0.75rem;
   display: block;
   margin-bottom: 0;
@@ -232,7 +232,7 @@
 
 .c-site-footer__meta-link {
   margin-right: 0;
-  color: var(--c-mist-light);
+  color: var(--c-white);
 
   transition: all var(--v-transition-time) var(--v-transition-function);
 

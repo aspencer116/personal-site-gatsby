@@ -1,5 +1,4 @@
 .c-current-work {
-  @include grain-background;
   padding: 0 var(--v-page-margin) 0;
 
   @media (min-width: $bp-md) {

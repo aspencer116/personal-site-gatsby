@@ -15,15 +15,15 @@ const PatternLibrary = () => (
       <h2 className="t-heading-2">Colors</h2>
 
       <ul className="o-grid o-grid-4">
-        <Color colorName="pine"/>
-        <Color colorName="pine-dark"/>
-        <Color colorName="seafoam"/>
-        <Color colorName="seafoam-light"/>
-        <Color colorName="stone"/>
-        <Color colorName="stone-light"/>
-        <Color colorName="stone-dark"/>
-        <Color colorName="mist"/>
-        <Color colorName="mist-dark"/>
+        <Color colorName="highlight"/>
+        <Color colorName="white"/>
+        <Color colorName="grayscale-1"/>
+        <Color colorName="grayscale-2"/>
+        <Color colorName="grayscale-3"/>
+        <Color colorName="grayscale-4"/>
+        <Color colorName="grayscale-5"/>
+        <Color colorName="grayscale-6"/>
+        <Color colorName="black"/>
       </ul>
 
       <h2 style={{paddingTop: `8rem`, paddingBottom: `2rem`}} className="t-heading-2">Typography</h2>
