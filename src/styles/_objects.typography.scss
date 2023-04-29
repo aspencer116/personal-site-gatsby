@@ -1,8 +1,8 @@
 .t-title {
   @include heading-base(
     $font-size-sm: 3rem,
-    $font-size-lg: 4.5rem,
-    $weight: bold,
+    $font-size-lg: 5.5rem,
+    $letter-spacing: -3rem * 0.03
   );
 }
 
@@ -10,7 +10,7 @@
   @include heading-base(
     $font-size-sm: 2.5rem,
     $font-size-lg: 3.5rem,
-    $weight: bold,
+    $letter-spacing: -3rem * 0.01
   );
 }
 
@@ -22,7 +22,7 @@
   @include heading-base(
     $font-size-sm: 2rem,
     $font-size-lg: 2.5rem,
-    $weight: bold,
+    $letter-spacing: -2.5rem * 0.01
   );
   margin-bottom: 1rem;
 }
@@ -31,7 +31,6 @@
   @include heading-base(
     $font-size-sm: 1.675rem,
     $font-size-lg: 1.75rem,
-    $weight: bold,
   );
   margin-bottom: 0.75rem;
 }
@@ -44,7 +43,6 @@
   @include heading-base(
     $font-size-sm: 1.25rem,
     $font-size-lg: 1.375rem,
-    $weight: bold,
   );
   margin-bottom: 0.75rem;
 }
@@ -57,8 +55,11 @@
   @include heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 1rem,
-    $weight: bold,
+    $letter-spacing: 0.875rem * 0.08,
+    $weight: 500,
+    $line-height: 1.2
   );
+  text-transform: uppercase;
 }
 
 .t-heading-5--reverse {
@@ -69,11 +70,11 @@
   @include heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 0.875rem,
-    $letter-spacing: 1px
+    $letter-spacing: 0.875rem * 0.08,
+    $weight: 500,
+    $line-height: 1.2
   );
-  font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
 }
 
 .t-heading-6--reverse {
@@ -89,13 +90,13 @@
 }
 
 .t-paragraph--callout {
-  font-weight: 500;
+  font-family: var(--v-font-display);
+  font-weight: 300;
   font-size: 1.125rem;
-  line-height: 1.44;
+  line-height: 1.4;
 
   @media (min-width: $bp-md) {
     font-size: 1.5rem;
-    line-height: 1.33;
   }
 }
 
@@ -105,17 +106,16 @@
 
 .t-meta {
   color: var(--c-black);
-  opacity: 0.6;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
   font-size: 0.875rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.875rem * 0.02;
 }
 
 .t-meta--small {
   font-size: 0.6875rem;
+  line-height: 1rem;
 
   @media (min-width: $bp-md) {
     font-size: 0.75rem;

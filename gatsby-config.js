@@ -38,21 +38,6 @@ module.exports = {
         icon: `src/images/andrew-spencer_favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: `DM Sans`,
-            variants: [`400`, `500`, `700`]
-          },
-          {
-            family: `IBM Plex Mono`,
-            variants: [`700`]
-          },
-        ]
-      }
-    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
