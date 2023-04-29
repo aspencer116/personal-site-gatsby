@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "NEXT-pan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/NEXT-Pan-Book-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "NEXT-pan";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/NEXT-Pan-Book-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Segment";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Segment-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Segment";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Segment-Bold.woff2) format('woff2');
+}
+
 html {
   // Base background color
   background-color: var(--c-green);
@@ -5,8 +37,10 @@ html {
 
 body {
   //Base font stack
-  font-family: "DM Sans", -apple-system, sans-serif;
+  font-family: var(--v-font-body);
   font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul, ol {

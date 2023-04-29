@@ -1,9 +1,11 @@
 // Typography mixins
-@mixin heading-base($color: var(--c-stone-dark), $weight: 500, $font-size-sm: 2.5rem, $font-size-lg: 3.5rem, $letter-spacing: 0) {
+@mixin heading-base($color: var(--c-stone-dark), $line-height: 1.3, $weight: 400, $font-size-sm: 2.5rem, $font-size-lg: 3.5rem, $letter-spacing: 1) {
   color: $color;
   font-weight: $weight;
   letter-spacing: $letter-spacing;
   font-size: $font-size-sm;
+  line-height: $line-height;
+  font-family: var(--v-font-display);
 
   @media (min-width: $bp-md) {
     // Scale the font up as the screen gets larger
