@@ -2,37 +2,29 @@
 // on the application either can be used.
 
 // Defined as SASS variables
-$c-pine: #3e5a4c;
-$c-pine-dark: #2e3a34;
+$c-highlight: #EE9833;
 
-$c-seafoam: #a7c5b4;
-$c-seafoam-light: #e9f4ed;
-$c-seafoam-bright: #76C193;
+$c-white: #FFFFFF;
+$c-grayscale-1: #F9FAFA;
+$c-grayscale-2: #E1E2E3;
+$c-grayscale-3: #909398;
+$c-grayscale-4: #5F6569;
+$c-grayscale-5: #2E3134;
+$c-grayscale-6: #1A1E1E;
+$c-black: #0B0C0C;
 
-$c-stone: #3e4859;
-$c-stone-light: #89909b;
-$c-stone-dark: #23282d;
-
-$c-mist: #f7f8f9;
-$c-mist-light: #ffffff;
-$c-mist-dark: #e6e9ed;
 
 // Devinded as root level CSS variables
 :root {
-  --c-pine: #{$c-pine};
-  --c-pine-dark: #{$c-pine-dark};
+  --c-highlight: #{$c-highlight};
+  
+  --c-grayscale-1: #{$c-grayscale-1};
+  --c-grayscale-2: #{$c-grayscale-2};
+  --c-grayscale-3: #{$c-grayscale-3};
+  --c-grayscale-4: #{$c-grayscale-4};
+  --c-grayscale-5: #{$c-grayscale-5};
+  --c-grayscale-6: #{$c-grayscale-6};
 
-  --c-seafoam: #{$c-seafoam};
-  --c-seafoam-light: #{$c-seafoam-light};
-  --c-seafoam-bright: #{$c-seafoam-bright};
-
-  --c-stone: #{$c-stone};
-  --c-stone-light: #{$c-stone-light};
-  --c-stone-dark: #{$c-stone-dark};
-
-  --c-mist: #{$c-mist};
-  --c-mist-dark: #{$c-mist-dark};
-
-  --c-white: white;
-  --c-black: black;
+  --c-white: #{$c-white};
+  --c-black: #{$c-black};
 }

@@ -133,7 +133,6 @@
     margin-bottom: 1rem;
     display: inline-block;
 
-    background: rgba($c-mist, 0.8);
     opacity: 1;
   }
 
@@ -159,7 +158,7 @@
   }
 
   &__link-text {
-    color: var(--c-stone-dark);
+    background: var(--c-grayscale-5);
     font-weight: bold;
   }
 
@@ -176,8 +175,8 @@
     width: 0.675rem;
     height: 0.675rem;
     transform: rotate(45deg);
-    border-top: 0.125rem solid var(--c-stone-dark);
-    border-right: 0.125rem solid var(--c-stone-dark);
+    border-top: 0.125rem solid var(--c-grayscale-5);
+    border-right: 0.125rem solid var(--c-grayscale-5);
   }
 
   // Custom styles for the various states of the component

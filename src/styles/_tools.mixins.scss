@@ -32,13 +32,6 @@
   }
 }
 
-// Grainy background texture
-@mixin grain-background {
-  background: var(--c-mist) url("../images/slate_stubble_light.jpg");
-  background-repeat: repeat;
-  background-size: 275px; // Scale down the size of the image
-}
-
 // Visually hide something
 @mixin visually-hidden {
   position: absolute !important;
