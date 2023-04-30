@@ -27,4 +27,16 @@ $c-black: #0B0C0C;
 
   --c-white: #{$c-white};
   --c-black: #{$c-black};
+
+  @media (prefers-color-scheme: dark) {
+    --c-grayscale-1: #{$c-grayscale-6};
+    --c-grayscale-2: #{$c-grayscale-5};
+    --c-grayscale-3: #{$c-grayscale-4};
+    --c-grayscale-4: #{$c-grayscale-3};
+    --c-grayscale-5: #{$c-grayscale-2};
+    --c-grayscale-6: #{$c-grayscale-1};
+
+    --c-white: #{$c-black};
+    --c-black: #{$c-white};
+  }
 }

@@ -99,8 +99,8 @@ $bottom-space: 6rem;
   overflow: hidden;
 
   border-radius: 1.5rem;
-  border: var(--c-white) solid 0.25rem;
-  background: var(--c-grayscale-6);
+  border: $c-white solid 0.25rem;
+  background: var(--c-grayscale-1);
   box-shadow:
     1rem 2rem 6rem -2rem rgba(0, 0, 0, 0.3),
     0.25rem 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.12);
@@ -144,7 +144,7 @@ $bottom-space: 6rem;
 
 .c-homepage-hero__heading {
   padding: 25vh 2rem 10vh 0;
-  font-weight: 500;
+  color: var(--c-black);
 
   @media(max-width: $bp-md) {
     padding-left: 5vw;
@@ -176,29 +176,6 @@ $bottom-space: 6rem;
     font-size: 0.75rem;
     transform: rotate(-90deg);
     transform-origin: left center;
-  }
-}
-
-.c-homepage-hero__background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 110vh;
-  object-fit: cover;
-
-  z-index: 1; // place behind text but over the background color
-
-  @media (min-width: $bp-md) {
-    width: 80vw;
-  }
-
-  @media (min-width: $bp-lg) {
-    width: 70vw;
-  }
-
-  &  .gatsby-image-wrapper {
-    height: 100%;
   }
 }
 
