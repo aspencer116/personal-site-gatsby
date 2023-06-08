@@ -6,6 +6,11 @@
   @include delist;
 }
 
+.o-delistelement {
+  margin: 0;
+  padding: 0;
+}
+
 .o-delink {
   color: inherit;
   text-decoration: inherit;

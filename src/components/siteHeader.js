@@ -18,6 +18,12 @@ const SiteHeader = ({ lightVersion }) => (
 
         <span className="c-site-header__logo-name">Andrew Spencer</span>
       </Link>
+
+      <ul className="o-delist">
+        <li className="o-delistelement">
+          <a className="c-button" href="mail-to:connect@andrew-spencer.com">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 )

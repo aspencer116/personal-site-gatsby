@@ -6,30 +6,57 @@
   z-index: 888; // Position it above all other content
   width: 100%;
 
-  // Blurred background effect
-  background: rgba(white, 0.85);
-  backdrop-filter: blur(0.625rem);
+  // Backgroud blur effect
+  background: rgba(#F9FAFA, 0.8);
+  backdrop-filter: blur(5rem);
 
-  @supports not (backdrop-filter: blur()) {
-    background: var(--c-white);
+  @media (prefers-color-scheme: dark) {
+    background: rgba(#0B0C0C, 0.8);
   }
-}
 
-.c-site-header--light {
-  // Light colored version of the navigation
-  --c-logo-color: var(--c-black);
+  // Border bottom
+  &:before {
+    content: '';
+    position: absolute;
+    left: calc(var(--v-page-margin) / 2);
+    right: calc(var(--v-page-margin) / 2);
+    bottom: 0;
+    height: 0.0625rem;
+    background: var(--c-grayscale-2);
+
+    @media(min-width: $bp-md) {
+      left: calc(var(--v-page-margin) / 4);
+    right: calc(var(--v-page-margin) / 4);
+    }
+  }
+
+  //Solid background
+  // background: var(--c-grayscale-1);
+
+  // Gradient fade
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background:
+  //     linear-gradient(to bottom, rgba(#F9FAFA,1) 0%,
+  //     rgba(#F9FAFA,0.95) 45%,
+  //     rgba(#F9FAFA,0.85) 50%,
+  //     rgba(#F9FAFA,0.70) 60%,
+  //     rgba(#F9FAFA,0));
+  // }
 }
 
 .c-site-header__inner {
   display: flex;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-
-  margin-left: calc(var(--v-page-margin) / 2);
+  justify-content: space-between;
+  margin: 0.875rem var(--v-page-margin);
 
   @media(min-width: $bp-md) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1.125rem calc(var(--v-page-margin) / 2);
   }
 }
 
@@ -44,8 +71,8 @@
 }
 
 .c-site-header__logo-icon {
-  $icon-width-sm: 1.5rem;
-  $icon-width-lg: 1.75rem; // Variable to keep the value consistent in this class
+  $icon-width-sm: 1rem;
+  $icon-width-lg: 1.25rem; // Variable to keep the value consistent in this class
 
   display: block;
   width: $icon-width-sm;
@@ -64,7 +91,7 @@
 
 .c-site-header__logo-name {
   color: var(--c-logo-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
 
   position: relative;
