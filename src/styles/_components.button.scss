@@ -1,0 +1,14 @@
+.c-button {
+    @include paragraph-base;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--c-black);
+    border-radius: 1rem;
+    text-decoration: none; //reset links
+    transition: all var(--v-transition-time-long) var(--v-transition-function-easy);
+
+    &:hover {
+        // box-shadow: 0 0 0 1px var(--c-black);
+        color: var(--c-white);
+        background: var(--c-black);
+    }
+}
