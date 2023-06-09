@@ -81,6 +81,21 @@
   color: var(--c-white);
 }
 
+.t-callout {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 76px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--c-black);
+  
+  @media (min-width: $bp-md) {
+    font-size: 96px;
+    line-height: 100px;
+  }
+}
+
 .t-paragraph {
   @include paragraph-base;
 }
