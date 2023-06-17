@@ -137,6 +137,12 @@
   }
 }
 
+.t-micro {
+ font-size: 0.5625rem;
+ letter-spacing: -0.5px;
+ transform: translateY(-2px);
+}
+
 .t-link {
   color: var(--c-grayscale-4);
   text-decoration: none;
