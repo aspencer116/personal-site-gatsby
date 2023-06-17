@@ -50,4 +50,13 @@ ul, ol {
 
 a {
   color: var(--c-black);
+  transition: all var(--v-transition-time) var(--v-transition-function);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

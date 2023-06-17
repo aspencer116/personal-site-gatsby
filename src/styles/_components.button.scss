@@ -12,3 +12,22 @@
         background: var(--c-black);
     }
 }
+
+.c-external-icon {
+    stroke: var(--c-black);
+    margin-left: 0.25rem;
+    transition: all var(--v-transition-time) var(--v-transition-function-easy);
+}
+
+.c-external-icon--small {
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+a:hover .c-external-icon {
+    transform: translate(2px, -2px);
+}
+
+a:hover .c-external-icon--small {
+    transform: translate(1px, -1px);
+}
