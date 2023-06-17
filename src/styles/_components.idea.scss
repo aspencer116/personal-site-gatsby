@@ -6,7 +6,7 @@
   background-color: var(--c-white);
   color: var(--c-black);
 
-  width: 15rem;
+  width: 12rem;
   padding: 1.5rem;
   margin-right: 1rem;
 
@@ -23,14 +23,14 @@
   }
 
   &:hover {
-    box-shadow: inset 0 0 0 1px var(--c-black);
+    transform: translateY(-4px);
     transition-duration: var(--v-transition-time-fast);
-    transition-delay: 50ms;
+    transition-delay: 75ms;
 
     & .c-idea__icon {
       transition-duration: var(--v-transition-time-fast);
-      transition-delay: 50ms;
-      transform: translate(2px, -2px);
+      transition-delay: 125ms;
+      transform: translate(4px, -4px);
     }
   }
 
@@ -55,7 +55,11 @@
 }
 
 .c-idea__top {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  
+  @media (min-width: $bp-md) {
+    margin-bottom: 4rem;
+  }
 }
 
 .c-idea__bottom {
