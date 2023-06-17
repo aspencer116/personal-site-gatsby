@@ -23,6 +23,7 @@
   margin-bottom: 0;
   height: 100%;
   position: absolute;
+  pointer-events: none;
 
   @media (min-width: $bp-md) {
     transform: rotate(-90deg) translate(0, -260px); 
@@ -39,7 +40,7 @@
   flex-direction: row;
   margin-top: 0;
 
-  & li:last-child {
+  & li:last-child a {
     margin-right: var(--v-page-margin);
   }
 }

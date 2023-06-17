@@ -7,11 +7,12 @@
   width: 100%;
 
   // Backgroud blur effect
-  background: rgba(#F9FAFA, 0.8);
-  backdrop-filter: blur(5rem);
+  background: rgba(#F9FAFA, 0.88);
+  backdrop-filter: blur(1rem) saturate(80%);
 
   @media (prefers-color-scheme: dark) {
-    background: rgba(#0B0C0C, 0.8);
+    background: rgba(#0B0C0C, 0.77);
+    backdrop-filter: blur(2rem) saturate(80%);
   }
 
   // Border bottom
@@ -29,25 +30,6 @@
     right: calc(var(--v-page-margin) / 4);
     }
   }
-
-  //Solid background
-  // background: var(--c-grayscale-1);
-
-  // Gradient fade
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background:
-  //     linear-gradient(to bottom, rgba(#F9FAFA,1) 0%,
-  //     rgba(#F9FAFA,0.95) 45%,
-  //     rgba(#F9FAFA,0.85) 50%,
-  //     rgba(#F9FAFA,0.70) 60%,
-  //     rgba(#F9FAFA,0));
-  // }
 }
 
 .c-site-header__inner {
