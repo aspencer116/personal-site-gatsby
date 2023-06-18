@@ -135,6 +135,10 @@
     color: var(--c-white);
 
     opacity: 1;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--c-black);
+    }
   }
 
   &__tag {
@@ -145,6 +149,10 @@
     font-size: 0.75rem;
     margin-right: 1rem;
     display: inline-block;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--c-black);
+    }
 
     &:not(:last-child)::after {
       content: '';

@@ -9,8 +9,8 @@ const PatternLibrary = () => (
     <SEO title="Pattern Library" />
 
     <div className="o-page-layout">
-      <h1 style={{paddingTop: `8rem`}}>Pattern Library</h1>
-      <p style={{paddingBottom: `4rem`}}>A collection of styles and patterns for use across the site.</p>
+      <h1 className="t-heading-1" style={{paddingTop: `8rem`}}>Pattern Library</h1>
+      <p className="t-paragraph" style={{paddingBottom: `4rem`}}>A collection of styles and patterns for use across the site.</p>
 
       <h2 className="t-heading-2">Colors</h2>
 

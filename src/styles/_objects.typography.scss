@@ -16,6 +16,10 @@
 
 .t-heading-1--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-black);
+  }
 }
 
 .t-heading-2 {
@@ -37,6 +41,10 @@
 
 .t-heading-3--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-black);
+  }
 }
 
 .t-heading-4 {
@@ -49,6 +57,10 @@
 
 .t-heading-4--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-black);
+  }
 }
 
 .t-heading-5 {
@@ -64,6 +76,10 @@
 
 .t-heading-5--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-black);
+  }
 }
 
 .t-heading-6 {
@@ -79,6 +95,10 @@
 
 .t-heading-6--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-white);
+  }
 }
 
 .t-callout {
@@ -102,6 +122,10 @@
 
 .t-paragraph--reverse {
   color: var(--c-white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--c-black);
+  }
 }
 
 .t-paragraph--callout {
