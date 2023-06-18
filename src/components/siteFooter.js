@@ -30,7 +30,7 @@ const SiteHeader = () => (
         </div>
         <div className="c-site-footer__meta-row">
           <span className="c-site-footer__meta t-meta--small">
-            Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com" target="_blank">Figma
+            Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com" target="_blank" rel="noreferrer">Figma
             <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998"/></svg></a>
           </span>
           <span className="c-site-footer__meta t-meta--small">
