@@ -21,7 +21,7 @@ const SiteHeader = ({ lightVersion }) => (
 
       <ul className="o-delist">
         <li className="o-delistelement">
-          <a className="c-button" href="mail-to:connect@andrew-spencer.com">Contact</a>
+          <a className="c-button" href="mailto:connect@andrew-spencer.com">Contact</a>
         </li>
       </ul>
     </div>

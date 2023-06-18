@@ -8,3 +8,8 @@
 .o-text-width-limiter {
   max-width: 60ch;
 }
+
+.o-flex {
+  display: flex;
+  flex-direction: column;
+}

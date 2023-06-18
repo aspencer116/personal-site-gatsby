@@ -6,7 +6,10 @@ import SiteFooterLink from "./siteFooterLink"
 const SiteHeader = () => (
   <footer className="c-site-footer">
     <div className="c-site-footer__primary">
-      <span className="c-site-footer__logo">Andrew Spencer</span>
+      <span className="o-flex">
+        <span className="c-site-footer__logo">Andrew Spencer</span>
+        <span className="t-paragraph t-meta--small"><a href="mailto:connect@andrew-spencer.com">connect@andrew-spencer.com</a></span>
+      </span>
       <ul className="o-delist c-site-footer__list">
         <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" newTab />
         <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" newTab />
@@ -27,7 +30,7 @@ const SiteHeader = () => (
         </div>
         <div className="c-site-footer__meta-row">
           <span className="c-site-footer__meta t-meta--small">
-            Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com">Figma
+            Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com" target="_blank">Figma
             <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg></a>
           </span>
           <span className="c-site-footer__meta t-meta--small">
@@ -45,7 +48,7 @@ const SiteHeader = () => (
       </div>
       <div className="c-site-footer__pictures">
         <span className="c-site-footer__meta t-meta--small">
-          I also take pictures and sometimes <a className="c-site-footer__meta-link" href="https://github.com/aspencer116/personal-site-gatsby" target="_blank" rel="noopener noreferrer">share them 
+          I also take pictures and sometimes <a className="c-site-footer__meta-link" href="https://unsplash.com/@iam_aspencer" target="_blank" rel="noopener noreferrer">share them 
           <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg>
           </a>.
         </span>

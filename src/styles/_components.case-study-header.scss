@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  background: var(--c-grayscale-2) url("../images/slate_stubble_light.jpg");
-  background-repeat: repeat;
-  background-size: 275px; // Scale down the size of the image
+  background: var(--c-grayscale-1);  
 
   @media (min-width: $bp-md) {
     flex-direction: row;
@@ -46,11 +44,6 @@
       right: 0;
       bottom: 0;
       left: 0;
-      box-shadow: inset 0 -4rem 8rem rgba(black, 0.2);
-
-      @media (min-width: $bp-md) {
-        box-shadow: inset 4rem -4rem 8rem rgba(black, 0.2);
-      }
     }
 
     & div {
@@ -83,7 +76,6 @@
 
   &__sub-heading {
     max-width: 30ch;
-    background: var(--c-grayscale-4);
   }
 
   &__meta {
