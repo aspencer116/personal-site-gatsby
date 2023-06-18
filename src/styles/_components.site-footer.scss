@@ -55,6 +55,7 @@
 }
 
 .c-site-footer__logo {
+  color: var(--c-black);
   line-height: 1.575rem; // baseline align with links
   
   @media (min-width: $bp-lg) {

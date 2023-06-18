@@ -28,7 +28,7 @@ const CaseStudyHeader = ({ title, subtitle, tags, year, image, imageAltText }) =
           >
             <div>
               <h1 className="t-heading-2">{ title }</h1>
-              <p className="t-paragraph--callout c-case-study-header__sub-heading">{ subtitle }</p>
+              <p className="t-paragraph t-paragraph--callout c-case-study-header__sub-heading">{ subtitle }</p>
             </div>
           </CSSTransition>
         </div>

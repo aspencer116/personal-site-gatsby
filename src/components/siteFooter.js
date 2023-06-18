@@ -31,25 +31,25 @@ const SiteHeader = () => (
         <div className="c-site-footer__meta-row">
           <span className="c-site-footer__meta t-meta--small">
             Designed in <a className="c-site-footer__meta-link" href="https://www.figma.com" target="_blank">Figma
-            <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg></a>
+            <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998"/></svg></a>
           </span>
           <span className="c-site-footer__meta t-meta--small">
             Built with <a className="c-site-footer__meta-link" href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby
-            <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg></a>
+            <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998"/></svg></a>
           </span>
           <span className="c-site-footer__meta t-meta--small">
             <Link className="c-site-footer__meta-link" to="/pattern-library/">Pattern Lib</Link>
           </span>
           <span className="c-site-footer__meta t-meta--small">
             <a className="c-site-footer__meta-link" href="https://github.com/aspencer116/personal-site-gatsby" target="_blank" rel="noopener noreferrer">
-            Repo<svg className="c-external-icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg></a>
+            Repo<svg className="c-external-icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998"/></svg></a>
           </span>
         </div>
       </div>
       <div className="c-site-footer__pictures">
         <span className="c-site-footer__meta t-meta--small">
           I also take pictures and sometimes <a className="c-site-footer__meta-link" href="https://unsplash.com/@iam_aspencer" target="_blank" rel="noopener noreferrer">share them 
-          <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998" stroke="#0B0C0C"/></svg>
+          <svg className="c-external-icon c-external-icon--small" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.34998H7.65V7.99998M7.3 1.69998L1.35 7.64998"/></svg>
           </a>.
         </span>
       </div>

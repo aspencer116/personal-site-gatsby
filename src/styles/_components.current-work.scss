@@ -11,6 +11,10 @@
   padding: 2rem;
   background: var(--c-white);
 
+  @media (prefers-color-scheme: dark) {
+    background: var(--c-grayscale-2);
+  }
+
   @media (min-width: $bp-md) {
     width: calc(83.25vw - #{var(--v-page-margin)});
   }
