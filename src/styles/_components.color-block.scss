@@ -1,16 +1,18 @@
 .c-color-block {
   position: relative;
 
-  padding-top: 5.5rem;
+  padding-top: 6rem;
 
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    height: 5rem;
+    height: 5.5rem;
     background: black;
     width: 100%;
     background-color: currentColor;
+    border: 1px solid var(--c-black);
+    border-radius: 1.5rem;
   }
 }
 

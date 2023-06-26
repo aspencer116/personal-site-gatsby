@@ -14,7 +14,7 @@ const SiteHeader = () => (
         <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" newTab />
         <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" newTab />
         <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" newTab />
-        <SiteFooterLink linkText="GitHub" linkPath="https://github.com/aspencer116" newTab />
+        <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" newTab />
         <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" newTab />
       </ul>
     </div>

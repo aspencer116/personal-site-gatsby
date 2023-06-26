@@ -24,18 +24,24 @@ const Ideas = () => (
             actionLink="https://xd.adobe.com/ideas/perspectives/leadership-insights/building-trust-client-designer-relationships/"
           />
           <Idea
-            type="Talk"
-            title="The Ladder of System Thinking"
-            forName="UnConference"
-            actionText="Watch"
-            actionLink="https://www.youtube.com/watch?v=cSbLpbXZYYI"
-          />
-          <Idea
             type="Article"
             title="Design Principles for Developers: Processes and CSS Tips for Better Web Design"
             forName="CSS Tricks"
             actionText="Read"
             actionLink="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/"
+          />
+          <Idea
+            type="Figma Resource"
+            title="UI Starter Kit"
+            actionText="Try it out"
+            actionLink="https://www.figma.com/community/file/1179139131585085734"
+          />
+          <Idea
+            type="Talk"
+            title="The Ladder of System Thinking"
+            forName="UnConference"
+            actionText="Watch"
+            actionLink="https://www.youtube.com/watch?v=cSbLpbXZYYI"
           />
           <Idea
             type="Article"
