@@ -6,7 +6,7 @@
   background-color: var(--c-white);
   color: var(--c-black);
 
-  width: 12rem;
+  width: 13rem;
   padding: 1.5rem;
   margin-right: 1rem;
 
@@ -33,10 +33,6 @@
       transform: translate(4px, -4px);
     }
   }
-
-  &:active {
-    opacity: 95%;
-  }
 }
 
 .c-idea--callout {
@@ -46,7 +42,6 @@
 .c-idea__type {
   margin-bottom: 0.75rem;
   display: block;
-  color: var(--c-black);
 }
 
 .c-idea__title {
@@ -65,14 +60,18 @@
 .c-idea__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .c-idea__action {
   margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .c-idea__icon {
   margin-left: 0.5rem;
+  margin-top: 3px;
   stroke: var(--c-black);
   transition: all var(--v-transition-time) var(--v-transition-function-easy);
 }

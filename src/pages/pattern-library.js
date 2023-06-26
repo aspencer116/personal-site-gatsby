@@ -13,8 +13,9 @@ const PatternLibrary = () => (
       <p className="t-paragraph" style={{paddingBottom: `4rem`}}>A collection of styles and patterns for use across the site.</p>
 
       <h2 className="t-heading-2">Colors</h2>
+      <p className="t-paragraph">Values are changed automatically between light and dark mode.</p>
 
-      <ul className="o-grid o-grid-4">
+      <ul className="g-color-grid">
         <Color colorName="highlight"/>
         <Color colorName="white"/>
         <Color colorName="grayscale-1"/>
@@ -47,7 +48,7 @@ const PatternLibrary = () => (
       <p className="t-meta t-meta--small">Small meta text style</p>
       <br/>
       <hr/>
-      <p className="t-paragraph">This is a <a href="https://andrew-spencer.com" className="t-link">Link</a>.</p>
+      <p className="t-paragraph">This is a <a href="https://andrew-spencer.com">Link</a>.</p>
     </div>
   </Layout>
 )

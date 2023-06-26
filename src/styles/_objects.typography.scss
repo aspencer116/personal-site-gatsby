@@ -140,7 +140,11 @@
 }
 
 .t-paragraph--small {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+
+  @media (min-width: $bp-md) {
+    font-size: 0.875rem;
+  }
 }
 
 .t-meta {
@@ -166,34 +170,16 @@
  transform: translateY(-2px);
 }
 
-.t-link {
-  color: var(--c-grayscale-4);
-  text-decoration: none;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: -0.125rem;
-    right: -0.125rem;
-    bottom: 0.0625rem;
-    height: 0.0625rem;
-    background: var(--c-grayscale-4);
-    opacity: 0.25;
-
-    transition: all var(--v-transition-time-fast) ease;
-  }
-
-  &:hover::after {
-    opacity: 0.7;
-  }
-}
-
 .t-list {
   list-style: disc;
 }
 
 // Black text on a white or gray background
 .t-subtle {
-  opacity: 0.7;
+  color: var(--c-grayscale-4);
+}
+
+.t-tight {
+  line-height: 1.1;
+  display: block;
 }
