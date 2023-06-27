@@ -9,6 +9,7 @@
 .c-ideas__heading-container {
   position: relative;
   padding-right: 4rem;
+  padding-top: 1rem;
 
   @media (min-width: $bp-md) {
     padding-left: var(--v-page-margin);
@@ -39,6 +40,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 0;
+  padding-top: 1rem;
 
   & li:last-child a {
     margin-right: var(--v-page-margin);
