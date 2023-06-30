@@ -183,6 +183,7 @@ $bp-hero-lg: 1200px;
 
 .c-homepage-hero__icon {
   margin-bottom: 0.25rem;
+  color: var(--c-black);
 
   @media (min-width: $bp-md) {
     position: absolute;
@@ -196,6 +197,7 @@ $bp-hero-lg: 1200px;
   display: block;
 
   font-family: var(--v-font-display);
+  color: var(--c-black);
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 105%;
