@@ -32,7 +32,7 @@ const HomepageHeroImages = () => {
   `)
 
   return (
-    <div className="c-homepage-hero__images-column">
+    <div className="c-homepage-hero__secondary">
       <div className="c-homepage-hero__images-column-inner">
         <CSSTransition
           in={true}
@@ -40,36 +40,26 @@ const HomepageHeroImages = () => {
           classNames="c-homepage-hero__image-1"
           appear
         >
-          <div className="c-homepage-hero__image-container">
-            <Parallax speed={10}>
-              <Img fluid={data.heroYoPortfolio.childImageSharp.fluid} alt="YoPortfolio website screenshot on a mobile device."/>
-            </Parallax>
+          <div className="c-homepage-hero__image-frame">
+            <div className="c-homepage-hero__image-mask">
+              <Parallax speed={10}>
+                <Img fluid={data.heroYoPortfolio.childImageSharp.fluid} alt="YoPortfolio website screenshot on a mobile device."/>
+              </Parallax>
+            </div>
           </div>
         </CSSTransition>
         <CSSTransition
           in={true}
           timeout={5000}
-          classNames="c-homepage-hero__image-3"
-          appear
-        >
-          <div className="c-homepage-hero__image-container c-homepage-hero__image-container--alt">
-            <Parallax speed={6}>
-              <Img fluid={data.heroTommyJohn.childImageSharp.fluid} alt="Whitworth University website screenshot on a mobile device with the navigation open."/>
-            </Parallax>
-          </div>
-        </CSSTransition>
-      </div>
-      <div className="c-homepage-hero__images-column-inner c-homepage-hero__images-column-inner--alt">
-        <CSSTransition
-          in={true}
-          timeout={4000}
           classNames="c-homepage-hero__image-2"
           appear
         >
-          <div className="c-homepage-hero__image-container">
-            <Parallax speed={8}>
-              <Img fluid={data.heroNCSBN.childImageSharp.fluid} alt="NCSBN website screenshot on a mobile device."/>
-            </Parallax>
+          <div className="c-homepage-hero__image-frame c-homepage-hero__image-container--alt">
+            <div className="c-homepage-hero__image-mask">
+              <Parallax speed={6}>
+                <Img fluid={data.heroTommyJohn.childImageSharp.fluid} alt="Whitworth University website screenshot on a mobile device with the navigation open."/>
+              </Parallax>
+            </div>
           </div>
         </CSSTransition>
       </div>
