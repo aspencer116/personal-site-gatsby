@@ -1,7 +1,8 @@
 .t-title {
   @include heading-base(
-    $font-size-sm: 3rem,
+    $font-size-sm: 3.75rem,
     $font-size-lg: 5.5rem,
+    $line-height: 1.05,
     $letter-spacing: -3rem * 0.03
   );
 }
@@ -150,6 +151,7 @@
 .t-meta {
   color: var(--c-black);
   text-transform: uppercase;
+  font-weight: 700;
   line-height: 1;
   font-size: 0.875rem;
   letter-spacing: 0.875rem * 0.02;
