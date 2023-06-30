@@ -70,7 +70,43 @@ $bp-hero-lg: 1200px;
       height: 10vh;
       z-index: 10;
 
-      background: linear-gradient(rgba($c-grayscale-1,0), rgba($c-grayscale-1,0.10) 20%, rgba($c-grayscale-1,0.6) 50%, rgba($c-grayscale-1,0.85) 75%, rgba($c-grayscale-1,0.97) 90%, rgba($c-grayscale-1,1) 95%);
+      // Not using variables because custom properties and rgba don't play nice
+      background: linear-gradient(
+        rgba(249, 250, 250, 0), 
+        rgba(249, 250, 250, 0.10) 20%,
+        rgba(249, 250, 250, 0.6) 50%,
+        rgba(249, 250, 250, 0.85) 75%,
+        rgba(249, 250, 250, 0.97) 90%,
+        rgba(249, 250, 250, 1) 95%);
+
+      @media (prefers-color-scheme: dark) {
+        // background: linear-gradient(
+        //   rgba(11, 12, 12, 0), 
+        //   rgba(11, 12, 12, 0.10) 20%,
+        //   rgba(11, 12, 12, 0.6) 50%,
+        //   rgba(11, 12, 12, 0.85) 75%,
+        //   rgba(11, 12, 12, 0.97) 90%,
+        //   rgba(11, 12, 12, 1) 95%);
+
+        // Created with Figma easing gradient plugin
+        background: linear-gradient( to top,
+          #0B0C0C 0%, 
+          rgba(11, 12, 12, 0.99) 6.67%, 
+          rgba(11, 12, 12, 0.96) 13.33%, 
+          rgba(11, 12, 12, 0.92) 20.00%, 
+          rgba(11, 12, 12, 0.85) 26.67%, 
+          rgba(11, 12, 12, 0.77) 33.33%, 
+          rgba(11, 12, 12, 0.67) 40.00%, 
+          rgba(11, 12, 12, 0.56) 46.67%, 
+          rgba(11, 12, 12, 0.44) 53.33%, 
+          rgba(11, 12, 12, 0.33) 60.00%, 
+          rgba(11, 12, 12, 0.23) 66.67%, 
+          rgba(11, 12, 12, 0.15) 73.33%, 
+          rgba(11, 12, 12, 0.08) 80.00%, 
+          rgba(11, 12, 12, 0.04) 86.67%, 
+          rgba(11, 12, 12, 0.01) 93.33%, 
+          rgba(11, 12, 12, 0.00) 100%);
+      }
     }
   }
 }
@@ -100,11 +136,19 @@ $bp-hero-lg: 1200px;
   padding: 0.5rem;
 
   border-radius: 9.44vw;
-  background: var(--c-white-lock, #FFF);
+  background: var(--c-white);
   box-shadow: 0px 36px 70px -12px rgba(0, 0, 0, 0.21),
-  0px 2.5px 8px 5px rgba(0, 0, 0, 0.03),
-  0px 0px 9px 0px rgba(0, 0, 0, 0.16) inset,
-  0px -8px 8px -3px rgba(0, 0, 0, 0.08) inset;
+              0px 4px 8px 5px rgba(0, 0, 0, 0.04),
+              0px 0px 9px 0px rgba(0, 0, 0, 0.16) inset,
+              -1px -6px 8px -3px rgba(0, 0, 0, 0.15) inset;
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--c-grayscale-2);
+    box-shadow: 0px 36px 70px -12px rgba(0, 0, 0, 0.40),
+              0px 2.5px 8px 5px rgba(0, 0, 0, 0.20),
+              0px 0px 9px 0px rgba(255,255,255, 0.03) inset,
+              5px 4px 8px -3px rgba(255,255,255, 0.08) inset;
+  }
 
   @media (min-width: $bp-sm) {
     width: 46vw;
