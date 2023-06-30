@@ -14,14 +14,7 @@ const HomepageHeroImages = () => {
           }
         }
       },
-      heroTommyJohn: file(relativePath: { eq: "hero_tommy-john.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      heroNCSBN: file(relativePath: { eq: "hero_ncsbn.png" }) {
+      heroFrontrow: file(relativePath: { eq: "hero_frontrow.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -57,7 +50,7 @@ const HomepageHeroImages = () => {
           <div className="c-homepage-hero__image-frame c-homepage-hero__image-container--alt">
             <div className="c-homepage-hero__image-mask">
               <Parallax speed={6}>
-                <Img fluid={data.heroTommyJohn.childImageSharp.fluid} alt="Whitworth University website screenshot on a mobile device with the navigation open."/>
+                <Img fluid={data.heroFrontrow.childImageSharp.fluid} alt="Whitworth University website screenshot on a mobile device with the navigation open."/>
               </Parallax>
             </div>
           </div>
