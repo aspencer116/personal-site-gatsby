@@ -257,6 +257,10 @@ $bp-hero-lg: 1200px;
   }
 }
 
+.c-homepage-hero__detail-container {
+  opacity: 0;
+}
+
 .c-homepage-hero__detail-container:last-child {
   @media (max-width: $bp-md) {
     grid-column: 1 / 3;
@@ -264,7 +268,6 @@ $bp-hero-lg: 1200px;
 }
 
 .c-homepage-hero__detail {
-  opacity: 0;
   display: block;
   margin-bottom: 2rem;
 }
