@@ -39,7 +39,7 @@ const HomepageHero = () => {
           appear
         >
           <div className="c-homepage-hero__text-container">
-            <p className="c-homepage-hero__intro">Helping teams deliver successful, beautiful, and engaging digital&nbsp;products.</p>
+            <p className="c-homepage-hero__intro">Helping teams deliver successful, beautiful, and engaging digital products.</p>
             <div className="o-relative c-homepage-hero__detail-container">
               <svg className="c-homepage-hero__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><g clipPath="url(#a)"><path stroke="currentColor" strokeWidth="1.5" d="M12.344 2.738h6.906v9.5H6.39v-9.5h5.954Z"/><path stroke="currentColor" strokeWidth="1.5" d="m19.648 12.271-4.74 4.741H2.066l4.846-4.893"/><path fill="currentColor" d="M13.014 5.013h4v4h-4z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v20H0z"/></clipPath></defs></svg>
               <span className="t-meta c-homepage-hero__detail">Senior Product Designer @<a href="https://thoughtbot.com">thoughtbot</a></span>
