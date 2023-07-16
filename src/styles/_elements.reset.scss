@@ -31,7 +31,7 @@
 }
 
 html {
-  // Base background color
+  // Color outside the page
   background-color: var(--c-grayscale-1);
 }
 
@@ -41,6 +41,9 @@ body {
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  // Page background color
+  background-color: var(--c-grayscale-1);
 }
 
 ul, ol {
