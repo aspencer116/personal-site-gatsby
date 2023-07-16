@@ -6,14 +6,16 @@
   background-color: var(--c-white);
   color: var(--c-black);
 
-  width: 13rem;
+  width: 15rem;
   padding: 1.5rem;
   margin-right: 1rem;
-
+  
   transition: all var(--v-transition-time-fast) var(--v-transition-function-easy);
-
+  
   @media (min-width: $bp-md) {
-    width: 16rem;
+    min-width: 18rem;
+    min-height: 18rem;
+    width: 25.934vw;
     padding: 2rem;
     margin-right: 2rem;
   }
@@ -47,14 +49,11 @@
 .c-idea__title {
   text-decoration: underline;
   color: var(--c-black);
+  max-width: 22ch;
 }
 
 .c-idea__top {
-  margin-bottom: 2rem;
-  
-  @media (min-width: $bp-md) {
-    margin-bottom: 4rem;
-  }
+  margin-bottom: 4rem;
 }
 
 .c-idea__bottom {

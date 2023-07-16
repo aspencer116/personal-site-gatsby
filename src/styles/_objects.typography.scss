@@ -148,18 +148,29 @@
   }
 }
 
+.t-paragraph--tighter {
+  line-height: 1.1;
+  display: block;
+}
+
+.t-paragraph--tight {
+  line-height: 1.4;
+}
+
 .t-meta {
   color: var(--c-black);
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   letter-spacing: 0.875rem * 0.02;
 }
 
 .t-meta--small {
   font-size: 0.6875rem;
   line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 
   @media (min-width: $bp-md) {
     font-size: 0.75rem;
@@ -181,7 +192,6 @@
   color: var(--c-grayscale-4);
 }
 
-.t-tight {
-  line-height: 1.1;
-  display: block;
+.t-bold {
+  font-weight: 500;
 }

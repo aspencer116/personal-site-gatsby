@@ -232,7 +232,7 @@ $bp-hero-lg: 1200px;
   @media (min-width: $bp-md) {
     position: absolute;
     left: -2.25rem;
-    top: -0.125rem;
+    top: -0.25rem;
   }
 }
 
@@ -302,6 +302,10 @@ $bp-hero-lg: 1200px;
   grid-template-columns: auto auto;
   column-gap: 2rem;
   margin-top: -1rem;
+}
+
+.c-homepage-hero__list-item {
+  margin-bottom: 0.25rem;
 }
 
 
