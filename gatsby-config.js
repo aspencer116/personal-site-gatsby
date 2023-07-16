@@ -32,8 +32,6 @@ module.exports = {
         name: `Andrew Spencer Portfolio`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#e6e9ed`,
-        theme_color: `#e6e9ed`,
         display: `minimal-ui`,
         icon: `src/images/andrew-spencer_favicon.png`, // This path is relative to the root of the site.
       },
