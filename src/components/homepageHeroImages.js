@@ -7,16 +7,16 @@ import Parallax from 'react-rellax'
 const HomepageHeroImages = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroYoPortfolio: file(relativePath: { eq: "hero_yo-portfolio.png" }) {
+      hero1: file(relativePath: { eq: "hero_frontrow.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      heroFrontrow: file(relativePath: { eq: "hero_frontrow.png" }) {
+      hero2: file(relativePath: { eq: "hero_groups-2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -29,28 +29,28 @@ const HomepageHeroImages = () => {
       <div className="c-homepage-hero__images-column-inner">
         <CSSTransition
           in={true}
-          timeout={4000}
+          timeout={5000}
           classNames="c-homepage-hero__image-1"
           appear
         >
           <div className="c-homepage-hero__image-frame">
             <div className="c-homepage-hero__image-mask">
               <Parallax speed={10}>
-                <Img fluid={data.heroYoPortfolio.childImageSharp.fluid} alt="YoPortfolio website screenshot on a mobile device."/>
+                <Img fluid={data.hero1.childImageSharp.fluid} alt="Frontrow Health website screenshot on a mobile device. Showing a list of medical products available for purchase."/>
               </Parallax>
             </div>
           </div>
         </CSSTransition>
         <CSSTransition
           in={true}
-          timeout={5000}
+          timeout={6000}
           classNames="c-homepage-hero__image-2"
           appear
         >
           <div className="c-homepage-hero__image-frame c-homepage-hero__image-container--alt">
             <div className="c-homepage-hero__image-mask">
               <Parallax speed={6}>
-                <Img fluid={data.heroFrontrow.childImageSharp.fluid} alt="Whitworth University website screenshot on a mobile device with the navigation open."/>
+                <Img fluid={data.hero2.childImageSharp.fluid} alt="Groups recover together website on a mobile device. Showing a care plan for a patient."/>
               </Parallax>
             </div>
           </div>
