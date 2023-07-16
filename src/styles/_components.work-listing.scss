@@ -1,9 +1,16 @@
 .c-work-listing {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
+  &:nth-child(even) {
+    // Stagger the grid horizontally
+    margin-left: var(--v-page-margin);
+  }
+  
   @media (min-width: $bp-sm) {
+    margin-bottom: 2rem;
     &:nth-child(even) {
-      // Stagger the grid
+      // Stagger the grid vertically
+      margin-left: 0;
       padding-top: 4rem;
     }
   }
