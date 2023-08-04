@@ -11,11 +11,11 @@ const SiteHeader = () => (
         <span className="t-paragraph t-meta--small"><a href="mailto:connect@andrew-spencer.com">connect@andrew-spencer.com</a></span>
       </span>
       <ul className="o-delist c-site-footer__list">
-        <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" newTab />
-        <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" newTab />
-        <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" newTab />
-        <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" newTab />
-        <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" newTab />
+        <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" />
+        <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" />
+        <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" />
+        <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" />
+        <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" />
       </ul>
     </div>
     <div className="c-site-footer__secondary">
