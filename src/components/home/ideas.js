@@ -10,8 +10,8 @@ const Ideas = () => (
     <div className="c-ideas__scroll-container">
       <ul className="c-ideas__list">
         <Idea
-          type="Figma Plugin"
-          title="Contrast Description"
+          type="Resource"
+          title="Contrast Description Figma Plugin"
           actionText="Try it out"
           actionLink="https://www.figma.com/community/plugin/1010556985353208247"
           callout
@@ -31,8 +31,8 @@ const Ideas = () => (
           actionLink="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/"
         />
         <Idea
-          type="Figma Resource"
-          title="UI Starter Kit"
+          type="Resource"
+          title="Figma UI Starter Kit"
           actionText="Try it out"
           actionLink="https://www.figma.com/community/file/1179139131585085734"
         />

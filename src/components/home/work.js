@@ -11,13 +11,13 @@ const Work = () => (
       <ul className="u-delist c-work__listings">
         <WorkListing
           title="Harvard Business Review"
-          description="A complete product redesign to help leaders discover and engage with&nbsp;HBR."
+          description="A product overhaul to help business leaders discover and engage with&nbsp;HBR."
           date="2023"
-          tags={["Product Design Lead", "User Research"]}
+          tags={["Product Design", "User Research"]}
         />
         <WorkListing
           title="Groups Recover Together"
-          description="A pivot to a digital platform for an organization providing hope to those recovering from&nbsp;addiction."
+          description="A digital platform to provide hope for those recovering from&nbsp;addiction."
           date="2022"
           tags={["Product Design"]}
         />
@@ -29,9 +29,9 @@ const Work = () => (
         />
         <WorkListing
           title="National Kidney Foundation"
-          description="A website redesign to help patients and professionals find the information they&nbsp;need."
+          description="A website redesign to help patients and professionals find critical&nbsp;info."
           date="2019"
-          tags={["Design", "Frontend Dev"]}
+          tags={["Web Design", "Frontend Dev"]}
           liveSite={"https://www.kidney.org"}
         />
         <WorkListing
@@ -44,17 +44,17 @@ const Work = () => (
           title="Dealer Tire"
           description="A first of its kind product to help car dealerships inspect, track, and sell&nbsp;tires."
           date="2019"
-          tags={["Design", "Frontend Dev"]}
+          tags={["Product Design", "Frontend Dev"]}
         />
         <WorkListing
           title="Frontrow Health"
           description="A zero to MVP launch for a health tech startup delivering a health products marketplace for consumers powered by reviews from&nbsp;providers."
           date="2022"
-          tags={["Product Design"]}
+          tags={["Product Design", "UX Testing"]}
         />
         <WorkListing
           title="Prolegis"
-          description="A variety of features for a startup delivering digital policy tools for Capitol&nbsp;Hill."
+          description="A startup on Capitol&nbsp;Hill delivering valuable, nonpartisan tools for politcal leaders."
           date="2023"
           tags={["Product Design"]}
         />
