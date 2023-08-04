@@ -41,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `keywords`,
-          content: keywords,
+          content: site.siteMetadata.keywords,
         },
         {
           property: `og:title`,
