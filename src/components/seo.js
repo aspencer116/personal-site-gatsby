@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: '/images/opengraph.jpg',
         },
         {
           property: `og:type`,
