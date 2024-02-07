@@ -8,6 +8,10 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: { 'data-colormode': 'system' },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id
