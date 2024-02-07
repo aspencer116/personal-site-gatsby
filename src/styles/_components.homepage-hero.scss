@@ -12,7 +12,7 @@ $bp-hero-lg: 1200px;
   }
 
   @media (min-width: $bp-hero-lg) {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 38.25% 61.75%;
   }
 }
 
@@ -80,14 +80,6 @@ $bp-hero-lg: 1200px;
         rgba(249, 250, 250, 1) 95%);
 
       @media (prefers-color-scheme: dark) {
-        // background: linear-gradient(
-        //   rgba(11, 12, 12, 0), 
-        //   rgba(11, 12, 12, 0.10) 20%,
-        //   rgba(11, 12, 12, 0.6) 50%,
-        //   rgba(11, 12, 12, 0.85) 75%,
-        //   rgba(11, 12, 12, 0.97) 90%,
-        //   rgba(11, 12, 12, 1) 95%);
-
         // Created with Figma easing gradient plugin
         background: linear-gradient( to top,
           #0B0C0C 0%, 
@@ -138,10 +130,9 @@ $bp-hero-lg: 1200px;
 
   border-radius: 9.44vw;
   background: var(--c-white);
-  box-shadow: 0px 36px 70px -12px rgba(0, 0, 0, 0.21),
-              0px 4px 8px 5px rgba(0, 0, 0, 0.04),
-              0px 0px 9px 0px rgba(0, 0, 0, 0.16) inset,
-              -1px -6px 8px -3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 16px 36px 90px -12px rgba(0, 0, 0, 0.20),
+              2px 4px 10px 5px rgba(0, 0, 0, 0.03),
+              3px 6px 9px 0px rgba(0, 0, 0, 0.06);
 
   @media (prefers-color-scheme: dark) {
     background: var(--c-grayscale-2);
@@ -195,7 +186,7 @@ $bp-hero-lg: 1200px;
 .c-homepage-hero__image-mask {
   width: 100%;
   height: 0;
-  padding-bottom: 198%; // 16:9 intrinsic ratio + extra
+  padding-bottom: 203%; // 16:9 intrinsic ratio + extra
   border-radius: 8vw;
   
   position: relative;
@@ -308,8 +299,8 @@ $bp-hero-lg: 1200px;
 .c-homepage-hero__navigation {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
 }
 
 
