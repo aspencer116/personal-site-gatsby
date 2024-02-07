@@ -25,7 +25,7 @@ const SiteHeader = () => (
             © Andrew Spencer {new Date().getFullYear()}.
           </span>
           <span className="c-site-footer__meta t-meta--small">
-            This site is a work in progress <span className="t-micro">(v2.0.1)</span>
+            This site is a work in progress <span className="t-micro">(v2.0.2)</span>
           </span>
         </div>
         <div className="c-site-footer__meta-row">
