@@ -25,10 +25,6 @@
 .c-work__text {
   max-width: 55ch;
   margin-bottom: 4rem;
-  
-  & p:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 
   @media (min-width: $bp-md) {
     grid-column: 3 / 7;

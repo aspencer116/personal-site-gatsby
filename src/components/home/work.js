@@ -5,8 +5,11 @@ const Work = () => (
   <section className="c-work">
       <h2 className="t-title c-work__title">Work</h2>
       <div className="c-work__text">
-        <p className="t-paragraph">Having spent most of my career working at digital agencies, I’ve developed a broad skillset while working alongside some incredibly talented people on a diverse array of&nbsp;projects.</p>
-        <p className="t-paragraph t-subtle">Case studies coming <s>soon</s> someday.</p>
+        <p className="t-paragraph t-paragraph--callout">As a designer who codes, I us an analytical approach to design to deliver engaging, beautiful digital
+          experiences that&nbsp;scale.</p>
+        <p className="t-paragraph">Having worked in the agency world for seven years, I’ve helped launch successful
+          products for companies of all sizes. I’m a generalist designer who bridges the gap between design and code to help teams deliver great&nbsp;products.</p>
+        <p className="t-paragraph t-subtle">Case studies coming soon. Portfolio available by request.</p>
       </div>
       <ul className="u-delist c-work__listings">
         <WorkListing

@@ -161,10 +161,6 @@ $bp-hero-lg: 1200px;
     position: relative;
   }
   
-  @media (min-width: $bp-lg) {
-    padding: 0.75rem;
-  }
-  
   // Hide until revealed with JS transition
   opacity: 0;
 
@@ -178,7 +174,7 @@ $bp-hero-lg: 1200px;
     }
 
     @media (min-width: $bp-hero-lg) {
-      margin-right: 5vw;
+      margin-right: 3.5vw;
     }
   }
 
@@ -199,7 +195,7 @@ $bp-hero-lg: 1200px;
 .c-homepage-hero__image-mask {
   width: 100%;
   height: 0;
-  padding-bottom: 190%; // 16:9 intrinsic ratio + extra
+  padding-bottom: 198%; // 16:9 intrinsic ratio + extra
   border-radius: 8vw;
   
   position: relative;
@@ -207,7 +203,7 @@ $bp-hero-lg: 1200px;
   overflow: hidden;
   
   @media (min-width: $bp-md) {
-    border-radius: clamp(0.5rem, 2.91vw, 3rem);
+    border-radius: clamp(0.5rem, 2.97vw, 3rem);
   }
 }
 
@@ -307,6 +303,13 @@ $bp-hero-lg: 1200px;
 
 .c-homepage-hero__list-item {
   margin-bottom: 0.25rem;
+}
+
+.c-homepage-hero__navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 
