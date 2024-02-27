@@ -1,6 +1,6 @@
 .c-work-listing {
   margin-bottom: 3rem;
-  
+
   @media (min-width: $bp-sm) {
     margin-bottom: 2rem;
     &:nth-child(even) {
@@ -24,14 +24,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  opacity: 0.8;
-  
+
   & span {
     display: block;
     flex-shrink: 0;
     margin-bottom: 0.375rem;
   }
-  
+
   & span:not(:last-child) {
     margin-right: 1rem;
   }

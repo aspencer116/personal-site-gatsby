@@ -7,10 +7,10 @@
 }
 
 .c-case-study__section:not(:last-child) {
-  margin-bottom: calc(var(--v-page-margin) * 2);
+  margin-bottom: var(--space-64);
 
   @media (min-width: $bp-md) {
-    margin-bottom: var(--v-page-margin);
+    margin-bottom: var(--space-128);
   }
 }
 
@@ -40,8 +40,15 @@
     // Adjustments for captions beside images
     @media (min-width: $bp-md) {
       margin-bottom: 0;
-      width: 40%;
+      width: calc(max(22vw, 200px));
       margin-right: 5%;
+    }
+
+    &.reverse {
+      @media (min-width: $bp-md) {
+        margin-left: 5%;
+        margin-right: 0;
+      }
     }
   }
 }
@@ -65,7 +72,7 @@
 }
 
 .c-case-study__sticky-text {
-  @media (min-height: 600px ) {
+  @media (min-height: 600px) {
     position: sticky;
     top: 15vh;
   }
@@ -80,6 +87,6 @@
   margin-bottom: 1.7rem;
 }
 
-.c-case-study .t-heading-2 {
-  margin-top: 2.5rem;
+.c-case-study__full-width-image {
+  margin: 0 calc(-1 * var(--v-page-margin));
 }

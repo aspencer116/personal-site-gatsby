@@ -30,11 +30,11 @@ const CaseStudyHeader = ({ title, subtitle, role, skills, year }) => {
               <span className="t-meta">{ year }</span>
             </div>
             <div className="c-case-study-header__meta-item">
-              <span className="t-meta c-text-light">Role</span>
+              <span className="t-meta color-text-light mr-4">Role</span>
               <span className="t-meta">{ role }</span>
             </div>
             <ul className="o-delist c-case-study-header__meta-item">
-                <li className="t-meta c-text-light">Skills</li>
+                <li className="t-meta color-text-light mr-4">Skills</li>
                 {skills.map((post) =>
                 <li
                   key={post.toString()}
