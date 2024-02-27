@@ -8,7 +8,7 @@ const CaseStudyHeader = ({ title, subtitle, role, skills, year }) => {
         <CSSTransition
           in={true}
           timeout={3000}
-          classNames="transition-case-study-header__text"
+          classNames="transition-case-study-header__heading"
           appear
         >
           <div>
@@ -17,29 +17,36 @@ const CaseStudyHeader = ({ title, subtitle, role, skills, year }) => {
           </div>
         </CSSTransition>
       </div>
-      <div className="c-case-study-header__text">
-        <p className="t-callout c-case-study-header__sub-heading">{ subtitle }</p>
-        <div className="c-case-study-header__meta">
-          <div className="c-case-study-header__meta-item">
-            <span className="t-meta">{ year }</span>
+      <CSSTransition
+        in={true}
+        timeout={3000}
+        classNames="transition-case-study-header__text"
+        appear
+      >
+        <div className="c-case-study-header__text">
+          <p className="t-callout c-case-study-header__sub-heading">{ subtitle }</p>
+          <div className="c-case-study-header__meta">
+            <div className="c-case-study-header__meta-item">
+              <span className="t-meta">{ year }</span>
+            </div>
+            <div className="c-case-study-header__meta-item">
+              <span className="t-meta c-text-light">Role</span>
+              <span className="t-meta">{ role }</span>
+            </div>
+            <ul className="o-delist c-case-study-header__meta-item">
+                <li className="t-meta c-text-light">Skills</li>
+                {skills.map((post) =>
+                <li
+                  key={post.toString()}
+                  className="t-meta"
+                >
+                  { post }
+                </li>
+              )}
+            </ul>
           </div>
-          <div className="c-case-study-header__meta-item">
-            <span className="t-meta c-text-light">Role</span>
-            <span className="t-meta">{ role }</span>
-          </div>
-          <ul className="o-delist c-case-study-header__meta-item">
-              <li className="t-meta c-text-light">Skills</li>
-              {skills.map((post) =>
-              <li
-                key={post.toString()}
-                className="t-meta"
-              >
-                { post }
-              </li>
-            )}
-          </ul>
         </div>
-      </div>
+      </CSSTransition>
     </div>
   )
 }

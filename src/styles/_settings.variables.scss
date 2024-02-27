@@ -6,7 +6,7 @@
   --v-page-margin: 6.5vw;
   --v-max-width: #{$bp-xl};
 
-  @media(min-width: $bp-md) {
+  @media (min-width: $bp-md) {
     --v-page-margin: 10vw;
   }
 
@@ -14,19 +14,18 @@
   --v-transition-time: 300ms;
   --v-transition-time-long: 500ms;
 
-
-  --v-transition-function: cubic-bezier(.04,.49,.32,.96);
+  --v-transition-function: cubic-bezier(0.04, 0.49, 0.32, 0.96);
   --v-transition-function-easy: cubic-bezier(0.36, 0.2, 0.2, 0.95);
-  --v-transition-function-easy-in: cubic-bezier(.06,.5,.2,.95);
+  --v-transition-function-easy-in: cubic-bezier(0.06, 0.5, 0.2, 0.95);
 
   --v-font-display: "NEXT-pan", -apple-system, sans-serif;
   --v-font-body: "Segment", -apple-system, sans-serif;
 
-  --space-4: 0.125rem;
-  --space-8: 0.25rem;
-  --space-16: 0.5rem;
-  --space-24: 0.75rem;
-  --space-32: 0.75rem;
-  --space-40: 0.75rem;
-  --space-64: 0.75rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-64: 4rem;
 }
