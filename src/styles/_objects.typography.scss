@@ -102,21 +102,6 @@
   }
 }
 
-.t-callout {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 72px;
-  line-height: 76px;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--c-black);
-  
-  @media (min-width: $bp-md) {
-    font-size: 96px;
-    line-height: 100px;
-  }
-}
-
 .t-paragraph {
   @include paragraph-base;
 }
@@ -126,6 +111,18 @@
 
   @media (prefers-color-scheme: dark) {
     color: var(--c-black);
+  }
+}
+
+.t-callout {
+  color: var(--c-black);
+  font-family: var(--v-font-display);
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  @media (min-width: $bp-md) {
+    font-size: 2rem;
   }
 }
 

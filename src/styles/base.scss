@@ -27,10 +27,14 @@
   @import "elements.reset";
 
   // OBJECTS
+  @import "objects.general";
   @import "objects.grid";
   @import "objects.page-layout";
+  @import "objects.spacing";
   @import "objects.typography";
-  @import "objects.general";
+
+  // OBJECTS - has to be after typography
+  @import "objects.colors";
 
   // COMPONENTS
   @import "components.button";
