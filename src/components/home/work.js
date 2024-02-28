@@ -25,7 +25,7 @@ const Work = () => (
         description="A product overhaul to help business leaders discover and engage with&nbps;HBR."
         date="2023"
         tags={["Product Design", "User Research"]}
-        caseStudy="/case-study/hbr"
+        // caseStudy="/case-study/hbr"
       />
       <WorkListing
         title="Groups Recover Together"

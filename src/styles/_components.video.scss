@@ -14,6 +14,7 @@
 
 .c-video {
   width: 100%;
+  background-color: var(--c-white);
 
   @media (prefers-reduced-motion: reduce) {
     display: none;
