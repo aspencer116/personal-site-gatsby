@@ -1,0 +1,73 @@
+.c-video-container {
+  margin: 0 calc(-1 * var(--v-page-margin));
+  position: relative;
+  overflow: hidden;
+
+  @media (hover: hover) {
+    &:hover .c-video-controls,
+    &:focus-within .c-video-controls {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.c-video {
+  width: 100%;
+
+  @media (prefers-reduced-motion: reduce) {
+    display: none;
+  }
+}
+.c-video.reduced-motion {
+  display: none;
+
+  @media (prefers-reduced-motion: reduce) {
+    display: block;
+  }
+}
+
+.c-video-controls {
+  position: absolute;
+  z-index: 999;
+  bottom: 0px;
+  right: 0px;
+  padding: 0.75rem;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  border: none;
+  transition: all var(--v-transition-time) var(--v-transition-function-easy);
+
+  @media (prefers-reduced-motion: reduce) {
+    // the browser default video controls will display if the user prefers reduced motion
+    display: none;
+  }
+  @media (min-width: $bp-md) {
+    padding: 1rem;
+  }
+}
+
+.pause-icon {
+  display: block;
+}
+.play-icon {
+  display: none;
+}
+
+.paused {
+  // If the video is paused, show the pause icon
+  & .pause-icon {
+    display: none;
+  }
+  & .play-icon {
+    display: block;
+  }
+}
+
+.c-video-controls {
+  // Hide the controls outside of the frame IF the user can hover
+  @media (hover: hover) {
+    bottom: -80px;
+    right: -80px;
+  }
+}

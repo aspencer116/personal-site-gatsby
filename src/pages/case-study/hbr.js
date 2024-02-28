@@ -6,8 +6,10 @@ import Helmet from "react-helmet"
 import Parallax from "react-rellax"
 import { CSSTransition } from "react-transition-group"
 import CaseStudyHeader from "../../components/case-study/caseStudyHeader"
+import CaseStudyVideo from "../../components/case-study/caseStudyVideo"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import videoLightDark from "../../images/hbr/HBR_Light-Dark_compressed.mp4"
 
 import Img from "gatsby-image"
 
@@ -276,6 +278,11 @@ const HBR = () => {
             />
           </div>
         </div>
+
+        <CaseStudyVideo
+          videoURL={videoLightDark}
+          ariaLabel="Screenshots of the HBR mobile app that switch between light and dark mode"
+        />
 
         <div className="c-case-study__section c-case-study__section--2-column">
           <div className="c-case-study__image-container">
