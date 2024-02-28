@@ -179,20 +179,26 @@ const HBR = () => {
       <div className="c-case-study">
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph t-paragraph--callout">
-            The time had come to overhaul the Harvard Business Review mobile
-            app—a full re-envisining and a chance to bring its design up to par
-            with the rest of the HBR brand.
+            The Harvard Business Review knew the time had come to overhaul their
+            mobile app. The goal was a full re-envisioning of the experience to
+            engage a younger audience and align the look and feel of the app
+            with the HBR brand.
           </p>
         </div>
         <div className="o-text-width-limiter c-case-study__section">
-          <h2 className="t-heading-1">Where we started</h2>
+          <h2 className="t-heading-1">How it started</h2>
           <p className="t-paragraph">
-            From the beginning our objective was clear, design a mobile
-            experience for HBR that is worth of the notoriety the brand caries.
-            It was important that the app would help HBR engage with a younger
-            audience. As a member of the team from{" "}
-            <a href="https://thoughtbot.com/">thougthbot</a> called on to help
-            meet this goal, I was excited to dive in.
+            The Harvard Business Review called on{" "}
+            <a href="https://thoughtbot.com/">thoughtbot</a>, the agency where I
+            worked, to help them build a new mobile app with a clear
+            objective—design a new app that was worthy of the HBR brand. An MVP
+            that didn’t look or feel like an MVP.
+          </p>
+          <p className="t-paragraph">
+            We knew we had to nail the fundamentals of a media app with features
+            like browsing and reading articles, but we wanted to also make sure
+            we could engage with the audience in a way that was personal and
+            habit building.
           </p>
         </div>
 
@@ -229,9 +235,16 @@ const HBR = () => {
 
         <div className="c-case-study__section c-case-study__section--full-width-image">
           <div className="c-case-study__caption">
-            <h2 className="o-columns__half t-heading-2">
-              Listen: to the client and the user
-            </h2>
+            <h2 className="o-columns__half t-heading-2">My role</h2>
+            <p className="t-paragraph">
+              My role as the lead product designer was broad. I facilitated a
+              design sprint, ran user interviews, orchestrated the UX of the
+              app, collaborated with the HBR design team on a UI direction, and
+              even jumped into code to help make it all a reality. This was a
+              team effort every step of the way and I worked closely with
+              another thoughtbot designer, two HBR designers, and a talented
+              team of developers and product managers.
+            </p>
             <p className="t-paragraph">
               To kickoff the work on a new app, thoughtbot ran a design sprint
               with the HBR team to gain better understanding of the work that

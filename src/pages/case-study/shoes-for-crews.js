@@ -1,11 +1,11 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import { withPrefix } from "gatsby"
 import Helmet from "react-helmet"
 import CaseStudyHeaderShoesForCrews from "../../components/case-study/CaseStudyHeaderShoesForCrews"
-import { withPrefix } from "gatsby"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 import Img from "gatsby-image"
 
@@ -55,8 +55,8 @@ const ShoesForCrews = () => {
       <CaseStudyHeaderShoesForCrews
         title="Shoes For Crews"
         subtitle="A leader in slip resistant footwear needed a website overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
-        tags={["Web Design", "Frontend Dev", "E-commerce"]}
         year="2016"
+        skills={["Web Design", "Frontend Dev", "E-commerce"]}
         imageAltText="Screenshots of the Shoes For Crews website on a swirly colored background."
       />
 
