@@ -3,7 +3,7 @@ import React from "react"
 
 import { withPrefix } from "gatsby"
 import Helmet from "react-helmet"
-import CaseStudyHeaderShoesForCrews from "../../components/case-study/CaseStudyHeaderShoesForCrews"
+import CaseStudyHeader from "../../components/case-study/caseStudyHeader"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
@@ -52,7 +52,7 @@ const ShoesForCrews = () => {
       </Helmet>
       <SEO title="Shoes for Crews Case Study" />
 
-      <CaseStudyHeaderShoesForCrews
+      <CaseStudyHeader
         title="Shoes For Crews"
         subtitle="A leader in slip resistant footwear needed a website overhaul to support multiple brands and a cohesive desktop to mobile&nbsp;experience."
         year="2016"

@@ -4,7 +4,7 @@ const CaseStudyVideo = ({ videoURL, ariaLabel }) => {
   const toggleVideoKeyboard = e => {
     const target = e.currentTarget
 
-    if (target.key == " " || target.key == "Enter") {
+    if (target.key === " " || target.key === "Enter") {
       target.preventDefault(target)
       toggleVideo(target)
     }
@@ -31,7 +31,6 @@ const CaseStudyVideo = ({ videoURL, ariaLabel }) => {
         class="c-video-controls"
         onClick={toggleVideo}
         onKeyDown={toggleVideoKeyboard}
-        role="button"
         aria-pressed="false"
         aria-label="Pause video"
       >
