@@ -1,11 +1,11 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import { withPrefix } from "gatsby"
 import Helmet from "react-helmet"
 import CaseStudyHeader from "../../components/case-study/caseStudyHeader"
-import { withPrefix } from "gatsby"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 import Img from "gatsby-image"
 
@@ -85,8 +85,8 @@ const YoPortfolio = () => {
       <CaseStudyHeader
         title="YoPortfolio"
         subtitle="A startup investment product needed a playful brand and UI design to launch them into the future."
-        tags={["Branding", "Product Design", "Animation"]}
         year="2018"
+        skills={["Branding", "Product Design", "Animation"]}
         image="images/casestudy/yo-portfolio_header.jpg"
         imageAltText="Screenshots of the YoPortfolio website"
       />
