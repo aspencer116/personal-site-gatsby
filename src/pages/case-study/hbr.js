@@ -209,10 +209,9 @@ const HBR = () => {
           </div>
           <div className="c-case-study__caption reverse">
             <div className="c-case-study__sticky-text">
-              <p className="t-paragraph">
-                The existing HBR mobile app did not reflect the brand standards
-                of HBR nor did in have a strong feature-set that resonated
-                with users.
+              <p className="t-paragraph t-paragraph--small">
+                The existing HBR app did not reflect their brand standards nor
+                did in have a strong feature-set that resonated with users.
               </p>
             </div>
           </div>

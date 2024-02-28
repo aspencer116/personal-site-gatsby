@@ -7,11 +7,7 @@
 }
 
 .c-case-study__section:not(:last-child) {
-  margin-bottom: var(--space-64);
-
-  @media (min-width: $bp-md) {
-    margin-bottom: var(--space-128);
-  }
+  margin-bottom: var(--space-xl);
 }
 
 .c-case-study__section--2-column {

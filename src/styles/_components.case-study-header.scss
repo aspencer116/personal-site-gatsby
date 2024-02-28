@@ -13,7 +13,7 @@
   &__secondary {
     position: relative;
     overflow: hidden;
-    padding: var(--space-40) calc(var(--v-page-margin) / 2) 0;
+    padding: var(--space-mdd) calc(var(--v-page-margin) / 2) 0;
 
     & div {
       transform: translateY(4rem);
@@ -49,7 +49,7 @@
     flex-direction: column;
     gap: 0.5rem;
     position: relative;
-    padding-top: var(--space-32);
+    padding-top: var(--space-md);
 
     @media (min-width: $bp-md) {
       padding-top: 0;

@@ -17,17 +17,17 @@
   --v-font-display: "NEXT-pan", -apple-system, sans-serif;
   --v-font-body: "Segment", -apple-system, sans-serif;
 
-  --space-4: 0.25rem;
-  --space-8: 0.5rem;
-  --space-16: 1rem;
-  --space-24: 1.5rem;
-  --space-32: 2rem;
-  --space-40: 2.5rem;
-  --space-64: 4rem;
-  --space-96: 6rem;
-  --space-128: 8rem;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-smm: 1.5rem;
+  --space-md: 2rem;
+  --space-mdd: 2.5rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
 
   @media (min-width: $bp-md) {
     --v-page-margin: 10vw;
+    --space-xl: 8rem;
   }
 }

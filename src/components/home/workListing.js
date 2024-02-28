@@ -47,7 +47,7 @@ const WorkListing = ({
         </a>
       )}
       {caseStudy && (
-        <Link className="c-button mt-16" to={caseStudy}>
+        <Link className="c-button mt-sm" to={caseStudy}>
           Case Study
         </Link>
       )}

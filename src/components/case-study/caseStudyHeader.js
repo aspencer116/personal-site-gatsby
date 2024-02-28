@@ -12,7 +12,7 @@ const CaseStudyHeader = ({ title, subtitle, role, skills, year }) => {
           appear
         >
           <div>
-            <span className="t-meta o-block mb-24">Case Study</span>
+            <span className="t-meta o-block mb-smm">Case Study</span>
             <h1 className="t-title">{ title }</h1>
           </div>
         </CSSTransition>
@@ -30,11 +30,11 @@ const CaseStudyHeader = ({ title, subtitle, role, skills, year }) => {
               <span className="t-meta">{ year }</span>
             </div>
             <div className="c-case-study-header__meta-item">
-              <span className="t-meta color-text-light mr-4">Role</span>
+              <span className="t-meta color-text-light mr-xxs">Role</span>
               <span className="t-meta">{ role }</span>
             </div>
             <ul className="o-delist c-case-study-header__meta-item">
-                <li className="t-meta color-text-light mr-4">Skills</li>
+                <li className="t-meta color-text-light mr-xxs">Skills</li>
                 {skills.map((post) =>
                 <li
                   key={post.toString()}
