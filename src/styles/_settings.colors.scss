@@ -2,23 +2,22 @@
 // on the application either can be used.
 
 // Defined as SASS variables
-$c-highlight: #EE9833;
+$c-highlight: #ee9833;
 
-$c-white: #FFFFFF;
-$c-grayscale-1: #F9FAFA;
-$c-grayscale-1-rgb: rgb(249, 250, 0);
-$c-grayscale-2: #E1E2E3;
+$c-white: #ffffff;
+$c-grayscale-1: #f9fafa;
+$c-grayscale-1-rgb: 249, 250, 250;
+$c-grayscale-2: #e1e2e3;
 $c-grayscale-3: #909398;
-$c-grayscale-4: #5F6569;
-$c-grayscale-5: #2E3134;
-$c-grayscale-6: #1A1E1E;
-$c-black: #0B0C0C;
-
+$c-grayscale-4: #5f6569;
+$c-grayscale-5: #2e3134;
+$c-grayscale-6: #1a1e1e;
+$c-black: #0b0c0c;
 
 // Devinded as root level CSS variables
 :root {
   --c-highlight: #{$c-highlight};
-  
+
   --c-grayscale-1: #{$c-grayscale-1};
   --c-grayscale-1-rgb: #{$c-grayscale-1-rgb};
   --c-grayscale-2: #{$c-grayscale-2};
@@ -34,6 +33,7 @@ $c-black: #0B0C0C;
 
   @media (prefers-color-scheme: dark) {
     --c-grayscale-1: #{$c-black};
+    --c-grayscale-1-rgb: 11, 12, 12;
     --c-grayscale-2: #{$c-grayscale-6};
     --c-grayscale-3: #{$c-grayscale-4};
     --c-grayscale-4: #{$c-grayscale-3};

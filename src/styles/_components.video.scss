@@ -1,20 +1,32 @@
+$video-height-mobile: 24rem;
+
 .c-video-container {
   margin: 0 calc(-1 * var(--v-page-margin));
   position: relative;
   overflow: hidden;
 
+  @media (max-width: $bp-md) {
+    height: $video-height-mobile;
+  }
+
   @media (hover: hover) {
     &:hover .c-video-controls,
     &:focus-within .c-video-controls {
-      bottom: 0;
-      right: 0;
+      bottom: 0.75rem;
+      right: 0.5rem;
+      opacity: 1;
     }
   }
 }
 
 .c-video {
   width: 100%;
+  object-fit: cover;
   background-color: var(--c-white);
+
+  @media (max-width: $bp-md) {
+    height: $video-height-mobile;
+  }
 
   @media (prefers-reduced-motion: reduce) {
     display: none;
@@ -31,13 +43,14 @@
 .c-video-controls {
   position: absolute;
   z-index: 999;
-  bottom: 0px;
-  right: 0px;
   padding: 0.75rem;
-  background-color: var(--c-white);
+  background-color: rgba(var(--c-grayscale-1-rgb), 0.85);
+  backdrop-filter: blur(1rem) saturate(80%);
+  border-radius: 50%;
   color: var(--c-black);
   border: none;
   transition: all var(--v-transition-time) var(--v-transition-function-easy);
+  cursor: pointer;
 
   @media (prefers-reduced-motion: reduce) {
     // the browser default video controls will display if the user prefers reduced motion
@@ -45,6 +58,11 @@
   }
   @media (min-width: $bp-md) {
     padding: 1rem;
+  }
+
+  &:hover {
+    background-color: var(--c-black);
+    color: var(--c-grayscale-1);
   }
 }
 
@@ -68,7 +86,8 @@
 .c-video-controls {
   // Hide the controls outside of the frame IF the user can hover
   @media (hover: hover) {
-    bottom: -80px;
-    right: -80px;
+    bottom: -1rem;
+    right: 0.5rem;
+    opacity: 0;
   }
 }

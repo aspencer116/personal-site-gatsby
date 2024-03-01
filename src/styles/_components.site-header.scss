@@ -1,23 +1,25 @@
 .c-site-header {
   // Variables for elements inside the navigation
-  --c-logo-color: var(--c-black); // This color will be reversed with the blend mode
+  --c-logo-color: var(
+    --c-black
+  ); // This color will be reversed with the blend mode
 
   position: fixed;
   z-index: 888; // Position it above all other content
   width: 100%;
 
   // Backgroud blur effect
-  background: rgba(#F9FAFA, 0.88);
+  background: rgba(var(--c-grayscale-1-rgb), 0.9);
   backdrop-filter: blur(1rem) saturate(80%);
 
   @media (prefers-color-scheme: dark) {
-    background: rgba(#0B0C0C, 0.77);
+    background: rgba(var(--c-grayscale-1-rgb), 0.77);
     backdrop-filter: blur(2rem) saturate(80%);
   }
 
   // Border bottom
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: calc(var(--v-page-margin) / 2);
     right: calc(var(--v-page-margin) / 2);
@@ -25,9 +27,9 @@
     height: 0.0625rem;
     background: var(--c-grayscale-2);
 
-    @media(min-width: $bp-md) {
+    @media (min-width: $bp-md) {
       left: calc(var(--v-page-margin) / 4);
-    right: calc(var(--v-page-margin) / 4);
+      right: calc(var(--v-page-margin) / 4);
     }
   }
 }
@@ -37,7 +39,7 @@
   justify-content: space-between;
   margin: 0.875rem var(--v-page-margin);
 
-  @media(min-width: $bp-md) {
+  @media (min-width: $bp-md) {
     margin: 1.125rem calc(var(--v-page-margin) / 2);
   }
 }
@@ -60,11 +62,11 @@
   width: $icon-width-sm;
   margin-right: 1rem;
 
-  @media(min-width: $bp-sm) {
+  @media (min-width: $bp-sm) {
     width: $icon-width-lg;
   }
 
-  @media(min-width: $bp-md) {
+  @media (min-width: $bp-md) {
     // Transformation to "hang" the logo icon to the left of the layout grid
     transform: translateX(calc(-#{$icon-width-lg} / 2));
     margin-right: calc((var(--v-page-margin) / 2) - #{$icon-width-lg});
@@ -78,22 +80,24 @@
 
   position: relative;
 
-  transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
+  transition: all var(--v-transition-time-fast) 75ms
+    var(--v-transition-function);
 
-  @media(min-width: $bp-sm) {
+  @media (min-width: $bp-sm) {
     font-size: 1.25rem;
   }
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: -0.5rem;
     left: -0.5rem;
     right: -0.5rem;
     bottom: -0.5rem;
     z-index: -1;
 
-    transition: all var(--v-transition-time-fast) 75ms var(--v-transition-function);
+    transition: all var(--v-transition-time-fast) 75ms
+      var(--v-transition-function);
   }
 }
 
