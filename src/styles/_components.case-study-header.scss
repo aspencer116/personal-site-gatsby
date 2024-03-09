@@ -5,7 +5,7 @@
     padding: 6rem var(--v-page-margin) 0;
     min-height: 80vh;
 
-    @media (min-width: $bp-md) {
+    @media (min-width: $bp-lg) {
       padding: 6rem var(--v-page-margin) 0;
     }
   }
@@ -26,7 +26,7 @@
     flex-direction: column;
     padding-bottom: 2rem;
 
-    @media (min-width: $bp-md) {
+    @media (min-width: $bp-lg) {
       justify-content: center; // Center the text vertically
       padding-bottom: 0;
     }
@@ -37,21 +37,21 @@
   }
 
   &__text {
-    @media (min-width: $bp-md) {
+    @media (min-width: $bp-lg) {
       display: grid;
-      gap: 1rem;
-      grid-template-columns: auto auto;
+      gap: 2rem;
+      grid-template-columns: 1fr auto;
     }
   }
 
   &__meta {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.675rem;
     position: relative;
     padding-top: var(--space-md);
 
-    @media (min-width: $bp-md) {
+    @media (min-width: $bp-lg) {
       padding-top: 0;
       align-self: end;
       align-items: flex-end;
@@ -61,16 +61,21 @@
 
   &__meta-item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-
-    @media (min-width: $bp-md) {
-      justify-content: flex-end;
-    }
+    gap: var(--space-sm);
+    justify-content: space-between;
+    width: 100%;
 
     & li {
       margin-bottom: 0;
     }
+  }
+
+  &__meta-list-item {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: var(--space-xs);
+    row-gap: var(--space-xxs);
+    flex-wrap: wrap;
   }
 }
 
