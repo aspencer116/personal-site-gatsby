@@ -118,7 +118,7 @@ const HBR = () => {
             The Harvard Business Review called on <a href="https://thoughtbot.com/">thoughtbot</a>, the agency where I work, to help them build a new mobile app with a clear objective—design a new app that was worthy of the HBR brand. An MVP that didn’t look or feel like an MVP.
           </p>
           <p className="t-paragraph">
-          We knew we had to nail the fundamentals of a media app with features like browsing and reading articles, but we wanted to also make sure we could engage with the audience in a way that was personal and habit-building.
+            We knew we had to nail the fundamentals of a media app with features like browsing and reading articles, but we wanted to also make sure we could engage with the audience in a way that was personal and habit-building.
           </p>
         </div>
 
@@ -183,22 +183,32 @@ const HBR = () => {
           <p className="t-paragraph">
             I proposed a structure for the design team that catered to everyone’s strengths and allowed us to work effectively. The HBR designers owned the UI since they knew the brand in and out, and the thoughtbot designers owned the UX. We collaborated often to share ideas and eventually integrated our work into a single product vision.
           </p>
+          <p className="t-paragraph">
+            To help ensure the app would be well supported in the long term, I was also able to mentor one of the HBR designers who took over the product design responsibilities once our engagement was over.
+          </p>
         </div>
 
         [ brand applied to UX ]
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
-            The thoughtbot designers also jumped into the React Native code to help developers refine UI details and close the long feedback loops that often exist between design and engineering teams. This allowed us to move faster while still upholding a high visual quality.
+            The thoughtbot designers also jumped into the React Native code to help developers refine UI details and close the long feedback loops that often exist between design and engineering teams. This allowed us to move faster while still upholding a high visual quality.
           </p>
         </div>
 
         <div className="o-text-width-limiter c-case-study__section">
           <h2 className="t-heading-1">Results</h2>
           <p className="t-paragraph">
-            At the end of the project, the HBR team said this was the best experience they had ever had working with outside consultants. We also were able to deliver and launch an MVP that doesn’t look like an MVP—something all of the designers appreciated.
+          In less than a year we went from a rough concept to launching in the Android and iOS app stores! We were able to deliver an MVP that doesn’t look or feel like an MVP. Feedback from the HBR team was extremely positive as we helped them not only launch a great app but also mentored their team.
           </p>
-          [ quote from HBR ]
+        </div>
+        <div className="o-text-width-limiter c-case-study__section">
+          <p className="t-paragraph t-paragraph--callout">
+            “When I look at the product right now, it's polished and complete, <strong>it sets a high design standard</strong>. I understand some things are not perfect but in comparison to what I was assuming, this is so much more polished and done and complete.”
+          </p>
+          <p className="t-paragraph t-paragraph--small">
+            — HBR's Director of User Experience and Product Design
+          </p>
         </div>
       </div>
     </Layout>
