@@ -37,6 +37,27 @@ const HBR = () => {
           }
         }
       }
+      HBRdesignsprint: file(relativePath: { eq: "hbr/HBR_design-sprint.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRhomepageiteration: file(relativePath: { eq: "hbr/HBR_homepage_iteration.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRusertest: file(relativePath: { eq: "hbr/HBR_user-test.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -107,42 +128,60 @@ const HBR = () => {
         />
         
         <div className="o-text-width-limiter c-case-study__section">
-          <h2 className="t-heading-1">My role</h2>
+          <h2 className="t-heading-1">The journey</h2>
           <p className="t-paragraph">
-            My role as the lead product designer was broad. I facilitated a design sprint, ran user interviews, orchestrated the UX of the app, collaborated with the HBR design team on a UI direction, and even jumped into code to help make it all a reality. This was a team effort every step of the way and I worked closely with another thoughtbot designer, two HBR designers, and a talented team of developers and product managers.
+            Designing and building great products is never a straight line. In my role as the lead product designer on the project I had a number of responsibilities through the twists and turns of the project. I led a design sprint, ran user interviews, orchestrated the UX of the app, collaborated with the HBR design team on the UI, and even jumped into code. This was a team effort every step of the way. I worked closely with another thoughtbot designer, two HBR designers, and a talented team of developers and product managers.
           </p>
         </div>
 
         <div className="c-case-study__section c-case-study__section--2-column">
           <div className="c-case-study__image-container">
             <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="Sketchbook of YoPortfolio brand ideas opened and held in a hand."
+              fluid={data.HBRdesignsprint.childImageSharp.fluid}
+              alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
               class="c-case-study__image"
             />
           </div>
-          <div className="c-case-study__caption reverse">
+          <div className="c-case-study__caption">
             <div className="c-case-study__sticky-text">
-              <p className="t-paragraph t-paragraph--small">
-                To kick off the work on a new app, thoughtbot ran a design sprint with the HBR team to gain a better understanding of the work that had been done up to this point and what different internal stakeholders envisioned for the new app.
+              <p className="t-paragraph">
+                In the first week of the engagement between thoughtbot and HBR, I helped run a design sprint that allowed us to quickly explore ideas and align on a vision for the new app.
               </p>
             </div>
           </div>
         </div>
 
-        [ image of user testing flows ]
-
-        <div className="o-text-width-limiter c-case-study__section">
-          <p className="t-paragraph">
-            The design team facilitated user interviews with people in our target audience to better understand the features that were important to our users and how we should structure the application.
-          </p>
+        <div className="c-case-study__section c-case-study__section--2-column reverse">
+          <div className="c-case-study__image-container">
+            <Img
+              fluid={data.HBRusertest.childImageSharp.fluid}
+              alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
+              class="c-case-study__image"
+            />
+          </div>
+          <div className="c-case-study__caption">
+            <div className="c-case-study__sticky-text">
+              <p className="t-paragraph">
+                We prototyped and user tested early lo-fi designs to better understand the features that were important to users.
+              </p>
+            </div>
+          </div>
         </div>
 
-        [ iterations of the homescreen ]
+        <div className="c-case-study__section c-case-study__full-width-image">
+          <Img
+            fluid={data.HBRhomepageiteration.childImageSharp.fluid}
+            alt="Iteration of the design of the HBR mobile app homepage. Showing different layouts and concepts."
+            class="c-case-study__image"
+          />
+        </div>
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
-            User testing helped us validate, or invalidate, our assumptions about how the navigation should be structured, what content should be on the home screen, and what features would help users build a habit of interacting with the app.
+            User testing provided invaluable data that caused us to rethink our assumptions about what features would be valuable and how to structure the app. We iterated on the design of the app as we gathered more data from user testing.
+          </p>
+          <p className="t-paragraph">
+            I proposed a structure for the design team that catered to everyone’s strengths and allowed us to work effectively. The HBR designers owned the UI since they knew the brand in and out, and the thoughtbot designers owned the UX. We collaborated often to share ideas and eventually integrated our work into a single product vision.
           </p>
         </div>
 
@@ -150,10 +189,7 @@ const HBR = () => {
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
-            As Lead Product Designer, I proposed a team structure and process that allowed the team to work effectively and cater to everyone’s strengths. The HBR design team owned the UI since they knew the brand in and out, and thoughtbot designers owned the UX since we had more experience shipping products. We all collaborated often to share ideas and eventually integrated our work into a single product vision.
-          </p>
-          <p className="t-paragraph">
-            The thoughtbot designers also jumped into the React Native code to help developers refine UI details and close the long feedback loops that often exist between design and engineering teams. This allowed us to move faster while still upholding a high visual quality.
+            The thoughtbot designers also jumped into the React Native code to help developers refine UI details and close the long feedback loops that often exist between design and engineering teams. This allowed us to move faster while still upholding a high visual quality.
           </p>
         </div>
 
@@ -163,151 +199,6 @@ const HBR = () => {
             At the end of the project, the HBR team said this was the best experience they had ever had working with outside consultants. We also were able to deliver and launch an MVP that doesn’t look like an MVP—something all of the designers appreciated.
           </p>
           [ quote from HBR ]
-        </div>
-
-
-
-        <div className="o-text-width-limiter c-case-study__section">
-          <p className="t-paragraph t-paragraph--callout">
-            The Harvard Business Review knew the time had come to overhaul their
-            mobile app. The goal was a full re-envisioning of the experience to
-            engage a younger audience and align the look and feel of the app
-            with the HBR brand.
-          </p>
-        </div>
-        <div className="o-text-width-limiter c-case-study__section">
-          <h2 className="t-heading-1">How it started</h2>
-          <p className="t-paragraph">
-            The Harvard Business Review called on{" "}
-            <a href="https://thoughtbot.com/">thoughtbot</a>, the agency where I
-            worked, to help them build a new mobile app with a clear
-            objective—design a new app that was worthy of the HBR brand. An MVP
-            that didn’t look or feel like an MVP.
-          </p>
-          <p className="t-paragraph">
-            We knew we had to nail the fundamentals of a media app with features
-            like browsing and reading articles, but we wanted to also make sure
-            we could engage with the audience in a way that was personal and
-            habit building.
-          </p>
-        </div>
-
-        <div className="c-case-study__section c-case-study__section--2-column">
-          <div className="c-case-study__image-container">
-            <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="Sketchbook of YoPortfolio brand ideas opened and held in a hand."
-              class="c-case-study__image"
-            />
-            <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="YoPortfolio brand sketches."
-              class="c-case-study__image"
-            />
-          </div>
-          <div className="c-case-study__caption reverse">
-            <div className="c-case-study__sticky-text">
-              <p className="t-paragraph t-paragraph--small">
-                The existing HBR app did not reflect their brand standards nor
-                did in have a strong feature-set that resonated with users.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="c-case-study__section c-case-study__full-width-image">
-          <Img
-            fluid={data.HBRcomponents.childImageSharp.fluid}
-            alt="Various YoPortfolio brand explorations with different design styles."
-            class="c-case-study__image"
-          />
-        </div>
-
-        <div className="c-case-study__section c-case-study__section--full-width-image">
-          <div className="c-case-study__caption">
-            <h2 className="o-columns__half t-heading-2">My role</h2>
-            <p className="t-paragraph">
-              My role as the lead product designer was broad. I facilitated a
-              design sprint, ran user interviews, orchestrated the UX of the
-              app, collaborated with the HBR design team on a UI direction, and
-              even jumped into code to help make it all a reality. This was a
-              team effort every step of the way and I worked closely with
-              another thoughtbot designer, two HBR designers, and a talented
-              team of developers and product managers.
-            </p>
-            <p className="t-paragraph">
-              To kickoff the work on a new app, thoughtbot ran a design sprint
-              with the HBR team to gain better understanding of the work that
-              had been done up to this point and what different internal
-              stakeholders envisioned for the new app.
-            </p>
-            <p className="t-paragraph">
-              We then conducted numerous rounds of user testing with early
-              prototypes of the app. This helped inform the features we
-              ultimately decided to prioritize building for the MVP.
-            </p>
-          </div>
-          <div className="c-case-study__full-width-image">
-            <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="Various YoPortfolio brand explorations with different design styles."
-              class="c-case-study__image"
-            />
-          </div>
-        </div>
-
-        <div className="o-text-width-limiter c-case-study__section">
-          <h2 className="t-heading-2">Brand meets product</h2>
-          <p className="t-paragraph">
-            Copy about bringing the HBR brand into the mobile product. Copy
-            about bringing the HBR brand into the mobile product. Copy about
-            bringing the HBR brand into the mobile product. Copy about bringing
-            the HBR brand into the mobile product.
-          </p>
-        </div>
-
-        <div className="c-case-study__section c-case-study__section--2-column">
-          <div className="c-case-study__caption">
-            <p className="t-paragraph">
-              Copy about an image. Copy about an image. Copy about an image.
-              Copy about an image. Copy about an image.
-            </p>
-          </div>
-          <div className="c-case-study__image-container">
-            <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="Various design elements of YoPortfolio shown on a monitor screen."
-              class="c-case-study__image"
-            />
-          </div>
-        </div>
-
-        <div className="c-case-study__section c-case-study__section--2-column">
-          <div className="c-case-study__image-container">
-            <Img
-              fluid={data.HBRcomponents.childImageSharp.fluid}
-              alt="Various design elements of YoPortfolio shown on a monitor screen."
-              class="c-case-study__image"
-            />
-          </div>
-          <div className="c-case-study__caption">
-            <p className="t-paragraph">
-              Copy about an image. Copy about an image. Copy about an image.
-              Copy about an image. Copy about an image.
-            </p>
-          </div>
-        </div>
-
-        <div className="o-text-width-limiter c-case-study__section">
-          <h2 className="t-heading-2">Build</h2>
-          <p className="t-paragraph">
-            Design and engineering worked closely to ensure the final built
-            product reflected the Figma designs down to the smallest detail.
-            This close collaboration ensured that if the scope of a feature
-            changed or a specific UI state needed to be designed, those changes
-            could be handled quickly by designers and developers working
-            side-by-side in the React Native codebase.
-          </p>
         </div>
       </div>
     </Layout>
