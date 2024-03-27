@@ -9,7 +9,8 @@ import CaseStudyHeader from "../../components/case-study/caseStudyHeader"
 import CaseStudyVideo from "../../components/case-study/caseStudyVideo"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import videoLightDark from "../../images/hbr/HBR_Light-Dark_compressed.mp4"
+import videoLightDark from "../../images/hbr/HBR_Light-Dark.mp4"
+import videoTip from "../../images/hbr/HBR_TipOfTheDay.mp4"
 
 import Img from "gatsby-image"
 
@@ -30,7 +31,7 @@ const HBR = () => {
           }
         }
       },
-      HBRgrid: file(relativePath: { eq: "hbr/HBR_grid-1.png" }) {
+      HBRgrid: file(relativePath: { eq: "hbr/HBR_grid-3.png" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
@@ -52,6 +53,34 @@ const HBR = () => {
         }
       }
       HBRusertest: file(relativePath: { eq: "hbr/HBR_user-test.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRstyles: file(relativePath: { eq: "hbr/HBR_styles.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRcards: file(relativePath: { eq: "hbr/HBR_cards.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRwelcome: file(relativePath: { eq: "hbr/HBR_welcome.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRsummary: file(relativePath: { eq: "hbr/HBR_summary.png" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
@@ -104,7 +133,7 @@ const HBR = () => {
           </p>
         </div>
 
-        <div className="c-case-study__section c-case-study__full-width-image">
+        <div className="c-case-study__section full-width">
           <Img
             fluid={data.HBRgrid.childImageSharp.fluid}
             alt="Screenshots of the new HBR mobile app arranged in a grid"
@@ -123,6 +152,8 @@ const HBR = () => {
         </div>
 
         <CaseStudyVideo
+          fullWidth
+          section
           videoURL={videoLightDark}
           ariaLabel="Screenshots of the HBR mobile app that switch between light and dark mode"
         />
@@ -168,7 +199,13 @@ const HBR = () => {
           </div>
         </div>
 
-        <div className="c-case-study__section c-case-study__full-width-image">
+        <div className="o-text-width-limiter c-case-study__section">
+          <p className="t-paragraph">
+            User testing provided invaluable data that caused us to rethink our assumptions about what features would be valuable and how to structure the app. We iterated on the design of the app as we gathered more data from user testing.
+          </p>
+        </div>
+
+        <div className="c-case-study__section c-case-study__section--sm full-width">
           <Img
             fluid={data.HBRhomepageiteration.childImageSharp.fluid}
             alt="Iteration of the design of the HBR mobile app homepage. Showing different layouts and concepts."
@@ -178,9 +215,6 @@ const HBR = () => {
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
-            User testing provided invaluable data that caused us to rethink our assumptions about what features would be valuable and how to structure the app. We iterated on the design of the app as we gathered more data from user testing.
-          </p>
-          <p className="t-paragraph">
             I proposed a structure for the design team that catered to everyone’s strengths and allowed us to work effectively. The HBR designers owned the UI since they knew the brand in and out, and the thoughtbot designers owned the UX. We collaborated often to share ideas and eventually integrated our work into a single product vision.
           </p>
           <p className="t-paragraph">
@@ -188,12 +222,60 @@ const HBR = () => {
           </p>
         </div>
 
-        [ brand applied to UX ]
+        <div className="c-case-study__section">
+          <div className="mb-md">
+            <Img
+              fluid={data.HBRstyles.childImageSharp.fluid}
+              alt="Various text and input styles used while designing the HBR app."
+              class="c-case-study__image"
+            />
+          </div>
+          <div className="mb-md">
+            <Img
+              fluid={data.HBRcards.childImageSharp.fluid}
+              alt="Various text and input styles used while designing the HBR app."
+              class="c-case-study__image"
+            />
+          </div>
+          <p className="o-text-width-limiter t-paragraph t-paragraph--small">As the design was refined, components and styles were added to Figma to keep everyone aligned and help with dev handoff.</p>
+        </div>
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
             The thoughtbot designers also jumped into the React Native code to help developers refine UI details and close the long feedback loops that often exist between design and engineering teams. This allowed us to move faster while still upholding a high visual quality.
           </p>
+        </div>
+
+        <div className="c-case-study__section">
+          <div className="g-2-col mb-md">
+            <div>
+              <Img
+                fluid={data.HBRwelcome.childImageSharp.fluid}
+                alt="Welcome message in the HBR app."
+                class="c-case-study__image"
+                />
+              <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
+                Personalized messages guide users through the unique features of the app, including the personalized For You page.
+              </p>
+            </div>
+            <div>
+              <CaseStudyVideo
+                videoURL={videoTip}
+                ariaLabel="Screenshots of the HBR mobile app that switch between light and dark mode"
+              />
+              <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
+              To engage users on the go, short-form content such as the popular Management Tip of the Day was highlighted in the latest feed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="c-case-study__section full-width">
+          <Img
+            fluid={data.HBRsummary.childImageSharp.fluid}
+            alt="Four screens from the HBR app showing the onboarding flow and an article."
+            class="c-case-study__image"
+          />
         </div>
 
         <div className="o-text-width-limiter c-case-study__section">

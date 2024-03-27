@@ -1,13 +1,6 @@
-$video-height-mobile: 24rem;
-
 .c-video-container {
-  // margin: 0 calc(-1 * var(--v-page-margin));
   position: relative;
   overflow: hidden;
-
-  @media (max-width: $bp-md) {
-    height: $video-height-mobile;
-  }
 
   @media (hover: hover) {
     &:hover .c-video-controls,
@@ -23,10 +16,6 @@ $video-height-mobile: 24rem;
   width: 100%;
   object-fit: cover;
   background-color: var(--c-white);
-
-  @media (max-width: $bp-md) {
-    height: $video-height-mobile;
-  }
 
   @media (prefers-reduced-motion: reduce) {
     display: none;
