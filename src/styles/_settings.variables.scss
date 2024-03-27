@@ -30,4 +30,8 @@
     --v-page-margin: 10vw;
     --space-xl: 8rem;
   }
+  
+  @media (min-width: $bp-lg) {
+    --space-xl: 10rem;
+  }
 }

@@ -10,41 +10,68 @@
   margin-bottom: var(--space-xl);
 }
 
+.c-case-study__section--sm:not(:last-child) {
+  margin-bottom: var(--space-lg);
+}
+
 .c-case-study__section--2-column {
   @media (min-width: $bp-md) {
     display: flex;
   }
 }
 
-.c-case-study__section--full-width-image {
+.c-case-study__section.full-width {
+  margin-inline: calc(-1 * var(--v-page-margin));
+  
   @media (min-width: $bp-md) {
     display: flex;
     flex-direction: column;
   }
 }
 
+.c-case-study__section.crop {
+  @media (max-width: $bp-md) {
+    height: 24rem;
+  }
+
+  & .c-video {
+    @media (max-width: $bp-md) {
+      height: 24rem;
+    }
+  }
+}
+
 .c-case-study__caption {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 
   @media (min-width: $bp-md) {
     max-width: 60ch;
-    margin-right: 5%;
+    margin-top: -0.25rem;
     margin-bottom: 4rem;
   }
-
+  
   .c-case-study__section--2-column & {
     // Adjustments for captions beside images
     @media (min-width: $bp-md) {
       margin-bottom: 0;
       width: calc(max(22vw, 200px));
-      margin-right: 5%;
+      margin-left: 5%;
     }
+  }
+}
 
-    &.reverse {
-      @media (min-width: $bp-md) {
-        margin-left: 5%;
-        margin-right: 0;
-      }
+.c-case-study__section--2-column.reverse {
+
+  & .c-case-study__image-container {
+    order: 2;
+  }
+
+  & .c-case-study__caption {
+    order: 1;
+
+    @media (min-width: $bp-md) {
+      margin-right: 5%;
+      margin-left: 0;
     }
   }
 }
@@ -81,8 +108,4 @@
 
 .c-case-study .t-paragraph:not(:last-child) {
   margin-bottom: 1.7rem;
-}
-
-.c-case-study__full-width-image {
-  margin: 0 calc(-1 * var(--v-page-margin));
 }

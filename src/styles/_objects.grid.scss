@@ -9,3 +9,17 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.g-2-col {
+  @media (max-width: $bp-md) {
+    & > *:not(:last-child) {
+      margin-bottom: var(--space-lg);
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+}

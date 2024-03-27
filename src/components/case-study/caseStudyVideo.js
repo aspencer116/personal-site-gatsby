@@ -1,6 +1,6 @@
 import React from "react"
 
-const CaseStudyVideo = ({ videoURL, ariaLabel }) => {
+const CaseStudyVideo = ({ videoURL, ariaLabel, fullWidth, section }) => {
   const toggleVideoKeyboard = e => {
     const target = e.currentTarget
 
@@ -26,7 +26,7 @@ const CaseStudyVideo = ({ videoURL, ariaLabel }) => {
   }
 
   return (
-    <div class="c-video-container c-case-study__section">
+    <div class={"c-video-container" + (section ? ' c-case-study__section ' : '') + (fullWidth ? ' full-width crop' : '')}>
       <button
         class="c-video-controls"
         onClick={toggleVideo}
