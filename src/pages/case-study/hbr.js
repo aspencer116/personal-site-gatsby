@@ -215,7 +215,7 @@ const HBR = () => {
 
         <div className="o-text-width-limiter c-case-study__section">
           <p className="t-paragraph">
-            I proposed a structure for the design team that catered to everyone’s strengths and allowed us to work effectively. The HBR designers owned the UI since they knew the brand in and out, and the thoughtbot designers owned the UX. We collaborated often to share ideas and eventually integrated our work into a single product vision.
+            As the lead product designer, I proposed a structure for the design team that catered to everyone’s strengths and allowed us to work effectively. The HBR designers owned the UI since they knew the brand in and out, and the thoughtbot designers owned the UX. We collaborated often to share ideas and eventually integrated our work into a single product vision.
           </p>
           <p className="t-paragraph">
             To help ensure the app would be well supported in the long term, I was also able to mentor one of the HBR designers who took over the product design responsibilities once our engagement was over.
@@ -285,12 +285,14 @@ const HBR = () => {
           </p>
         </div>
         <div className="o-text-width-limiter c-case-study__section">
-          <p className="t-paragraph t-paragraph--callout">
-            “When I look at the product right now, it's polished and complete, <strong>it sets a high design standard</strong>. I understand some things are not perfect but in comparison to what I was assuming, this is so much more polished and done and complete.”
-          </p>
-          <p className="t-paragraph t-paragraph--small">
+          <blockquote className="c-quote">
+            <p className="t-paragraph t-paragraph--callout">
+              When I look at the product right now, it's polished and complete, <strong>it sets a high design standard</strong>. I understand some things are not perfect but in comparison to what I was assuming, this is so much more polished and done and complete.
+            </p>
+          <footer className="t-paragraph t-paragraph--small">
             — HBR's Director of User Experience and Product Design
-          </p>
+          </footer>
+          </blockquote>
         </div>
       </div>
     </Layout>
