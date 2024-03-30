@@ -2,11 +2,13 @@
   margin-bottom: 3rem;
 
   @media (min-width: $bp-sm) {
-    margin-bottom: 2rem;
-    &:nth-child(even) {
-      // Stagger the grid vertically
-      padding-top: 4rem;
-    }
+    margin-bottom: 4rem;
+  }
+}
+
+.c-work-listing--featured {
+  @media (min-width: $bp-sm) {
+    grid-column: 1 / 3;
   }
 }
 

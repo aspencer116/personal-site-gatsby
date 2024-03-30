@@ -1,4 +1,5 @@
 import React from "react"
+import HBRimage from "../../images/hbr/HBR_mockup-1_min.jpg"
 import WorkListing from "./workListing"
 
 const Work = () => (
@@ -25,7 +26,9 @@ const Work = () => (
         description="A completely reimagined mobile app for a new generation of business leaders."
         date="2023"
         tags={["Product Design", "User Research"]}
-        // caseStudy="/case-study/hbr"
+        caseStudy="/case-study/hbr"
+        image={HBRimage}
+        featured
       />
       <WorkListing
         title="Groups Recover Together"

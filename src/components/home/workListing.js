@@ -8,8 +8,11 @@ const WorkListing = ({
   tags,
   liveSite,
   caseStudy,
+  image,
+  featured,
 }) => (
-  <li className="c-work-listing">
+  <li className={'c-work-listing' + (featured ? ' c-work-listing--featured' : '')}>
+    {image && <img src={image} />}
     <h3 className="t-heading-3 c-work-listing__title">{title}</h3>
     <p className="t-paragraph t-paragraph--tight c-work-listing__body">
       {description}
