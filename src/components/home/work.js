@@ -25,9 +25,10 @@ const Work = () => (
         title="Harvard Business Review"
         description="A completely reimagined mobile app for a new generation of business leaders."
         date="2023"
-        tags={["Product Design", "User Research"]}
+        tags={["Lead Product Designer", "User Research", "UX/UI Design", "React Native"]}
         caseStudy="/case-study/hbr"
         image={HBRimage}
+        imageAlt="Woman holding a phone with the HBR app on it."
         featured
       />
       <WorkListing

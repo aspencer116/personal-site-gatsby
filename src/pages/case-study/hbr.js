@@ -103,7 +103,7 @@ const HBR = () => {
           subtitle="Reinventing the HBR mobile app for the next generation of business&nbsp;leaders"
           year="2023"
           agency="thoughtbot"
-          role="Product Design Lead"
+          role="Lead Product Designer"
           skills={["Design Sprint", "User Research", "React Native"]}
           imageAltText="Person holding a phone in their lap looking at the Harvard Business Review mobile app."
         />
