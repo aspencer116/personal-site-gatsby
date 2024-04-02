@@ -9,6 +9,7 @@ import CaseStudyHeader from "../../components/case-study/caseStudyHeader"
 import CaseStudyVideo from "../../components/case-study/caseStudyVideo"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import videoLatestFeed from "../../images/hbr/HBR_LatestFeed.mp4"
 import videoLightDark from "../../images/hbr/HBR_Light-Dark.mp4"
 import videoTip from "../../images/hbr/HBR_TipOfTheDay.mp4"
 
@@ -83,6 +84,13 @@ const HBR = () => {
       HBRsummary: file(relativePath: { eq: "hbr/HBR_summary.png" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HBRforYou: file(relativePath: { eq: "hbr/HBR_forYou.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -246,16 +254,16 @@ const HBR = () => {
           </p>
         </div>
 
-        <div className="c-case-study__section">
+        <div className="c-case-study__section c-case-study__section--sm">
           <div className="g-2-col mb-md">
             <div>
               <Img
-                fluid={data.HBRwelcome.childImageSharp.fluid}
-                alt="Welcome message in the HBR app."
+                fluid={data.HBRforYou.childImageSharp.fluid}
+                alt="For You screen of the HBR app showing a filter for topics with the current issue selected."
                 class="c-case-study__image"
                 />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
-                Personalized messages guide users through the unique features of the app, including the personalized For You page.
+              The For You feed contained content from topics chosen by the user along with a special callout for content from the current print issue of the Harvard Business Review.
               </p>
             </div>
             <div>
@@ -265,6 +273,30 @@ const HBR = () => {
               />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
               To engage users on the go, short-form content such as the popular Management Tip of the Day was highlighted in the latest feed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="c-case-study__section">
+          <div className="g-2-col mb-md">
+            <div>
+              <CaseStudyVideo
+                videoURL={videoLatestFeed}
+                ariaLabel="The Lastest feed in the HBR app scrolls from top to bottom."
+              />
+              <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
+              Editorial-style typography and unique content modules added variety to the feeds and helped organize HBR’s extensive content library.
+              </p>
+            </div>
+            <div>
+              <Img
+                fluid={data.HBRwelcome.childImageSharp.fluid}
+                alt="Welcome message in the HBR app."
+                class="c-case-study__image"
+                />
+              <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
+                Personalized messages guide users through the unique features of the app, including the personalized For You page.
               </p>
             </div>
           </div>
