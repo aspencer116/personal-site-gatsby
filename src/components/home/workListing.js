@@ -25,7 +25,7 @@ const WorkListing = ({
       {image && (
         <div className="c-work-listing__image-container">
           <img className="c-work-listing__image" src={image} alt={imageAlt} />
-          <img className="c-work-listing__image" src={image2} aria-hidden="true" />
+          <img className="c-work-listing__image" src={image2} alt="" aria-hidden="true" />
         </div>
       )}
       {caseStudy && (

@@ -18,7 +18,7 @@ const Ideas = () => (
         />
         <Idea
           type="Article"
-          title="How to Build Trust with Clients and Why It’s Worth Your Time"
+          title="How to Build Trust with Clients and Why It’s Worth Your Time"
           forName="Adobe XD"
           actionText="Read"
           actionLink="https://xd.adobe.com/ideas/perspectives/leadership-insights/building-trust-client-designer-relationships/"
@@ -29,6 +29,13 @@ const Ideas = () => (
           forName="CSS Tricks"
           actionText="Read"
           actionLink="https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/"
+        />
+        <Idea
+          type="Article"
+          title="Can Auto-Playing Videos be Accessible?"
+          forName="thoughtbot"
+          actionText="Read"
+          actionLink="https://thoughtbot.com/blog/can-auto-playing-videos-be-accessible"
         />
         <Idea
           type="Resource"
