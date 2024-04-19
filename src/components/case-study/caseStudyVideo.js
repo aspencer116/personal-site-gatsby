@@ -1,6 +1,6 @@
 import React from "react"
 
-const CaseStudyVideo = ({ videoURL, ariaLabel, fullWidth, section }) => {
+const CaseStudyVideo = ({ videoURL, ariaLabel, fullWidth, section, }) => {
   const toggleVideoKeyboard = e => {
     const target = e.currentTarget
 
@@ -84,7 +84,7 @@ const CaseStudyVideo = ({ videoURL, ariaLabel, fullWidth, section }) => {
         background
         aria-label={ariaLabel}
       >
-        <source preload="none" src={videoURL} type="video/mp4" />
+        <source preload="auto" src={videoURL} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <video

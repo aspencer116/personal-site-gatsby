@@ -1,4 +1,5 @@
 import React from "react"
+import HBRimageHover from "../../images/hbr/HBR_card-hover.png"
 import HBRimage from "../../images/hbr/HBR_mockup-1_min.jpg"
 import WorkListing from "./workListing"
 
@@ -28,6 +29,7 @@ const Work = () => (
         tags={["Lead Product Designer", "User Research", "UX/UI Design", "React Native"]}
         caseStudy="/case-study/hbr"
         image={HBRimage}
+        image2={HBRimageHover}
         imageAlt="Woman holding a phone with the HBR app on it."
         featured
       />
@@ -48,7 +50,7 @@ const Work = () => (
         description="A website redesign to help patients and professionals find critical info."
         date="2019"
         tags={["Web Design", "Frontend Dev"]}
-        liveSite={"https://www.kidney.org"}
+      // liveSite={"https://www.kidney.org"}
       />
       <WorkListing
         title="Seegrid"
@@ -79,7 +81,7 @@ const Work = () => (
         description="A visual guide to the latest on design systems."
         date="2021"
         tags={["Web Design", "Branding"]}
-        liveSite="https://designsystemsurvey.sparkbox.com/2021/"
+      // liveSite="https://designsystemsurvey.sparkbox.com/2021/"
       />
       {/* <WorkListing
           title="Shoes for Crews"

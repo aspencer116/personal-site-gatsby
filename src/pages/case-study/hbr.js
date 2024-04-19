@@ -263,7 +263,7 @@ const HBR = () => {
                 class="c-case-study__image"
                 />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
-              The For You feed contained content from topics chosen by the user along with a special callout for content from the current print issue of the Harvard Business Review.
+                The For You feed contained content from topics chosen by the user along with a special callout for content from the current print issue of the Harvard Business Review.
               </p>
             </div>
             <div>

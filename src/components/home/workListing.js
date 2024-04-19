@@ -16,12 +16,18 @@ const WorkListing = ({
   liveSite,
   caseStudy,
   image,
+  image2,
   imageAlt,
   featured,
 }) => (
   <li className={'c-work-listing' + (featured ? ' c-work-listing--featured' : '')}>
     <CaseStudy caseStudy={caseStudy}>
-      {image && <img src={image} alt={imageAlt} />}
+      {image && (
+        <div className="c-work-listing__image-container">
+          <img className="c-work-listing__image" src={image} alt={imageAlt} />
+          <img className="c-work-listing__image" src={image2} aria-hidden="true" />
+        </div>
+      )}
       {caseStudy && (
         <p
           className="t-meta t-meta--small t-bold c-work-listing__site"
