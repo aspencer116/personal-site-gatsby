@@ -1,10 +1,6 @@
 .c-work-listing {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   text-decoration: none;
-
-  @media (min-width: $bp-sm) {
-    margin-bottom: 4rem;
-  }
 }
 
 .c-work-listing--featured {
@@ -48,11 +44,15 @@
   display: block;
 
   & .c-work-listing__image-container > *:last-child {
-    // display: none;
-    opacity: 0;
+    display: none;
+
+    @media (min-width: $bp-sm) {
+      display: block;
+      opacity: 0;
+    }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: $bp-sm) {
     &:hover .c-work-listing__image-container {
       & > *:first-child {
         opacity: 0;

@@ -18,7 +18,7 @@ const Work = () => (
         deliver great&nbsp;products.
       </p>
       <p className="t-paragraph t-subtle">
-        Case studies coming soon. Portfolio available by request.
+        More case studies coming soon. Portfolio available by request.
       </p>
     </div>
     <ul className="u-delist c-work__listings">
