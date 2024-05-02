@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import HomepageHero from "../components/homepageHero"
 // import CurrentWork from "../components/home/currentWork"
 // import CaseStudyLinks from "../components/home/caseStudyLinks"
+import ModeToggle from "../components/modeToggle"
 import Work from "../components/home/work"
 import Ideas from "../components/home/ideas"
 import SEO from "../components/seo"
@@ -18,6 +19,8 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <HomepageHero />
+
+    <ModeToggle />
 
     {/* <CurrentWork />
 

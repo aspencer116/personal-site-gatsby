@@ -44,3 +44,30 @@ $c-black: #0b0c0c;
     --c-black: #{$c-white};
   }
 }
+
+
+body:not(.dark-mode) {
+  --c-highlight: #{$c-highlight};
+  
+  --c-grayscale-1: #{$c-grayscale-1};
+  --c-grayscale-1-rgb: #{$c-grayscale-1-rgb};
+  --c-grayscale-2: #{$c-grayscale-2};
+  --c-grayscale-3: #{$c-grayscale-3};
+  --c-grayscale-4: #{$c-grayscale-4};
+  --c-grayscale-5: #{$c-grayscale-5};
+  --c-grayscale-6: #{$c-grayscale-6};
+
+  --c-white: #{$c-white}; 
+  --c-black: #{$c-black};
+}
+body.dark-mode {
+  --c-grayscale-1: #{$c-black};
+  --c-grayscale-2: #{$c-grayscale-6};
+  --c-grayscale-3: #{$c-grayscale-4};
+  --c-grayscale-4: #{$c-grayscale-3};
+  --c-grayscale-5: #{$c-grayscale-2};
+  --c-grayscale-6: #{$c-grayscale-1};
+
+  --c-white: #{$c-black};
+  --c-black: #{$c-white};
+}
