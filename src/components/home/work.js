@@ -12,10 +12,10 @@ const Work = () => (
         deliver engaging, beautiful digital experiences that&nbsp;scale.
       </p>
       <p className="t-paragraph">
-        Having worked in the agency world for seven years, I’ve helped launch
-        successful products for companies of all sizes. I’m a generalist
-        designer who bridges the gap between design and code to help teams
-        deliver great&nbsp;products.
+        Having worked as a design consultant for almost a decade, I’ve helped
+        build teams and launch successful products for companies of all sizes.
+        I’m a generalist designer who bridges the gap between design and code to
+        help teams deliver great&nbsp;products.
       </p>
       <p className="t-paragraph t-subtle">
         More case studies coming soon. Portfolio available by request.
