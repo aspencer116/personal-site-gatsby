@@ -18,13 +18,6 @@ const Ideas = () => (
         />
         <Idea
           type="Article"
-          title="How to Build Trust with Clients and Why It’s Worth Your Time"
-          forName="Adobe XD"
-          actionText="Read"
-          actionLink="https://xd.adobe.com/ideas/perspectives/leadership-insights/building-trust-client-designer-relationships/"
-        />
-        <Idea
-          type="Article"
           title="Design Principles for Developers"
           forName="CSS Tricks"
           actionText="Read"
@@ -32,10 +25,24 @@ const Ideas = () => (
         />
         <Idea
           type="Article"
-          title="Can Auto-Playing Videos be Accessible?"
+          title="What it’s like to work with thoughtbot’s designers who code"
           forName="thoughtbot"
           actionText="Read"
-          actionLink="https://thoughtbot.com/blog/can-auto-playing-videos-be-accessible"
+          actionLink="https://thoughtbot.com/blog/what-it-s-like-to-work-with-thoughtbot-s-designers-who-code"
+        />
+        <Idea
+          type="Article"
+          title="How to Build Trust with Clients and Why It’s Worth Your Time"
+          forName="Adobe XD"
+          actionText="Read"
+          actionLink="https://xd.adobe.com/ideas/perspectives/leadership-insights/building-trust-client-designer-relationships/"
+        />
+        <Idea
+          type="Article"
+          title="What I learned about design by helping my grandfather send an email"
+          forName="thoughtbot"
+          actionText="Read"
+          actionLink="https://thoughtbot.com/blog/what-i-learned-about-design-by-helping-my-grandfather-send-an-email"
         />
         <Idea
           type="Resource"
@@ -56,6 +63,13 @@ const Ideas = () => (
           forName="LogRocket"
           actionText="Read"
           actionLink="https://blog.logrocket.com/advanced-css-selectors-for-common-scenarios/"
+        />
+        <Idea
+          type="Article"
+          title="Can Auto-Playing Videos be Accessible?"
+          forName="thoughtbot"
+          actionText="Read"
+          actionLink="https://thoughtbot.com/blog/can-auto-playing-videos-be-accessible"
         />
         <Idea
           type="Article"

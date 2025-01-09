@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Andrew Spencer — Senior Product Designer`,
-    description: `Portfolio of Andrew Spencer, a Senior Product Designer in New England who works at the intersection of design and frontend code.`,
+    title: `Andrew Spencer — Principal Product Designer`,
+    description: `Portfolio of Andrew Spencer, a Product Designer based in New England who works at the intersection of design and frontend code.`,
     author: `@iam_aspencer`,
     keywords: `product designer, design, portfolio, Boston, frontend code,`,
     image: `/images/opengraph.jpg`,
