@@ -12,18 +12,18 @@
     "gatsby-plugin-manifest": "^2.7.0",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.5.0",
-    "gatsby-plugin-sass": "^2.6.0",
+    "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sharp": "^2.9.1",
     "gatsby-source-filesystem": "^2.6.1",
     "gatsby-transformer-sharp": "^2.7.0",
     "markdown-to-jsx": "^7.4.1",
-    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-rellax": "^1.0.3",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "sass": "^1.49.9"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
