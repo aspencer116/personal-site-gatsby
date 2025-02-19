@@ -1,7 +1,6 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, withPrefix } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
-
-import { withPrefix } from "gatsby"
 import Helmet from "react-helmet"
 import Parallax from "react-rellax"
 import { CSSTransition } from "react-transition-group"
@@ -13,90 +12,116 @@ import videoLatestFeed from "../../images/hbr/HBR_LatestFeed.mp4"
 import videoLightDark from "../../images/hbr/HBR_Light-Dark.mp4"
 import videoTip from "../../images/hbr/HBR_TipOfTheDay.mp4"
 
-import Img from "gatsby-image"
 
 const HBR = () => {
   const data = useStaticQuery(graphql`
     query {
-      HBRcomponents: file(relativePath: { eq: "hbr/HBR_components.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       HBRheader: file(relativePath: { eq: "hbr/HBR_mockup-1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       },
       HBRgrid: file(relativePath: { eq: "hbr/HBR_grid-3.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRdesignsprint: file(relativePath: { eq: "hbr/HBR_design-sprint.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRhomepageiteration: file(relativePath: { eq: "hbr/HBR_homepage_iteration.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRusertest: file(relativePath: { eq: "hbr/HBR_user-test.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRstyles: file(relativePath: { eq: "hbr/HBR_styles.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRcards: file(relativePath: { eq: "hbr/HBR_cards.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRwelcome: file(relativePath: { eq: "hbr/HBR_welcome.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1300) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 1300
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRsummary: file(relativePath: { eq: "hbr/HBR_summary.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 2400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
       HBRforYou: file(relativePath: { eq: "hbr/HBR_forYou.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 1400
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
     }
   `)
+
+  // Get processed images
+  const images = {
+    HBRheader: getImage(data.HBRheader),
+    HBRgrid: getImage(data.HBRgrid),
+    HBRdesignsprint: getImage(data.HBRdesignsprint),
+    HBRhomepageiteration: getImage(data.HBRhomepageiteration),
+    HBRusertest: getImage(data.HBRusertest),
+    HBRstyles: getImage(data.HBRstyles),
+    HBRcards: getImage(data.HBRcards),
+    HBRwelcome: getImage(data.HBRwelcome),
+    HBRsummary: getImage(data.HBRsummary),
+    HBRforYou: getImage(data.HBRforYou)
+  }
 
   return (
     <Layout lightVersion={true}>
@@ -123,10 +148,10 @@ const HBR = () => {
         >
           <div className="c-case-study-header__secondary">
             <Parallax speed={-1}>
-              <Img
+              <GatsbyImage 
                 height="100"
-                fluid={data.HBRheader.childImageSharp.fluid}
-                class="c-case-study-header__image"
+                image={images.HBRheader} 
+                className="c-case-study-header__image"
                 alt="Person holding a phone in their lap looking at the Harvard Business Review mobile app."
               />
             </Parallax>
@@ -142,8 +167,8 @@ const HBR = () => {
         </div>
 
         <div className="c-case-study__section full-width">
-          <Img
-            fluid={data.HBRgrid.childImageSharp.fluid}
+          <GatsbyImage 
+            image={images.HBRgrid} 
             alt="Screenshots of the new HBR mobile app arranged in a grid"
             class="c-case-study__image"
           />
@@ -175,8 +200,8 @@ const HBR = () => {
 
         <div className="c-case-study__section c-case-study__section--2-column">
           <div className="c-case-study__image-container">
-            <Img
-              fluid={data.HBRdesignsprint.childImageSharp.fluid}
+            <GatsbyImage 
+              image={images.HBRdesignsprint} 
               alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
               class="c-case-study__image"
             />
@@ -192,8 +217,8 @@ const HBR = () => {
 
         <div className="c-case-study__section c-case-study__section--2-column reverse">
           <div className="c-case-study__image-container">
-            <Img
-              fluid={data.HBRusertest.childImageSharp.fluid}
+            <GatsbyImage 
+              image={images.HBRusertest} 
               alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
               class="c-case-study__image"
             />
@@ -214,8 +239,8 @@ const HBR = () => {
         </div>
 
         <div className="c-case-study__section c-case-study__section--sm full-width">
-          <Img
-            fluid={data.HBRhomepageiteration.childImageSharp.fluid}
+          <GatsbyImage 
+            image={images.HBRhomepageiteration} 
             alt="Iteration of the design of the HBR mobile app homepage. Showing different layouts and concepts."
             class="c-case-study__image"
           />
@@ -232,15 +257,15 @@ const HBR = () => {
 
         <div className="c-case-study__section">
           <div className="mb-md">
-            <Img
-              fluid={data.HBRstyles.childImageSharp.fluid}
+            <GatsbyImage 
+              image={images.HBRstyles} 
               alt="Various text and input styles used while designing the HBR app."
               class="c-case-study__image"
             />
           </div>
           <div className="mb-md">
-            <Img
-              fluid={data.HBRcards.childImageSharp.fluid}
+            <GatsbyImage 
+              image={images.HBRcards} 
               alt="Various text and input styles used while designing the HBR app."
               class="c-case-study__image"
             />
@@ -257,11 +282,11 @@ const HBR = () => {
         <div className="c-case-study__section c-case-study__section--sm">
           <div className="g-2-col mb-md">
             <div>
-              <Img
-                fluid={data.HBRforYou.childImageSharp.fluid}
+              <GatsbyImage 
+                image={images.HBRforYou} 
                 alt="For You screen of the HBR app showing a filter for topics with the current issue selected."
                 class="c-case-study__image"
-                />
+              />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
                 The For You feed contained content from topics chosen by the user along with a special callout for content from the current print issue of the Harvard Business Review.
               </p>
@@ -290,11 +315,11 @@ const HBR = () => {
               </p>
             </div>
             <div>
-              <Img
-                fluid={data.HBRwelcome.childImageSharp.fluid}
+              <GatsbyImage 
+                image={images.HBRwelcome} 
                 alt="Welcome message in the HBR app."
                 class="c-case-study__image"
-                />
+              />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
                 Personalized messages guide users through the unique features of the app, including the personalized For You page.
               </p>
@@ -303,8 +328,8 @@ const HBR = () => {
         </div>
 
         <div className="c-case-study__section full-width">
-          <Img
-            fluid={data.HBRsummary.childImageSharp.fluid}
+          <GatsbyImage 
+            image={images.HBRsummary} 
             alt="Four screens from the HBR app showing the onboarding flow and an article."
             class="c-case-study__image"
           />
