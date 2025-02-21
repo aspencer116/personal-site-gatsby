@@ -170,7 +170,7 @@ const HBR = () => {
           <GatsbyImage 
             image={images.HBRgrid} 
             alt="Screenshots of the new HBR mobile app arranged in a grid"
-            class="c-case-study__image"
+            className="c-case-study__image"
           />
         </div>
         
@@ -203,7 +203,7 @@ const HBR = () => {
             <GatsbyImage 
               image={images.HBRdesignsprint} 
               alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
-              class="c-case-study__image"
+              className="c-case-study__image"
             />
           </div>
           <div className="c-case-study__caption">
@@ -220,7 +220,7 @@ const HBR = () => {
             <GatsbyImage 
               image={images.HBRusertest} 
               alt="Screenshot of the virtual white board used for the HBR design sprint. Lots of stickynotes with text that is too small to read."
-              class="c-case-study__image"
+              className="c-case-study__image"
             />
           </div>
           <div className="c-case-study__caption">
@@ -242,7 +242,7 @@ const HBR = () => {
           <GatsbyImage 
             image={images.HBRhomepageiteration} 
             alt="Iteration of the design of the HBR mobile app homepage. Showing different layouts and concepts."
-            class="c-case-study__image"
+            className="c-case-study__image"
           />
         </div>
 
@@ -260,7 +260,7 @@ const HBR = () => {
             <GatsbyImage 
               image={images.HBRstyles} 
               alt="Various text and input styles used while designing the HBR app."
-              class="c-case-study__image"
+              className="c-case-study__image"
             />
           </div>
           <div className="mb-md">
@@ -285,7 +285,7 @@ const HBR = () => {
               <GatsbyImage 
                 image={images.HBRforYou} 
                 alt="For You screen of the HBR app showing a filter for topics with the current issue selected."
-                class="c-case-study__image"
+                className="c-case-study__image"
               />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
                 The For You feed contained content from topics chosen by the user along with a special callout for content from the current print issue of the Harvard Business Review.
@@ -318,7 +318,7 @@ const HBR = () => {
               <GatsbyImage 
                 image={images.HBRwelcome} 
                 alt="Welcome message in the HBR app."
-                class="c-case-study__image"
+                className="c-case-study__image"
               />
               <p className="mt-md o-text-width-limiter t-paragraph t-paragraph--small">
                 Personalized messages guide users through the unique features of the app, including the personalized For You page.
@@ -331,7 +331,7 @@ const HBR = () => {
           <GatsbyImage 
             image={images.HBRsummary} 
             alt="Four screens from the HBR app showing the onboarding flow and an article."
-            class="c-case-study__image"
+            className="c-case-study__image"
           />
         </div>
 
