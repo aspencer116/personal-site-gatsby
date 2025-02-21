@@ -25,6 +25,10 @@
     "react-transition-group": "^4.4.1",
     "sass": "^1.49.9"
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=10.8.2"
+  },
   "devDependencies": {
     "prettier": "^1.19.1"
   },
