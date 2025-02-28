@@ -1,3 +1,5 @@
+@use "settings.breakpoints";
+
 .c-case-study-links {
   position: relative;
   padding: 6rem var(--v-page-margin);
@@ -14,7 +16,7 @@
     gap: 2rem;
 
     // Auto-size the grid
-    @media (min-width: $bp-md) {
+    @media (min-width: settings.$bp-md) {
       grid-template-columns: 1fr; // TEMP Due to the number of active links
     }
 

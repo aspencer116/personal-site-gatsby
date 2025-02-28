@@ -1,3 +1,5 @@
+@use "settings.breakpoints";
+
 .c-idea {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
   
   transition: all var(--v-transition-time-fast) var(--v-transition-function-easy);
   
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     min-width: 20rem;
     min-height: 22rem;
     width: 25.934vw;

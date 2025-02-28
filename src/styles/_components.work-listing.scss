@@ -1,16 +1,18 @@
+@use "settings.breakpoints";
+
 .c-work-listing {
   margin-bottom: 4rem;
   text-decoration: none;
 }
 
 .c-work-listing--featured {
-  @media (max-width: $bp-sm) {
+  @media (max-width: settings.$bp-sm) {
     & .c-work-listing__image-container {
       margin-inline: calc(-1 * var(--v-page-margin));
     }
   }
 
-  @media (min-width: $bp-sm) {
+  @media (min-width: settings.$bp-sm) {
     grid-column: 1 / 3;
   }
 }
@@ -24,7 +26,7 @@
   justify-content: center;
   position: relative;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     height: 32vw;
   }
 }
@@ -46,13 +48,13 @@
   & .c-work-listing__image-container > *:last-child {
     display: none;
 
-    @media (min-width: $bp-sm) {
+    @media (min-width: settings.$bp-sm) {
       display: block;
       opacity: 0;
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) and (min-width: $bp-sm) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: settings.$bp-sm) {
     &:hover .c-work-listing__image-container {
       & > *:first-child {
         opacity: 0;

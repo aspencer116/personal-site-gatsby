@@ -1,3 +1,5 @@
+@use "settings.breakpoints";
+
 // Typography mixins
 @mixin heading-base($color: var(--c-black), $line-height: 1.2, $weight: 400, $font-size-sm: 2.5rem, $font-size-lg: 3.5rem, $letter-spacing: 1) {
   color: $color;
@@ -7,12 +9,12 @@
   line-height: $line-height;
   font-family: var(--v-font-display);
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     // Scale the font up as the screen gets larger
-    font-size: $font-size-sm / $bp-md * 100vw;
+    font-size: $font-size-sm / settings.$bp-md * 100vw;
   }
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: settings.$bp-lg) {
     font-size: $font-size-lg;
   }
 }
@@ -27,7 +29,7 @@
     margin-bottom: 1.75rem;
   }
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: $font-size-lg;
   }
 }

@@ -1,10 +1,11 @@
+@use "settings.breakpoints";
+
 // Variables for use across the site
 
 // Common layout values
 
 :root {
   --v-page-margin: 6.5vw;
-  --v-max-width: #{$bp-xl};
 
   --v-transition-time-fast: 200ms;
   --v-transition-time: 300ms;
@@ -26,12 +27,12 @@
   --space-lg: 4rem;
   --space-xl: 6rem;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     --v-page-margin: 10vw;
     --space-xl: 8rem;
   }
-  
-  @media (min-width: $bp-lg) {
+
+  @media (min-width: settings.$bp-lg) {
     --space-xl: 10rem;
   }
 }
