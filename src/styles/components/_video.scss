@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-video-container {
   position: relative;

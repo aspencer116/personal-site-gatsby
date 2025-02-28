@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-work-listing {
   margin-bottom: 4rem;
@@ -58,13 +58,15 @@
     &:hover .c-work-listing__image-container {
       & > *:first-child {
         opacity: 0;
-        animation: image-out 800ms 50ms var(--v-transition-function-easy-in) forwards;
+        animation: image-out 800ms 50ms var(--v-transition-function-easy-in)
+          forwards;
       }
-      
+
       & > *:last-child {
         opacity: 1;
         align-self: flex-start;
-        animation: image-in 600ms 100ms var(--v-transition-function-easy-in) forwards;
+        animation: image-in 600ms 100ms var(--v-transition-function-easy-in)
+          forwards;
       }
     }
   }

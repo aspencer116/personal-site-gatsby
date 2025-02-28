@@ -1,0 +1,36 @@
+@use "../tools/mixins" as tools;
+
+.c-button {
+  @include tools.paragraph-base;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--c-black);
+  border-radius: 1rem;
+  text-decoration: none; //reset links
+  transition: all var(--v-transition-time-long)
+    var(--v-transition-function-easy);
+
+  &:hover {
+    // box-shadow: 0 0 0 1px var(--c-black);
+    color: var(--c-white);
+    background: var(--c-black);
+  }
+}
+
+.c-external-icon {
+  stroke: var(--c-black);
+  margin-left: 0.25rem;
+  transition: all var(--v-transition-time) var(--v-transition-function-easy);
+}
+
+.c-external-icon--small {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+}
+
+a:hover .c-external-icon {
+  transform: translate(2px, -2px);
+}
+
+a:hover .c-external-icon--small {
+  transform: translate(1px, -1px);
+}

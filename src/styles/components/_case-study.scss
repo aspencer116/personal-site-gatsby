@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-case-study {
   margin: calc(var(--v-page-margin) * 2) var(--v-page-margin);
@@ -24,7 +24,7 @@
 
 .c-case-study__section.full-width {
   margin-inline: calc(-1 * var(--v-page-margin));
-  
+
   @media (min-width: settings.$bp-md) {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     margin-top: -0.25rem;
     margin-bottom: 4rem;
   }
-  
+
   .c-case-study__section--2-column & {
     // Adjustments for captions beside images
     @media (min-width: settings.$bp-md) {
@@ -63,7 +63,6 @@
 }
 
 .c-case-study__section--2-column.reverse {
-
   & .c-case-study__image-container {
     order: 2;
   }

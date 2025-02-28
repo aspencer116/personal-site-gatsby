@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-case-study-link {
   position: relative;
@@ -9,7 +9,8 @@
   mix-blend-mode: multiply;
   cursor: pointer;
 
-  transition: all var(--v-transition-time-long) 50ms var(--v-transition-function-easy-in);
+  transition: all var(--v-transition-time-long) 50ms
+    var(--v-transition-function-easy-in);
 
   @media (max-width: settings.$bp-lg) and (min-width: settings.$bp-md) {
     // TEMP Change to a 1 column layout due to how the links are organized
@@ -20,8 +21,7 @@
   @media (min-width: settings.$bp-md) {
     &:not(.c-case-study-link--coming-soon):hover {
       transform: translateY(-0.215rem);
-      box-shadow:
-        1rem 2rem 6rem -2rem rgba(0, 0, 0, 0.4),
+      box-shadow: 1rem 2rem 6rem -2rem rgba(0, 0, 0, 0.4),
         0.25rem 0.25rem 1rem -0.25rem rgba(0, 0, 0, 0.2);
 
       &::after {
@@ -64,7 +64,8 @@
     mix-blend-mode: soft-light;
     opacity: 0.4;
 
-    transition: all var(--v-transition-time-long) 50ms var(--v-transition-function-easy-in);
+    transition: all var(--v-transition-time-long) 50ms
+      var(--v-transition-function-easy-in);
   }
 
   &__link-container {
@@ -110,7 +111,7 @@
     background: var(--c-white);
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       z-index: -1;
       top: 0;
@@ -120,7 +121,8 @@
       background: var(--c-white);
 
       transform-origin: bottom right;
-      transition: all var(--v-transition-time) 50ms var(--v-transition-function-easy-in);
+      transition: all var(--v-transition-time) 50ms
+        var(--v-transition-function-easy-in);
     }
   }
 
@@ -157,7 +159,7 @@
     }
 
     &:not(:last-child)::after {
-      content: '';
+      content: "";
       position: absolute;
       right: -0.5rem;
       top: -0.125rem;
@@ -178,7 +180,7 @@
 
   &__arrow::after {
     // Arrow icon
-    content: '';
+    content: "";
     position: absolute;
     top: calc(50% - 0.3375rem);
     right: 1.4375rem; // 23px

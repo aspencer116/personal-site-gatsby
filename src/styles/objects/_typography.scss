@@ -1,5 +1,5 @@
-@use "../settings.breakpoints";
-@use "../tools.mixins";
+@use "../settings/breakpoints" as settings;
+@use "/src/styles/tools/mixins" as tools;
 
 .t-title {
   @include tools.heading-base(

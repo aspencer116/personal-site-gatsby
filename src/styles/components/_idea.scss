@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-idea {
   display: flex;
@@ -11,9 +11,10 @@
   width: 15rem;
   padding: 1.5rem;
   margin-right: 1rem;
-  
-  transition: all var(--v-transition-time-fast) var(--v-transition-function-easy);
-  
+
+  transition: all var(--v-transition-time-fast)
+    var(--v-transition-function-easy);
+
   @media (min-width: settings.$bp-md) {
     min-width: 20rem;
     min-height: 22rem;

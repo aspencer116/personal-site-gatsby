@@ -1,10 +1,10 @@
-@use "settings.breakpoints";
-@use "tools.mixins";
+@use "../settings/breakpoints" as settings;
+@use "../tools/mixins" as tools;
 
 .c-quote {
   position: relative;
   margin: 0;
-  
+
   &:before {
     @include tools.paragraph-base;
     position: absolute;
