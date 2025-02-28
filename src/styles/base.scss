@@ -8,27 +8,27 @@
 // help ensure our content is readable in these older browsers.
 
 // Styles for a message if the browser is not supported
-@use "components.unsupported-message";
+@use "components/unsupported-message";
 
 // Styles for modern browsers:
 
 // SETTINGS
-@use "settings.colors";
-@use "settings.breakpoints" as settings2;
-@use "settings.variables" as settings3;
+@use "settings/breakpoints"; // SASS variables
+@use "settings/color-variables"; // CSS custom properties
+@use "settings/variables"; // CSS custom properties
 
 // TOOLS
-@use "tools.mixins";
+@use "tools/mixins";
 
 // GENERIC
-@use "generic.safe-focus";
+@use "generic/safe-focus";
 
 // ELEMENTS
-@use "elements.reset";
+@use "elements/reset";
 
 // OBJECTS
 @use "objects/general";
-@use "objects/grid.scss";
+@use "objects/grid";
 @use "objects/page-layout";
 @use "objects/spacing";
 @use "objects/typography";
@@ -37,19 +37,19 @@
 @use "objects/colors";
 
 // COMPONENTS
-@use "components.button" as components2;
-@use "components.color-block" as components3;
-@use "components.current-work" as components4;
-@use "components.case-study" as components5;
-@use "components.case-study-link" as components6;
-@use "components.case-study-links" as components7;
-@use "components.case-study-header" as components8;
-@use "components.homepage-hero" as components9;
-@use "components.idea" as components10;
-@use "components.ideas" as components11;
-@use "components.quote" as components12;
-@use "components.site-header" as components13;
-@use "components.site-footer" as components14;
-@use "components.video" as components15;
-@use "components.work" as components16;
-@use "components.work-listing" as components17;
+@use "components/button";
+@use "components/color-block";
+@use "components/current-work";
+@use "components/case-study";
+@use "components/case-study-link";
+@use "components/case-study-links";
+@use "components/case-study-header";
+@use "components/homepage-hero";
+@use "components/idea";
+@use "components/ideas";
+@use "components/quote";
+@use "components/site-header";
+@use "components/site-footer";
+@use "components/video";
+@use "components/work";
+@use "components/work-listing";

@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings/breakpoints" as settings;
 
 .c-site-footer {
   display: flex;
@@ -19,7 +19,7 @@
 .c-site-footer__secondary {
   display: flex;
   flex-direction: column;
-  
+
   @media (min-width: settings.$bp-lg) {
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +39,6 @@
 }
 
 .c-site-footer__list-item {
-
   @media (min-width: settings.$bp-lg) {
     margin-bottom: 0rem;
     margin-left: 2rem;
@@ -59,7 +58,7 @@
 .c-site-footer__logo {
   color: var(--c-black);
   line-height: 1.575rem; // baseline align with links
-  
+
   @media (min-width: settings.$bp-lg) {
     line-height: 2.1rem;
   }
@@ -86,7 +85,7 @@
 .c-site-footer__meta-row {
   display: flex;
   flex-direction: column;
-  
+
   @media (min-width: settings.$bp-sm) {
     flex-direction: row;
     margin-bottom: 0.5rem;
@@ -105,7 +104,7 @@
   @media (min-width: settings.$bp-sm) {
     margin-bottom: 0;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 1rem;
     }
   }

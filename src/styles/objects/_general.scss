@@ -1,4 +1,4 @@
-@use "../tools.mixins";
+@use "/src/styles/tools/mixins" as tools;
 
 .o-visually-hidden {
   @include tools.visually-hidden;
