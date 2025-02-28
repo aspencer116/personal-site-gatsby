@@ -1,5 +1,14 @@
+@use "../settings/breakpoints" as settings;
+
 // Typography mixins
-@mixin heading-base($color: var(--c-black), $line-height: 1.2, $weight: 400, $font-size-sm: 2.5rem, $font-size-lg: 3.5rem, $letter-spacing: 1) {
+@mixin heading-base(
+  $color: var(--c-black),
+  $line-height: 1.2,
+  $weight: 400,
+  $font-size-sm: 2.5rem,
+  $font-size-lg: 3.5rem,
+  $letter-spacing: 1
+) {
   color: $color;
   font-weight: $weight;
   letter-spacing: $letter-spacing;
@@ -7,17 +16,22 @@
   line-height: $line-height;
   font-family: var(--v-font-display);
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     // Scale the font up as the screen gets larger
-    font-size: $font-size-sm / $bp-md * 100vw;
+    font-size: $font-size-sm / settings.$bp-md * 100vw;
   }
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: settings.$bp-lg) {
     font-size: $font-size-lg;
   }
 }
 
-@mixin paragraph-base($color: var(--c-black), $font-size-sm: 1rem, $font-size-lg: 1.0625rem, $line-height: 1.7) {
+@mixin paragraph-base(
+  $color: var(--c-black),
+  $font-size-sm: 1rem,
+  $font-size-lg: 1.0625rem,
+  $line-height: 1.7
+) {
   color: $color;
   font-size: $font-size-sm;
   line-height: $line-height;
@@ -27,7 +41,7 @@
     margin-bottom: 1.75rem;
   }
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: $font-size-lg;
   }
 }
@@ -57,8 +71,6 @@
     // Draws a thick border with a light and dark color for easier readability
     // for all users. This style is only applied when safe focus is enabled.
     // Meaning it won't apply unless a user tabs to a focusable element.
-    box-shadow:
-      0 0 0 2px black,
-      0 0 0 4px white !important;
+    box-shadow: 0 0 0 2px black, 0 0 0 4px white !important;
   }
 }

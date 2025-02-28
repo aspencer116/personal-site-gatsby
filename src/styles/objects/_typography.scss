@@ -1,5 +1,8 @@
+@use "../settings/breakpoints" as settings;
+@use "/src/styles/tools/mixins" as tools;
+
 .t-title {
-  @include heading-base(
+  @include tools.heading-base(
     $font-size-sm: 3.75rem,
     $font-size-lg: 5.5rem,
     $line-height: 1.05,
@@ -8,7 +11,7 @@
 }
 
 .t-heading-1 {
-  @include heading-base(
+  @include tools.heading-base(
     $font-size-sm: 2.5rem,
     $font-size-lg: 3.5rem,
     $letter-spacing: -3rem * 0.01
@@ -24,7 +27,7 @@
 }
 
 .t-heading-2 {
-  @include heading-base(
+  @include tools.heading-base(
     $font-size-sm: 2rem,
     $font-size-lg: 2.5rem,
     $letter-spacing: -2.5rem * 0.01
@@ -33,10 +36,7 @@
 }
 
 .t-heading-3 {
-  @include heading-base(
-    $font-size-sm: 1.675rem,
-    $font-size-lg: 1.75rem,
-  );
+  @include tools.heading-base($font-size-sm: 1.675rem, $font-size-lg: 1.75rem);
   margin-bottom: 0.75rem;
 }
 
@@ -49,10 +49,7 @@
 }
 
 .t-heading-4 {
-  @include heading-base(
-    $font-size-sm: 1.25rem,
-    $font-size-lg: 1.375rem,
-  );
+  @include tools.heading-base($font-size-sm: 1.25rem, $font-size-lg: 1.375rem);
   margin-bottom: 0.75rem;
 }
 
@@ -65,7 +62,7 @@
 }
 
 .t-heading-5 {
-  @include heading-base(
+  @include tools.heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 1rem,
     $letter-spacing: 0.875rem * 0.08,
@@ -84,7 +81,7 @@
 }
 
 .t-heading-6 {
-  @include heading-base(
+  @include tools.heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 0.875rem,
     $letter-spacing: 0.875rem * 0.08,
@@ -103,7 +100,7 @@
 }
 
 .t-paragraph {
-  @include paragraph-base;
+  @include tools.paragraph-base;
 }
 
 .t-paragraph--reverse {
@@ -121,7 +118,7 @@
   font-size: 1.5rem;
   line-height: 1.2;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: 2rem;
   }
 }
@@ -132,7 +129,7 @@
   font-size: 1.125rem;
   line-height: 1.4;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: 1.5rem;
   }
 }
@@ -140,7 +137,7 @@
 .t-paragraph--small {
   font-size: 0.8125rem;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: 0.875rem;
   }
 }
@@ -169,15 +166,15 @@
   font-weight: 400;
   letter-spacing: 0.5px;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     font-size: 0.75rem;
   }
 }
 
 .t-micro {
- font-size: 0.5625rem;
- letter-spacing: -0.5px;
- transform: translateY(-2px);
+  font-size: 0.5625rem;
+  letter-spacing: -0.5px;
+  transform: translateY(-2px);
 }
 
 .t-list {

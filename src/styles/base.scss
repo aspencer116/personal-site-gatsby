@@ -8,49 +8,48 @@
 // help ensure our content is readable in these older browsers.
 
 // Styles for a message if the browser is not supported
-@import "components.unsupported-message";
+@use "components/unsupported-message";
 
 // Styles for modern browsers:
-@supports (display: grid) {
-  // SETTINGS
-  @import "settings.colors";
-  @import "settings.breakpoints";
-  @import "settings.variables";
 
-  // TOOLS
-  @import "tools.mixins";
+// SETTINGS
+@use "settings/breakpoints"; // SASS variables
+@use "settings/color-variables"; // CSS custom properties
+@use "settings/variables"; // CSS custom properties
 
-  // GENERIC
-  @import "generic.safe-focus";
+// TOOLS
+@use "tools/mixins";
 
-  // ELEMENTS
-  @import "elements.reset";
+// GENERIC
+@use "generic/safe-focus";
 
-  // OBJECTS
-  @import "objects.general";
-  @import "objects.grid";
-  @import "objects.page-layout";
-  @import "objects.spacing";
-  @import "objects.typography";
+// ELEMENTS
+@use "elements/reset";
 
-  // OBJECTS - has to be after typography
-  @import "objects.colors";
+// OBJECTS
+@use "objects/general";
+@use "objects/grid";
+@use "objects/page-layout";
+@use "objects/spacing";
+@use "objects/typography";
 
-  // COMPONENTS
-  @import "components.button";
-  @import "components.color-block";
-  @import "components.current-work";
-  @import "components.case-study";
-  @import "components.case-study-link";
-  @import "components.case-study-links";
-  @import "components.case-study-header";
-  @import "components.homepage-hero";
-  @import "components.idea";
-  @import "components.ideas";
-  @import "components.quote";
-  @import "components.site-header";
-  @import "components.site-footer";
-  @import "components.video";
-  @import "components.work";
-  @import "components.work-listing";
-}
+// OBJECTS - has to be after typography
+@use "objects/colors";
+
+// COMPONENTS
+@use "components/button";
+@use "components/color-block";
+@use "components/current-work";
+@use "components/case-study";
+@use "components/case-study-link";
+@use "components/case-study-links";
+@use "components/case-study-header";
+@use "components/homepage-hero";
+@use "components/idea";
+@use "components/ideas";
+@use "components/quote";
+@use "components/site-header";
+@use "components/site-footer";
+@use "components/video";
+@use "components/work";
+@use "components/work-listing";
