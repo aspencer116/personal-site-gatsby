@@ -27,14 +27,14 @@
 @use "elements.reset";
 
 // OBJECTS
-@use "objects.general";
-@use "objects.grid" as objects2;
-@use "objects.page-layout" as objects3;
-@use "objects.spacing" as objects4;
-@use "objects.typography" as objects5;
+@use "objects/general";
+@use "objects/grid.scss";
+@use "objects/page-layout";
+@use "objects/spacing";
+@use "objects/typography";
 
 // OBJECTS - has to be after typography
-@use "objects.colors" as objects6;
+@use "objects/colors";
 
 // COMPONENTS
 @use "components.button" as components2;

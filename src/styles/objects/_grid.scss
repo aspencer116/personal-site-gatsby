@@ -1,4 +1,4 @@
-@use "settings.breakpoints";
+@use "../settings.breakpoints";
 
 // Grid classes
 .g-color-grid {
@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   grid-gap: 2rem;
-  
+
   @media (min-width: settings.$bp-md) {
     grid-template-columns: repeat(4, 1fr);
   }
