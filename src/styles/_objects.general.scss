@@ -1,9 +1,11 @@
+@use "tools.mixins";
+
 .o-visually-hidden {
-  @include visually-hidden;
+  @include tools.visually-hidden;
 }
 
 .o-delist {
-  @include delist;
+  @include tools.delist;
 }
 
 .o-delistelement {

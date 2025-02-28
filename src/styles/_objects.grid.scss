@@ -1,3 +1,5 @@
+@use "settings.breakpoints";
+
 // Grid classes
 .g-color-grid {
   display: grid;
@@ -5,19 +7,19 @@
   padding: 0;
   grid-gap: 2rem;
   
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .g-2-col {
-  @media (max-width: $bp-md) {
+  @media (max-width: settings.$bp-md) {
     & > *:not(:last-child) {
       margin-bottom: var(--space-lg);
     }
   }
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-md);

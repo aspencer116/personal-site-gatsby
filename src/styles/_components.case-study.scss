@@ -1,7 +1,9 @@
+@use "settings.breakpoints";
+
 .c-case-study {
   margin: calc(var(--v-page-margin) * 2) var(--v-page-margin);
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     margin: var(--v-page-margin);
   }
 }
@@ -15,7 +17,7 @@
 }
 
 .c-case-study__section--2-column {
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     display: flex;
   }
 }
@@ -23,19 +25,19 @@
 .c-case-study__section.full-width {
   margin-inline: calc(-1 * var(--v-page-margin));
   
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     display: flex;
     flex-direction: column;
   }
 }
 
 .c-case-study__section.crop {
-  @media (max-width: $bp-md) {
+  @media (max-width: settings.$bp-md) {
     height: 24rem;
   }
 
   & .c-video {
-    @media (max-width: $bp-md) {
+    @media (max-width: settings.$bp-md) {
       height: 24rem;
     }
   }
@@ -44,7 +46,7 @@
 .c-case-study__caption {
   margin-top: 2rem;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     max-width: 60ch;
     margin-top: -0.25rem;
     margin-bottom: 4rem;
@@ -52,7 +54,7 @@
   
   .c-case-study__section--2-column & {
     // Adjustments for captions beside images
-    @media (min-width: $bp-md) {
+    @media (min-width: settings.$bp-md) {
       margin-bottom: 0;
       width: calc(max(22vw, 200px));
       margin-left: 5%;
@@ -69,7 +71,7 @@
   & .c-case-study__caption {
     order: 1;
 
-    @media (min-width: $bp-md) {
+    @media (min-width: settings.$bp-md) {
       margin-right: 5%;
       margin-left: 0;
     }

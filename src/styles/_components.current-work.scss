@@ -1,7 +1,9 @@
+@use "settings.breakpoints";
+
 .c-current-work {
   padding: 0 var(--v-page-margin) 0;
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -15,11 +17,11 @@
     background: var(--c-grayscale-2);
   }
 
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     width: calc(83.25vw - #{var(--v-page-margin)});
   }
 
-  @media (min-width: $bp-lg) {
+  @media (min-width: settings.$bp-lg) {
     width: calc(66.75vw - #{var(--v-page-margin)});
   }
 

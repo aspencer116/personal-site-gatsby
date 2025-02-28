@@ -1,3 +1,5 @@
+@use "settings.breakpoints";
+
 .c-video-container {
   position: relative;
   overflow: hidden;
@@ -45,7 +47,7 @@
     // the browser default video controls will display if the user prefers reduced motion
     display: none;
   }
-  @media (min-width: $bp-md) {
+  @media (min-width: settings.$bp-md) {
     padding: 1rem;
   }
 
