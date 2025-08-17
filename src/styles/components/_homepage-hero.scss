@@ -138,6 +138,9 @@ $bp-hero-lg: 1200px;
   box-shadow: 16px 36px 90px -12px rgba(0, 0, 0, 0.2),
     2px 4px 10px 5px rgba(0, 0, 0, 0.03), 3px 6px 9px 0px rgba(0, 0, 0, 0.06);
 
+  // Hide until revealed with JS transition
+  opacity: 0;
+
   @media (prefers-color-scheme: dark) {
     background: var(--c-grayscale-2);
     box-shadow: 0px 36px 70px -12px rgba(0, 0, 0, 0.4),
@@ -155,9 +158,6 @@ $bp-hero-lg: 1200px;
     width: 50%;
     position: relative;
   }
-
-  // Hide until revealed with JS transition
-  opacity: 0;
 
   &:first-child {
     z-index: 2;

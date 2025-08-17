@@ -27,17 +27,18 @@
 }
 
 .t-heading-2 {
+  margin-bottom: 1rem;
+
   @include tools.heading-base(
     $font-size-sm: 2rem,
     $font-size-lg: 2.5rem,
     $letter-spacing: -2.5rem * 0.01
   );
-  margin-bottom: 1rem;
 }
 
 .t-heading-3 {
-  @include tools.heading-base($font-size-sm: 1.675rem, $font-size-lg: 1.75rem);
   margin-bottom: 0.75rem;
+  @include tools.heading-base($font-size-sm: 1.675rem, $font-size-lg: 1.75rem);
 }
 
 .t-heading-3--reverse {
@@ -49,8 +50,8 @@
 }
 
 .t-heading-4 {
-  @include tools.heading-base($font-size-sm: 1.25rem, $font-size-lg: 1.375rem);
   margin-bottom: 0.75rem;
+  @include tools.heading-base($font-size-sm: 1.25rem, $font-size-lg: 1.375rem);
 }
 
 .t-heading-4--reverse {
@@ -62,6 +63,7 @@
 }
 
 .t-heading-5 {
+  text-transform: uppercase;
   @include tools.heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 1rem,
@@ -69,7 +71,6 @@
     $weight: 500,
     $line-height: 1.2
   );
-  text-transform: uppercase;
 }
 
 .t-heading-5--reverse {
@@ -81,6 +82,7 @@
 }
 
 .t-heading-6 {
+  text-transform: uppercase;
   @include tools.heading-base(
     $font-size-sm: 0.875rem,
     $font-size-lg: 0.875rem,
@@ -88,7 +90,6 @@
     $weight: 500,
     $line-height: 1.2
   );
-  text-transform: uppercase;
 }
 
 .t-heading-6--reverse {

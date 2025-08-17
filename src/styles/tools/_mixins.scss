@@ -18,7 +18,7 @@
 
   @media (min-width: settings.$bp-md) {
     // Scale the font up as the screen gets larger
-    font-size: $font-size-sm / settings.$bp-md * 100vw;
+    font-size: calc($font-size-sm / settings.$bp-md * 100vw);
   }
 
   @media (min-width: settings.$bp-lg) {
