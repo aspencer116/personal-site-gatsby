@@ -6,12 +6,13 @@
   margin: 0;
 
   &:before {
-    @include tools.paragraph-base;
     position: absolute;
     content: open-quote;
     top: -0.25rem;
     left: -0.875rem;
     font-size: 1.125rem;
+
+    @include tools.paragraph-base;
 
     @media (min-width: settings.$bp-md) {
       font-size: 1.5rem;
