@@ -1,6 +1,14 @@
-import { Link } from "gatsby"
-import React from "react"
-import SiteFooterLink from "./siteFooterLink"
+import { Link } from "gatsby";
+import React from "react";
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
+import SiteFooterLink from "./siteFooterLink";
+
+class Carbon extends React.Component {
+  render() {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return <WebsiteCarbonBadge dark={prefersDark} co2="0.12" percentage='89' />;
+  }
+}
 
 const SiteHeader = () => (
   <footer className="c-site-footer">
@@ -9,13 +17,16 @@ const SiteHeader = () => (
         <span className="c-site-footer__logo">Andrew Spencer</span>
         <span className="t-paragraph t-meta--small"><a href="mailto:connect@andrew-spencer.com">connect@andrew-spencer.com</a></span>
       </span>
-      <ul className="o-delist c-site-footer__list">
-        <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" />
-        <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" />
-        <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" />
-        <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" />
-        <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" />
-      </ul>
+      <div className="c-site-footer__primary-inner">
+        <ul className="o-delist c-site-footer__list mb-sm">
+          <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" />
+          <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" />
+          <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" />
+          <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" />
+          <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" />
+        </ul>
+        <Carbon />
+      </div>
     </div>
     <div className="c-site-footer__secondary">
       <div className="c-site-footer__meta-container">

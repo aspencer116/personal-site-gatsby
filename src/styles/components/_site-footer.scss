@@ -16,6 +16,12 @@
   margin-bottom: 4rem;
 }
 
+.c-site-footer__primary-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .c-site-footer__secondary {
   display: flex;
   flex-direction: column;
