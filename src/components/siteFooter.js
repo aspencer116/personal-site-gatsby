@@ -19,10 +19,10 @@ const SiteHeader = () => (
       </span>
       <div className="c-site-footer__primary-inner">
         <ul className="o-delist c-site-footer__list mb-sm">
-          <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" />
-          <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" />
+          {/* <SiteFooterLink linkText="Dribbble" linkPath="https://dribbble.com/iam_aspencer" /> */}
           <SiteFooterLink linkText="Instagram" linkPath="https://www.instagram.com/iam_aspencer/" />
-          <SiteFooterLink linkText="Read.CV" linkPath="https://read.cv/andrewspencer" />
+          <SiteFooterLink linkText="CodePen" linkPath="https://codepen.io/iam_aspencer/" />
+          <SiteFooterLink linkText="Unsplash" linkPath="https://unsplash.com/@iam_aspencer" />
           <SiteFooterLink linkText="LinkedIn" linkPath="https://www.linkedin.com/in/andrew-spencer/" />
         </ul>
         <Carbon />
@@ -35,7 +35,7 @@ const SiteHeader = () => (
             © Andrew Spencer {new Date().getFullYear()}.
           </span>
           <span className="c-site-footer__meta t-meta--small">
-            This site is a work in progress <span className="t-micro">(v2.0.2)</span>
+            This site is a work in progress <span className="t-micro">(v2.0.3)</span>
           </span>
         </div>
         <div className="c-site-footer__meta-row">
