@@ -5,8 +5,11 @@ import SiteFooterLink from "./siteFooterLink";
 
 class Carbon extends React.Component {
   render() {
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return <WebsiteCarbonBadge dark={prefersDark} co2="0.12" percentage='89' />;
+    if (typeof window !== "undefined") {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return <WebsiteCarbonBadge dark={prefersDark} co2="0.12" percentage='89' />;
+    }
+    return null;
   }
 }
 
