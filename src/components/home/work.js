@@ -34,6 +34,12 @@ const Work = () => (
         featured
       />
       <WorkListing
+        title="HopSkipDrive"
+        description="A multi-platform feature launch for wheelchair accessible student transportation."
+        date="2025"
+        tags={["Product Design"]}
+      />
+      <WorkListing
         title="Groups Recover Together"
         description="A digital platform to provide hope for those recovering from addiction."
         date="2022"
