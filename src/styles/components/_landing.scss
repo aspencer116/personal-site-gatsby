@@ -1,19 +1,20 @@
 @use "../settings/breakpoints" as settings;
+
 .c-landing {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-// Hero heading area
 .c-landing__hero {
   flex: 1;
   display: flex;
   align-items: center;
   padding: var(--space-xl) var(--v-page-margin);
+
+  text-wrap: balance;
 }
 
-// Cards area
 .c-landing__cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -25,7 +26,7 @@
 }
 
 .c-landing__card {
-  padding: var(--space-lg) var(--v-page-margin);
+  padding: var(--v-page-margin) var(--v-page-margin) var(--space-lg);
   text-decoration: none;
   color: var(--c-black);
   transition: background-color var(--v-transition-time) var(--v-transition-function);
@@ -65,23 +66,12 @@
   }
 }
 
-.c-landing__arrow {
-  color: var(--c-grayscale-3);
-  flex-shrink: 0;
-  margin-top: 0.25rem;
-  transition: color var(--v-transition-time) var(--v-transition-function);
-
-  .c-landing__card:hover & {
-    color: var(--c-black);
-  }
-}
-
 .c-landing__card-description {
   color: var(--c-grayscale-5);
   font-family: var(--v-font-body);
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0 0 var(--space-md);
+  margin-bottom: var(--space-sm);
   max-width: 32rem;
 }
 
@@ -111,4 +101,15 @@
   background-color: var(--c-highlight);
   margin-right: 0.375rem;
   vertical-align: middle;
+}
+
+.c-landing__arrow {
+  color: var(--c-grayscale-3);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  transition: color var(--v-transition-time) var(--v-transition-function);
+
+  .c-landing__card:hover & {
+    color: var(--c-black);
+  }
 }

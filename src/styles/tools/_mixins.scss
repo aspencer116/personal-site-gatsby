@@ -30,8 +30,8 @@
   $color: var(--c-black),
   $line-height: 1.1,
   $weight: 200,
-  $font-size-sm: 2.5rem,
-  $font-size-lg: 5rem,
+  $font-size-sm: 5.5rem,
+  $font-size-lg: 5.5rem,
   $letter-spacing: -0.02em
 ) {
   color: $color;
@@ -42,7 +42,7 @@
   font-family: var(--v-font-editorial);
 
   @media (min-width: settings.$bp-md) {
-    font-size: calc($font-size-sm / settings.$bp-md * 100vw);
+    font-size: calc($font-size-sm / settings.$bp-md * 150vw);
   }
 
   @media (min-width: settings.$bp-lg) {

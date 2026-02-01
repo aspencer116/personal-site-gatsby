@@ -5,7 +5,7 @@
 // Common layout values
 
 :root {
-  --v-page-margin: 6.5vw;
+  --v-page-margin: 1rem;
 
   --v-transition-time-fast: 200ms;
   --v-transition-time: 300ms;
@@ -29,11 +29,7 @@
   --space-xl: 6rem;
 
   @media (min-width: settings.$bp-md) {
-    --v-page-margin: 10vw;
+    --v-page-margin: 1.5rem;
     --space-xl: 8rem;
-  }
-
-  @media (min-width: settings.$bp-lg) {
-    --space-xl: 10rem;
   }
 }

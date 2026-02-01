@@ -4,19 +4,16 @@ import React from "react"
 import { Link } from "gatsby"
 
 const ArrowIcon = () => (
-  <svg className="c-landing__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <svg className="c-landing__arrow" xmlns="http://www.w3.org/2000/svg" width="41" height="41" fill="none">
+    <path stroke="currentColor" stroke-width="1.5" d="M0 2.05h38.95m0 0V41m0-38.95-36.9 36.9" opacity=".8" />
   </svg>
 )
 
-const HomepageIntro = () => (
+const Landing = () => (
   <section className="c-landing">
-    <div className="c-landing__hero">
-      <h1 className="t-editorial">
-        Hey, I'm Andrew Spencer,
-        <br />a creative from New England
-      </h1>
-    </div>
+    <h1 className="c-landing__hero t-editorial">
+      Hey, I'm Andrew Spencer, a&nbsp;creative from New England
+    </h1>
 
     <div className="c-landing__cards">
       <Link to="/designer" className="c-landing__card">
@@ -49,4 +46,4 @@ const HomepageIntro = () => (
   </section>
 )
 
-export default HomepageIntro
+export default Landing
