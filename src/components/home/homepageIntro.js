@@ -12,8 +12,9 @@ const ArrowIcon = () => (
 const HomepageIntro = () => (
   <section className="c-landing">
     <div className="c-landing__hero">
-      <h1 className="c-landing__heading">
-        Hey, I'm Andrew Spencer,{"\n"}a creative from New England
+      <h1 className="t-editorial">
+        Hey, I'm Andrew Spencer,
+        <br />a creative from New England
       </h1>
     </div>
 

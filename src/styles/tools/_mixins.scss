@@ -26,6 +26,30 @@
   }
 }
 
+@mixin heading-editorial(
+  $color: var(--c-black),
+  $line-height: 1.1,
+  $weight: 200,
+  $font-size-sm: 2.5rem,
+  $font-size-lg: 5rem,
+  $letter-spacing: -0.02em
+) {
+  color: $color;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-sm;
+  line-height: $line-height;
+  font-family: var(--v-font-editorial);
+
+  @media (min-width: settings.$bp-md) {
+    font-size: calc($font-size-sm / settings.$bp-md * 100vw);
+  }
+
+  @media (min-width: settings.$bp-lg) {
+    font-size: $font-size-lg;
+  }
+}
+
 @mixin paragraph-base(
   $color: var(--c-black),
   $font-size-sm: 1rem,

@@ -10,6 +10,15 @@
   );
 }
 
+.t-editorial {
+  @include tools.heading-editorial(
+    $font-size-sm: 2.5rem,
+    $font-size-lg: 5.5rem,
+    $line-height: 1.1,
+    $letter-spacing: -2.5rem * 0.02
+  );
+}
+
 .t-heading-1 {
   @include tools.heading-base(
     $font-size-sm: 2.5rem,

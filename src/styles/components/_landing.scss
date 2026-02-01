@@ -1,5 +1,4 @@
 @use "../settings/breakpoints" as settings;
-
 .c-landing {
   min-height: 100vh;
   display: flex;
@@ -12,33 +11,6 @@
   display: flex;
   align-items: center;
   padding: var(--space-xl) var(--v-page-margin);
-}
-
-.c-landing__heading {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-weight: 400;
-  color: var(--c-black);
-  margin: 0;
-  white-space: pre-line;
-  font-size: 2.5rem;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-
-  @media (min-width: settings.$bp-sm) {
-    font-size: 3.5rem;
-  }
-
-  @media (min-width: settings.$bp-md) {
-    font-size: calc(3.5rem / settings.$bp-md * 100vw);
-  }
-
-  @media (min-width: settings.$bp-lg) {
-    font-size: 5rem;
-  }
-
-  @media (min-width: settings.$bp-xl) {
-    font-size: 5.5rem;
-  }
 }
 
 // Cards area

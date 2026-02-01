@@ -30,6 +30,14 @@
   src: url(/fonts/Segment-Bold.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: "PP Editorial New";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/fonts/PPEditorialNew-Ultralight.woff2) format('woff2');
+}
+
 html {
   // Color outside the page
   background-color: var(--c-grayscale-1);
