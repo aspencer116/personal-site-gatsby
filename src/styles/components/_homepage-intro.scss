@@ -1,0 +1,142 @@
+@use "../settings/breakpoints" as settings;
+
+.c-landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Hero heading area
+.c-landing__hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: var(--space-xl) var(--v-page-margin);
+}
+
+.c-landing__heading {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--c-black);
+  margin: 0;
+  white-space: pre-line;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+
+  @media (min-width: settings.$bp-sm) {
+    font-size: 3.5rem;
+  }
+
+  @media (min-width: settings.$bp-md) {
+    font-size: calc(3.5rem / settings.$bp-md * 100vw);
+  }
+
+  @media (min-width: settings.$bp-lg) {
+    font-size: 5rem;
+  }
+
+  @media (min-width: settings.$bp-xl) {
+    font-size: 5.5rem;
+  }
+}
+
+// Cards area
+.c-landing__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--c-grayscale-2);
+
+  @media (min-width: settings.$bp-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.c-landing__card {
+  padding: var(--space-lg) var(--v-page-margin);
+  text-decoration: none;
+  color: var(--c-black);
+  transition: background-color var(--v-transition-time) var(--v-transition-function);
+
+  &:first-child {
+    border-bottom: 1px solid var(--c-grayscale-2);
+
+    @media (min-width: settings.$bp-md) {
+      border-bottom: none;
+      border-right: 1px solid var(--c-grayscale-2);
+    }
+  }
+
+  &:hover {
+    background-color: var(--c-white);
+  }
+}
+
+.c-landing__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.c-landing__card-title {
+  font-family: var(--v-font-display);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--c-black);
+
+  @media (min-width: settings.$bp-md) {
+    font-size: 2.5rem;
+  }
+}
+
+.c-landing__arrow {
+  color: var(--c-grayscale-3);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  transition: color var(--v-transition-time) var(--v-transition-function);
+
+  .c-landing__card:hover & {
+    color: var(--c-black);
+  }
+}
+
+.c-landing__card-description {
+  color: var(--c-grayscale-5);
+  font-family: var(--v-font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 var(--space-md);
+  max-width: 32rem;
+}
+
+.c-landing__card-detail {
+  color: var(--c-grayscale-4);
+  font-family: var(--v-font-body);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.c-landing__link {
+  color: var(--c-grayscale-4);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: var(--c-black);
+  }
+}
+
+.c-landing__status-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--c-highlight);
+  margin-right: 0.375rem;
+  vertical-align: middle;
+}
