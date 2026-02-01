@@ -4,6 +4,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+}
+
+// Remove footer margin when landing is present
+main:has(.c-landing) + .c-site-footer {
+  margin-top: 0;
 }
 
 .c-landing__hero {
