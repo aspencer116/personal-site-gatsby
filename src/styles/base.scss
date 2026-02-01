@@ -30,10 +30,10 @@
 @use "objects/general";
 @use "objects/grid";
 @use "objects/page-layout";
-@use "objects/spacing";
 @use "objects/typography";
 
 // OBJECTS - has to be after typography
+@use "objects/spacing";
 @use "objects/colors";
 
 // COMPONENTS

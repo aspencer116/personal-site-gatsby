@@ -44,6 +44,8 @@ Prefer existing utility classes from `src/styles/objects/` over writing new decl
 
 Only create new declarations in component files for layout and behavior specific to that component. Do not duplicate typography sizes, spacing values, or color assignments that already exist as utilities.
 
+Even if the utility styles for typography are not exactly right, still prefer these in order to stay consistent across the codebase.
+
 ## CSS Variables
 
 Key variables defined in `:root` (see `src/styles/settings/`):

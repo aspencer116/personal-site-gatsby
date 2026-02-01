@@ -14,7 +14,7 @@
   letter-spacing: $letter-spacing;
   font-size: $font-size-sm;
   line-height: $line-height;
-  font-family: var(--v-font-display);
+  font-family: var(--v-font-body);
 
   @media (min-width: settings.$bp-md) {
     // Scale the font up as the screen gets larger
