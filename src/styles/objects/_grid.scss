@@ -12,6 +12,51 @@
   }
 }
 
+// 12-column grid
+.g-12-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--v-page-margin);
+}
+
+// Column span utilities
+@for $i from 1 through 12 {
+  .g-col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+// Column start utilities
+@for $i from 1 through 12 {
+  .g-start-#{$i} {
+    grid-column-start: $i;
+  }
+}
+
+// Responsive column span utilities
+$breakpoint-prefixes: (
+  "sm": settings.$bp-sm,
+  "md": settings.$bp-md,
+  "lg": settings.$bp-lg,
+  "xl": settings.$bp-xl,
+);
+
+@each $prefix, $bp in $breakpoint-prefixes {
+  @media (min-width: $bp) {
+    @for $i from 1 through 12 {
+      .g-col-#{$i}\@#{$prefix} {
+        grid-column: span $i;
+      }
+    }
+
+    @for $i from 1 through 12 {
+      .g-start-#{$i}\@#{$prefix} {
+        grid-column-start: $i;
+      }
+    }
+  }
+}
+
 .g-2-col {
   @media (max-width: settings.$bp-md) {
     & > *:not(:last-child) {
