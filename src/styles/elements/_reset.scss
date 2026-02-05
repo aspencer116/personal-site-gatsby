@@ -67,3 +67,9 @@ a {
     text-decoration: none;
   }
 }
+
+sup {
+  display: inline-block;
+  transform: translateY(-0.25rem);
+  margin-left: 1px;
+}
