@@ -78,10 +78,10 @@ const SiteHeader = ({ lightVersion }) => {
                 <Link to="/" className="c-nav-overlay__link c-button c-button--ghost">About</Link>
               </li>
               <li className="c-nav-overlay__item">
-                <Link to="/" className="c-nav-overlay__link c-button c-button--ghost">Design<sup className="t-micro">6</sup></Link>
+                <Link to="/designer" className="c-nav-overlay__link c-button c-button--ghost">Design<sup className="t-micro">6</sup></Link>
               </li>
               <li className="c-nav-overlay__item">
-                <Link to="/" className="c-nav-overlay__link c-button c-button--ghost">Photos<sup className="t-micro">6</sup></Link>
+                <Link to="/photographer" className="c-nav-overlay__link c-button c-button--ghost">Photos<sup className="t-micro">6</sup></Link>
               </li>
               <li className="c-nav-overlay__item">
                 <Link to="/" className="c-nav-overlay__link c-button c-button--ghost">Ideas<sup className="t-micro">8</sup></Link>
