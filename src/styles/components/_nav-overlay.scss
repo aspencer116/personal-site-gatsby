@@ -1,6 +1,7 @@
 @use "../settings/breakpoints" as settings;
 
 .c-nav-overlay {
+  pointer-events: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,13 +12,31 @@
 
   padding: var(--space-xs);
 
+  display: none; // Hide from screen readers until opened
   opacity: 0;
-  pointer-events: none;
-  transition: all var(--v-transition-time-long) var(--v-transition-function);
+
+  transition: 
+    display 0s allow-discrete,
+    opacity var(--v-transition-time-long) var(--v-transition-function);
+
+   @media (min-width: settings.$bp-md) {
+    padding: var(--space-sm);
+  }
 
   &--open {
+    display: block;
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+@starting-style {
+  .c-nav-overlay {
+    opacity: 0;
+  }
+
+  .c-nav-overlay__inner {
+    transform: translate(0.5rem, 0.5rem);
   }
 }
 
@@ -29,10 +48,18 @@
   padding: var(--space-xs);
   background: var(--c-white);
   border-radius: 1rem;
-  
+
+  transform: translate(0.5rem, 0.5rem);
+  transition: all var(--v-transition-time) var(--v-transition-function);
+
   @media (min-width: settings.$bp-md) {
     left: auto;
     width: fit-content;
+  }
+
+  .c-nav-overlay--open & {
+    transition: all var(--v-transition-time) var(--v-transition-function);
+    transform: translate(0, 0);
   }
 }
 
