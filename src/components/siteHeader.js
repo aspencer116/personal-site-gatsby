@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { Link } from "gatsby"
 
@@ -24,6 +24,18 @@ const SiteHeader = ({ lightVersion }) => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen])
 
   return (
     <>
@@ -56,8 +68,10 @@ const SiteHeader = ({ lightVersion }) => {
         </div>
       </nav>
 
-      <div className={`c-nav-overlay ${menuOpen ? 'c-nav-overlay--open' : ''}`}>
-        <div className="c-nav-overlay__inner">
+      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+      <div className={`c-nav-overlay ${menuOpen ? 'c-nav-overlay--open' : ''}`} onClick={toggleMenu}>
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+        <div className="c-nav-overlay__inner" onClick={(e) => e.stopPropagation()}>
           <nav className="c-nav-overlay__nav">
             <ul className="c-nav-overlay__list o-delist">
               <li className="c-nav-overlay__item">
@@ -73,7 +87,7 @@ const SiteHeader = ({ lightVersion }) => {
                 <Link to="/" className="c-nav-overlay__link c-button c-button--ghost">Ideas<sup className="t-micro">8</sup></Link>
               </li>
               <li className="c-nav-overlay__item">
-                <Link to="/" className="c-button">Contact</Link>
+                <a href="mailto:connect@andrew-spencer.com" className="c-button">Contact</a>
               </li>
             </ul>
           </nav>
