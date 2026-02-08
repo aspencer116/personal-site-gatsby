@@ -15,9 +15,8 @@ main:has(.c-landing) + .c-site-footer {
 .c-landing__hero {
   flex: 1;
   display: flex;
-  align-items: center;
   padding: var(--space-xl) var(--v-page-margin);
-
+  
   text-wrap: balance;
 }
 

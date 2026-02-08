@@ -4,30 +4,32 @@ import HomepageHeroImages from "./homepageHeroImages"
 
 const HomepageHero = () => {
   return (
-    <section className="c-homepage-hero">
+    <section className="c-homepage-hero g-12-grid">
       <CSSTransition
         in={true}
         timeout={3000}
         classNames="transition-homepage-hero__heading"
         appear
       >
-        <h1 className="t-title c-homepage-hero__heading" aria-label="Product Designer">
-          <span>P</span>
-          <span>r</span>
-          <span>o</span>
-          <span>d</span>
-          <span>u</span>
-          <span>c</span>
-          <span>t</span>
-          <span className="with-space"></span>
-          <span>D</span>
-          <span>e</span>
-          <span>s</span>
-          <span>i</span>
-          <span>g</span>
-          <span>n</span>
-          <span>e</span>
-          <span>r</span>
+        <h1 className="t-editorial c-homepage-hero__heading" aria-label="Product Designer">
+          Hey, I'm Andrew Spencer, a&#20;
+          <span>
+            <span>p</span>
+            <span>r</span>
+            <span>o</span>
+            <span>d</span>
+            <span>u</span>
+            <span>c</span>
+            <span>t&#20;</span>
+            <span>D</span>
+            <span>e</span>
+            <span>s</span>
+            <span>i</span>
+            <span>g</span>
+            <span>n</span>
+            <span>e</span>
+            <span>r</span>
+          </span>
         </h1>
       </CSSTransition>
       <div className="c-homepage-hero__primary">

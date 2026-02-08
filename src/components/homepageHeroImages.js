@@ -53,9 +53,9 @@ const HomepageHeroImages = () => {
         >
           <div className="c-homepage-hero__image-frame">
             <div className="c-homepage-hero__image-mask">
-              <Parallax speed={10}>
-                <GatsbyImage 
-                  image={hero1Image} 
+              <Parallax speed={7}>
+                <GatsbyImage
+                  image={hero1Image}
                   alt="Screenshot of the Frontrow Health website screenshot on a mobile device. Showing a list of medical products available for purchase."
                 />
               </Parallax>
@@ -70,15 +70,15 @@ const HomepageHeroImages = () => {
         >
           <div className="c-homepage-hero__image-frame c-homepage-hero__image-container--alt">
             <div className="c-homepage-hero__image-mask">
-              <Parallax speed={6}>
-                <GatsbyImage 
-                  image={hero2Image} 
+              <Parallax speed={4}>
+                <GatsbyImage
+                  image={hero2Image}
                   alt="Screenshot of the Harvard Business Review mobile app. Showing a feed of articles."
                 />
               </Parallax>
               <div className="c-homepage-hero__navigation">
-                <GatsbyImage 
-                  image={hero2NavImage} 
+                <GatsbyImage
+                  image={hero2NavImage}
                   alt=""
                   aria-hidden="true"
                 />
