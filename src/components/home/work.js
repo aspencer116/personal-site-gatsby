@@ -9,12 +9,12 @@ const Work = () => (
     <div className="c-work__text">
       <p className="t-paragraph t-paragraph--callout">
         As a designer who codes, I us an analytical approach to design to
-        deliver engaging, beautiful digital experiences that&nbsp;scale.
+        deliver digital experiences that&nbsp;scale.
       </p>
       <p className="t-paragraph">
-        Having worked as a design consultant for almost a decade, I’ve helped
+        Having worked as a design consultant for almost a decade, I've helped
         build teams and launch successful products for companies of all sizes.
-        I’m a generalist designer who bridges the gap between design and code to
+        I'm a generalist designer who bridges the gap between design and code to
         help teams deliver great&nbsp;products.
       </p>
       <p className="t-paragraph t-subtle">
@@ -41,38 +41,38 @@ const Work = () => (
       />
       <WorkListing
         title="Groups Recover Together"
-        description="A digital platform to provide hope for those recovering from addiction."
+        description="A digital platform to provide hope for those recovering from addiction."
         date="2022"
         tags={["Product Design"]}
       />
       <WorkListing
         title="Fanatics"
-        description="A new consumer app for the leader in licensed sports merchandise."
+        description="A new consumer app for the leader in licensed sports merchandise."
         date="2022"
         tags={["Product Design"]}
       />
       <WorkListing
         title="National Kidney Foundation"
-        description="A website redesign to help patients and professionals find critical info."
+        description="A website redesign to help patients and professionals find critical info."
         date="2019"
         tags={["Web Design", "Frontend Dev"]}
       // liveSite={"https://www.kidney.org"}
       />
       <WorkListing
         title="Seegrid"
-        description="An ecosystem of digital tools to help humans manage warehouse automation robots."
+        description="An ecosystem of digital tools to help humans manage warehouse automation robots."
         date="2021"
         tags={["Product Design", "Design System"]}
       />
       <WorkListing
         title="Dealer Tire"
-        description="A first of its kind product to help car dealerships inspect, track, and sell tires."
+        description="A first of its kind product to help car dealerships inspect, track, and sell tires."
         date="2019"
         tags={["Product Design", "Frontend Dev"]}
       />
       <WorkListing
         title="Frontrow Health"
-        description="A zero to MVP launch for a health tech startup delivering a health products marketplace for consumers powered by reviews from providers."
+        description="A zero to MVP launch for a health tech startup delivering a health products marketplace for consumers powered by reviews from providers."
         date="2022"
         tags={["Product Design", "UX Testing"]}
       />

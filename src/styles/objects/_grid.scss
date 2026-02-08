@@ -5,7 +5,7 @@
   display: grid;
   margin: 0;
   padding: 0;
-  grid-gap: 2rem;
+  grid-gap: var(--v-grid-gap);
 
   @media (min-width: settings.$bp-md) {
     grid-template-columns: repeat(4, 1fr);
@@ -16,7 +16,7 @@
 .g-12-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--v-page-margin);
+  gap: var(--v-grid-gap);
 }
 
 // Column span utilities
