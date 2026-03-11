@@ -1,0 +1,13 @@
+.c-photo {
+  // todo
+}
+
+.c-photo--vertical {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.c-photo--horizontal {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

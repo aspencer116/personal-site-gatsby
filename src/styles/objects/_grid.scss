@@ -22,7 +22,7 @@
 // Column span utilities
 @for $i from 1 through 12 {
   .g-col-#{$i} {
-    grid-column: span $i;
+    grid-column-end: span $i;
   }
 }
 
@@ -45,7 +45,7 @@ $breakpoint-prefixes: (
   @media (min-width: $bp) {
     @for $i from 1 through 12 {
       .g-col-#{$i}\@#{$prefix} {
-        grid-column: span $i;
+        grid-column-end: span $i;
       }
     }
 

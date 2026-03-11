@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/NEXT-Pan-Book-Light.woff2) format('woff2');
+  src: url(/fonts/NEXT-Pan-Book-Light.woff2) format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/NEXT-Pan-Book-Medium.woff2) format('woff2');
+  src: url(/fonts/NEXT-Pan-Book-Medium.woff2) format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/Segment-Regular.woff2) format('woff2');
+  src: url(/fonts/Segment-Regular.woff2) format("woff2");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/fonts/Segment-Bold.woff2) format('woff2');
+  src: url(/fonts/Segment-Bold.woff2) format("woff2");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(/fonts/PPEditorialNew-Ultralight.woff2) format('woff2');
+  src: url(/fonts/PPEditorialNew-Ultralight.woff2) format("woff2");
 }
 
 html {
@@ -55,14 +55,24 @@ body {
   background-color: var(--c-grayscale-1);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin-left: 0 !important;
+}
+
+p,
+span {
+  color: var(--c-black);
 }
 
 a {
   color: var(--c-black);
   transition: all var(--v-transition-time) var(--v-transition-function);
+  text-underline-offset: 16%;
+  text-decoration-thickness: 7%;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: color-mix(in srgb, currentColor 80%, transparent);
 
   &:hover {
     text-decoration: none;

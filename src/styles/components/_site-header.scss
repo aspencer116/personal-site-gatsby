@@ -36,11 +36,11 @@
 
 .c-site-header__logo {
   display: contents;
-  
+
   & > * {
     transition: opacity var(--v-transition-time) var(--v-transition-function);
   }
-  
+
   &:hover > * {
     opacity: 0.6;
   }
@@ -61,6 +61,19 @@
 
   @media (min-width: settings.$bp-md) {
     display: flex;
+  }
+}
+
+.c-site-header__subtitle-link {
+  color: inherit;
+  transition: opacity var(--v-transition-time) var(--v-transition-function);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.active {
+    text-decoration: none;
   }
 }
 

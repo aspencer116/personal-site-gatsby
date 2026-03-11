@@ -1,7 +1,8 @@
 import PropTypes from "prop-types"
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useState } from "react"
 
 import { Link } from "gatsby"
+import { useLocation } from "@reach/router"
 
 const MenuIcon = () => (
   <svg className="c-site-header__menu-icon" width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +21,10 @@ const CloseIcon = () => (
 
 const SiteHeader = ({ lightVersion }) => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { pathname } = useLocation()
+
+  const isDesignerActive = pathname === "/designer" || pathname.startsWith("/designer/")
+  const isPhotographerActive = pathname === "/photographer" || pathname.startsWith("/photographer/")
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -55,7 +60,21 @@ const SiteHeader = ({ lightVersion }) => {
           </Link>
 
 
-          <span className="c-site-header__subtitle t-body t-subtle g-col-6">Product Designer &amp; Photographer</span>
+          <span className="c-site-header__subtitle t-body t-subtle g-col-6">
+            <Link
+              to="/designer"
+              className={`c-site-header__subtitle-link${isDesignerActive ? " active" : ""}`}
+            >
+              Product Designer
+            </Link>
+            <span className="t-subtle">&nbsp;&amp;&nbsp;</span>
+            <Link
+              to="/photographer"
+              className={`c-site-header__subtitle-link${isPhotographerActive ? " active" : ""}`}
+            >
+              Photographer
+            </Link>
+          </span>
 
           <button
             className="c-site-header__menu g-col-1 g-start-12"
