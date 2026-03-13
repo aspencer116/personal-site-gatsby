@@ -7,6 +7,7 @@ $c-highlight: #ee9833;
 $c-white: #ffffff;
 $c-grayscale-1: #f9fafa;
 $c-grayscale-1-rgb: 249, 250, 250;
+$c-grayscale-15: #ecefef;
 $c-grayscale-2: #e1e2e3;
 $c-grayscale-3: #909398;
 $c-grayscale-4: #5f6569;
@@ -20,6 +21,7 @@ $c-black: #0b0c0c;
 
   --c-grayscale-1: #{$c-grayscale-1};
   --c-grayscale-1-rgb: #{$c-grayscale-1-rgb};
+  --c-grayscale-15: #{$c-grayscale-15};
   --c-grayscale-2: #{$c-grayscale-2};
   --c-grayscale-3: #{$c-grayscale-3};
   --c-grayscale-4: #{$c-grayscale-4};
@@ -34,7 +36,8 @@ $c-black: #0b0c0c;
   @media (prefers-color-scheme: dark) {
     --c-grayscale-1: #{$c-black};
     --c-grayscale-1-rgb: 11, 12, 12;
-    --c-grayscale-2: #{$c-grayscale-6};
+    --c-grayscale-15: #{$c-grayscale-6};
+    --c-grayscale-2: #{$c-grayscale-5};
     --c-grayscale-3: #{$c-grayscale-4};
     --c-grayscale-4: #{$c-grayscale-3};
     --c-grayscale-5: #{$c-grayscale-2};

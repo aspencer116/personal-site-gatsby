@@ -1,8 +1,9 @@
 .c-grid-block {
-  border-block: 1px solid var(--c-grayscale-2);
+  border-block: 1px solid var(--c-grayscale-15);
 
-  * > div {
-    border-inline: 1px solid var(--c-grayscale-2);
+  * > div[class^="g-"],
+  * > div[class*=" g-"] {
+    border-inline: 1px solid var(--c-grayscale-15);
   }
 }
 
@@ -13,4 +14,6 @@
   height: 100%;
   min-height: 100%;
   flex: 1 1 auto;
+
+  padding-block: var(--space-xs);
 }

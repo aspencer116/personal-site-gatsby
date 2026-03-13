@@ -15,7 +15,7 @@ $bp-hero-lg: 1200px;
   margin: 0;
   color: var(--c-black);
   text-wrap: balance;
-    
+
   @media (max-width: settings.$bp-sm) {
     grid-row: 1 / 2;
     padding-block: var(--space-xl) var(--space-md);
@@ -38,10 +38,10 @@ $bp-hero-lg: 1200px;
 .c-homepage-hero__primary {
   grid-column: 1 / 13;
   grid-row: 3 / 4;
-  
+
   position: relative;
   z-index: 2;
-  
+
   @media (min-width: settings.$bp-sm) {
     grid-column: 1 / 5;
   }
@@ -61,7 +61,7 @@ $bp-hero-lg: 1200px;
   z-index: 2;
   overflow: hidden;
   position: relative;
-  
+
   @media (min-width: settings.$bp-sm) {
     grid-column: 6 / 13;
     grid-row: 2 / 3;
@@ -153,7 +153,7 @@ $bp-hero-lg: 1200px;
   opacity: 0;
 
   @media (prefers-color-scheme: dark) {
-    background: var(--c-grayscale-2);
+    background: var(--c-grayscale-15);
     box-shadow: 0px 36px 70px -12px rgba(0, 0, 0, 0.4),
       0px 2.5px 8px 5px rgba(0, 0, 0, 0.2),
       0px 0px 9px 0px rgba(255, 255, 255, 0.03) inset,
@@ -322,9 +322,10 @@ $transition-image-delay: 1500ms;
 .c-homepage-hero__image-3-appear-done {
   opacity: 1;
   transform: translateY(0) rotateX(0);
-  transition:
-    opacity $transition-image-time $transition-image-delay var(--v-transition-function),
-    transform $transition-image-time $transition-image-delay var(--v-transition-function);
+  transition: opacity $transition-image-time $transition-image-delay
+      var(--v-transition-function),
+    transform $transition-image-time $transition-image-delay
+      var(--v-transition-function);
 }
 
 .c-homepage-hero__image-1-appear picture,
@@ -363,9 +364,10 @@ $transition-image-delay: 1500ms;
 .transition-homepage-hero__heading-appear-done span {
   opacity: 1;
   transform: translateY(0) rotateX(0);
-  transition: 
-    opacity $transition-heading-time $transition-heading-delay var(--v-transition-function),
-    transform $transition-heading-time $transition-heading-delay var(--v-transition-function);
+  transition: opacity $transition-heading-time $transition-heading-delay
+      var(--v-transition-function),
+    transform $transition-heading-time $transition-heading-delay
+      var(--v-transition-function);
 }
 
 @for $i from 1 through 16 {
@@ -384,9 +386,10 @@ $transition-image-delay: 1500ms;
 .transition-homepage-hero__text-appear-done * {
   opacity: 1;
   transform: translateY(0);
-  transition:
-    opacity $transition-text-time $transition-text-delay var(--v-transition-function),
-    transform $transition-text-time $transition-text-delay var(--v-transition-function);
+  transition: opacity $transition-text-time $transition-text-delay
+      var(--v-transition-function),
+    transform $transition-text-time $transition-text-delay
+      var(--v-transition-function);
 }
 
 @for $i from 1 through 5 {

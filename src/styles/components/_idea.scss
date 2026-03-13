@@ -5,13 +5,13 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background-color: var(--c-white);
+  border: 1px solid var(--c-grayscale-15);
   color: var(--c-black);
 
   width: 15rem;
   padding: 1.5rem;
-  margin-right: 1rem;
 
+  will-change: contents;
   transition: all var(--v-transition-time-fast)
     var(--v-transition-function-easy);
 
@@ -20,15 +20,12 @@
     min-height: 22rem;
     width: 25.934vw;
     padding: 2rem;
-    margin-right: 2rem;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--c-grayscale-2);
   }
 
   &:hover {
     transform: translateY(-4px);
+    border-color: var(--c-grayscale-2);
+
     transition-duration: var(--v-transition-time-fast);
     transition-delay: 75ms;
 

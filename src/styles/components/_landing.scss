@@ -4,7 +4,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 // Remove footer margin when landing is present
@@ -16,14 +15,14 @@ main:has(.c-landing) + .c-site-footer {
   flex: 1;
   display: flex;
   padding: var(--space-xl) var(--v-page-margin);
-  
+
   text-wrap: balance;
 }
 
 .c-landing__cards {
   display: grid;
   grid-template-columns: 1fr;
-  border-top: 1px solid var(--c-grayscale-2);
+  border-top: 1px solid var(--c-grayscale-15);
 
   @media (min-width: settings.$bp-md) {
     grid-template-columns: 1fr 1fr;
@@ -34,14 +33,15 @@ main:has(.c-landing) + .c-site-footer {
   padding: var(--v-page-margin) var(--v-page-margin) var(--space-lg);
   text-decoration: none;
   color: var(--c-black);
-  transition: background-color var(--v-transition-time) var(--v-transition-function);
+  transition: background-color var(--v-transition-time)
+    var(--v-transition-function);
 
   &:first-child {
-    border-bottom: 1px solid var(--c-grayscale-2);
+    border-bottom: 1px solid var(--c-grayscale-15);
 
     @media (min-width: settings.$bp-md) {
       border-bottom: none;
-      border-right: 1px solid var(--c-grayscale-2);
+      border-right: 1px solid var(--c-grayscale-15);
     }
   }
 

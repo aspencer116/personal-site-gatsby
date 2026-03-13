@@ -6,7 +6,8 @@
   border: 1px solid var(--c-black);
   border-radius: 0.5rem;
   text-decoration: none; //reset links
-  transition: all var(--v-transition-time-long) var(--v-transition-function-easy);
+  transition: all var(--v-transition-time-long)
+    var(--v-transition-function-easy);
   cursor: pointer;
   @include tools.paragraph-base;
 
@@ -26,7 +27,7 @@
 
   &:hover {
     color: var(--c-black);
-    background: var(--c-grayscale-2);
+    background: var(--c-grayscale-15);
   }
 }
 

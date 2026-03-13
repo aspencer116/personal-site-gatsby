@@ -67,16 +67,12 @@
       & > *:first-child {
         opacity: 0;
         transform: scale(1);
-        // animation: image-out 3000ms 50ms var(--v-transition-function-easy-in);
-        // animation-fill-mode: forwards;
       }
 
       & > *:last-child {
         opacity: 1;
         transform: scale(1.03);
         transition-delay: 150ms;
-        // animation: image-in 600ms 100ms var(--v-transition-function-easy-in)
-        // forwards;
       }
     }
   }
@@ -116,22 +112,4 @@
 
 .c-work-listing__site {
   padding-bottom: 0.5rem; // make the touch target larger
-}
-
-@keyframes image-in {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes image-out {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.95);
-  }
 }
