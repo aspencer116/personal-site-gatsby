@@ -37,9 +37,14 @@
 }
 
 .c-ideas__scroll-container {
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   width: 100%;
   padding: 2rem 0 1rem;
+
+  scrollbar-color: var(--c-grayscale-2) transparent;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
 
   @media (min-width: settings.$bp-md) {
     padding-top: 4rem;
@@ -49,7 +54,7 @@
 .c-ideas__list {
   display: flex;
   flex-direction: row;
-  margin-top: 0;
+  margin-block: 0;
   padding-left: var(--v-page-margin);
   padding-top: 1rem;
 

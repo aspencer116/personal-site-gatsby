@@ -1,6 +1,11 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  /* Scrollbar styles */
+  scrollbar-color: var(--c-grayscale-2) transparent;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
 }
 body {
   margin: 0;

@@ -14,7 +14,6 @@ const Ideas = () => (
           title="Contrast Description Figma Plugin"
           actionText="Try it out"
           actionLink="https://www.figma.com/community/plugin/1010556985353208247"
-          callout
         />
         <Idea
           type="Article"
