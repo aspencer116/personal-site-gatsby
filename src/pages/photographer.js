@@ -4,6 +4,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { CSSTransition } from 'react-transition-group'
 import Layout from "../components/layout"
+import GridImageBlock from "../components/photography/gridImageBlock"
 import SEO from "../components/seo"
 
 const PhotographerPage = () => {
@@ -65,14 +66,14 @@ const PhotographerPage = () => {
             classNames="transition-homepage-hero__text"
             appear
           >
-            <div className="g-col-4@md c-grid-block__text t-subtle">
+            <div className="c-grid-block__text g-col-4@md t-subtle">
               <p className="c-homepage-hero__intro">
                 Capturing the beauty of the world we live in and the story of your brand.
               </p>
 
               <div>
                 <p className="t-paragraph t-paragraph--small t-paragraph--tight c-homepage-hero__detail">
-                  Freelance photographer focused on Small businesses in New England
+                  I'm a New England based Freelance Photographer focused on small businesses.
                 </p>
                 <ul className="o-delist c-homepage-hero__list t-subtle">
                   <li className="o-delist t-meta c-homepage-hero__list-item">Retail</li>
@@ -86,7 +87,7 @@ const PhotographerPage = () => {
             </div>
           </CSSTransition>
 
-          <div className="g-start-6@md g-col-7@md">
+          <div className="c-grid-block__photo g-start-6@md g-col-7@md">
             <GatsbyImage
               image={placeholderImage}
               alt="Bedroom interior at Villa Hygge Hotel with wooden walls and cozy bedding"
@@ -96,113 +97,84 @@ const PhotographerPage = () => {
         </div>
       </section>
 
-      <section className="o-page-layout g-12-grid">
-        {/* Row 1 */}
-        <div className="g-col-2@md mb-xl">
-          <h2 className="t-heading-2">My Work</h2>
-          <p className="t-paragraph">
-            I prefer to take pictures of things that hold still. The spaces that inspire us, the beautiful world around us, and the things and food that bring joy to the every day.
-          </p>
-          <p className="t-paragraph">
-            I call New England home but have a passion for travel.
-          </p>
-        </div>
-        
-        <div className="g-start-4@md g-col-3@md mb-xl">
-          <GatsbyImage
-            image={placeholderImage}
-            alt="Alt text"
-            className="c-photo c-photo--vertical mb-md"
-          />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
-        </div>
+      <section className="c-grid-block mb-xl">
+        <div className="o-page-layout g-12-grid">
+          <div className="c-grid-block__text c-grid-block__gap g-col-2@md">
+            <h2 className="t-heading-2">My Work</h2>
 
-        <div className="g-start-8@md g-col-5@md mb-xl">
-          <GatsbyImage
+            <div className="c-grid-block__spacing">
+              <p className="t-paragraph t-paragraph--small">
+                Spaces, places, and things that have caught my eye.
+              </p>
+            </div>
+          </div>
+          
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-start-4@md g-col-3@md"
             image={placeholderImage}
             alt="Alt text"
-            className="c-photo c-photo--horizontal mb-md"
+            imageClassName="c-photo c-photo--vertical"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
           />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
-        </div>
 
-        {/* Row 2 */}
-        <div className="g-col-4@md mb-xl">
-          <GatsbyImage
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-start-8@md g-col-5@md"
             image={placeholderImage}
             alt="Alt text"
-            className="c-photo c-photo--horizontal mb-md"
+            imageClassName="c-photo c-photo--horizontal"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
           />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
-        </div>
 
-        <div className="g-start-6@md g-col-7@md mb-xl">
-          <GatsbyImage
+          {/* Row 2 */}
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-col-4@md"
             image={placeholderImage}
             alt="Alt text"
-            className="c-photo c-photo--horizontal mb-md"
+            imageClassName="c-photo c-photo--horizontal"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
           />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
-        </div>
 
-        {/* Row 3 */}
-        <div className="g-start-2@md g-col-5@md mb-xl">
-          <GatsbyImage
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-start-6@md g-col-7@md"
             image={placeholderImage}
             alt="Alt text"
-            className="c-photo c-photo--horizontal mb-md"
+            imageClassName="c-photo c-photo--horizontal"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
           />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
-        </div>
 
-        <div className="g-start-8@md g-col-3@md mb-xl">
-          <GatsbyImage
+          {/* Row 3 */}
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-start-2@md g-col-5@md"
             image={placeholderImage}
             alt="Alt text"
-            className="c-photo c-photo--vertical mb-md"
+            imageClassName="c-photo c-photo--horizontal"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
           />
-          <h3 className="t-heading-3 t-heading-3--reverse">Case Study Title</h3>
-          <span className="t-meta t-heading-6--reverse t-subtle mr-sm">
-            Category
-          </span>
-          <span className="t-meta t-heading-6--reverse t-subtle">
-            Location
-          </span>
+
+          <GridImageBlock
+            wrapperClassName="c-grid-block__photo c-grid-block__gap g-start-8@md g-col-3@md"
+            image={placeholderImage}
+            alt="Alt text"
+            imageClassName="c-photo c-photo--vertical"
+            title="Case Study Title"
+            category="Category"
+            location="Location"
+          />
         </div>
       </section>
 
-      <section className="o-page-layout g-12-grid">
-        <p className="t-callout g-start-2@md g-col-4@md">
+      <section className="o-page-layout g-12-grid mb-xl">
+        <p className="t-callout g-start-2@md g-col-6@md">
           Let's capture your labor of love in the best light,{' '}
           <a href="mailto:connect@andrew-spencer.com">Reach out</a>
         </p>
